@@ -6,9 +6,9 @@ pygments:	true
 permalink:	/blog/:title
 
 # Setup
-title:		Notebook of a Java developer
+title:		Notes of a Java developer
 tagline:	'blog'
-description:	'Notebook of a Java developer'
+description:	'Notes of a Java developer'
 url:		http://bdulac.github.io/
 
 author:
