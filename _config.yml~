@@ -30,11 +30,11 @@ social:
     url:	https://github.com/bdulac
     desc:	Fork me on github
 
-  - icon:	feed
+  - icon:	atom
     url:	http://bdulac.github.io/atom.xml
     desc:	Subscribe to my Atom feed
 
-  - icon:	feed
+  - icon:	rss
     url:	http://bdulac.github.io/feed.xml
     desc:	Subscribe to my RSS feed    
 
