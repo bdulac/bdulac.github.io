@@ -13,7 +13,7 @@ title: ! 'Point of view: MVC frameworks'
 <p>
 	Each period has its champion. Struts, as one of the elders, had a
 	long period. So many developers had to use it. But what about software
-	maintenance and evolutions ? Starting with Struts 1, who had to move to
+	maintenance and evolutions ? Struts 1 upgrade to
 	version 2 ? What about moving to another technology ?
 </p>
 <p>
