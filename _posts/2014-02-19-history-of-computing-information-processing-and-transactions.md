@@ -8,20 +8,21 @@ title: ! 'History of computing: information processing and transactions'
 	telescopes" said <a href="http://viaf.org/viaf/17820452">Edsger
 		Dijkstra</a>.
 </p>
-<p></p>
-<p>&nbsp;I have always been interested in the two sides of
-	computing:</p>
+<p>
+	I have always been interested in the two sides of
+	computing:
+</p>
 <p>
 <ul>
 	<li>Calculus</li>
 	<li>Information processing</li>
 </ul>
+<p>
 In the early ages of computing, we tend to focus on the first machines
 and their calculus properties.
 <a href="http://viaf.org/viaf/4963723">Charles Babbage</a>
 inventions are famous.
 </p>
-<p></p>
 <p>
 	But in the early 19th century, the pioneer was also interested in
 	information processing and transactions. Reading <a

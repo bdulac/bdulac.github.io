@@ -2,22 +2,32 @@
 layout: default
 title: Home
 ---
-
-<header class="clean" style="height: 250px; background-image: url({{ site.cover }});">
+<div id="container" style="background-image: url({{ site.cover }});">
+<header style="height: 150px;">
 	{% include top.html %}
 	<div id="home-title">
 		<a href="{{ site.url }}">
-			<img src="{{ site.icon }}" class="site-icon">
+			<img src="{{ site.icon }}" class="site-icon" />
 		</a>
+		<h1>{{ site.title }}</h1>
 	</div>
 </header>
 <div id="post-list">
 	{% for post in paginator.posts %}
-		<div>
-			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+	<article>
+		<header>
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			<p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
-		</div>
+		</header>
+		<main>
+			<div id="article" class="post-content">
+				{{ post.content}}
+			</div>
+		</main>
+		<!-- <p class="post-description">{{ post.content | strip_html | truncatewords: 1000 }}</p> -->
+		<footer>
+			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+		</footer>
+	</article>
 		<br>
 	{% endfor %}
 </div>
@@ -37,3 +47,4 @@ title: Home
 <footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
 	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
+</div>
