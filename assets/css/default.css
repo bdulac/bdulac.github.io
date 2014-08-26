@@ -36,13 +36,13 @@ footer {
 	border-bottom-style: dotted;
 	border-bottom-width: 2px;
 	border-color: #843208;
+	font-family: 'Poiret One', cursive;
 }
 
 p {
     text-indent: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	/*color: #515151;*/
 	font-family: 'Poiret One', cursive;
 }
 
@@ -548,5 +548,19 @@ pre code {
 
 .post-date {
 	font-size: 12pt;
+	color: #999;
+	display: block;
+}
+
+.categories {
+	margin-bottom: 15px;
+}
+
+.category {
+	border-style: outset;
+	border-width: 1px;
+	padding: 5px;
+	font-size: 12pt;
+	text-transform: uppercase;
 	color: #999;
 }
