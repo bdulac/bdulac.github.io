@@ -14,9 +14,8 @@ title: ! 'Point of view: Packaging'
 	<li>Grouping things</li>
 	<li>Notational things</li>
 </ul>
-Obviously, classes are structural elements.
-</p>
 <p>
+	Obviously, classes are structural elements. 
 	According to this same book, <a
 		href="http://en.wikipedia.org/wiki/Package_%28UML%29">packaging</a> is
 	the act of grouping classes.
