@@ -16,15 +16,16 @@ title: Memory errors in Java
 	<li>The PermGen space contains classes definitions</li>
 	<li>The Heap space contains objects</li>
 </ul>
-When a memory problem occurs, an
-<a
-	href="http://docs.oracle.com/javase/7/docs/api/java/lang/OutOfMemoryError.html">error</a>
-is raised. This
-<a
-	href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html">throwable</a>
-contains information about the cause of the problem and the impacted
-memory space. Most of time, these informations are sufficient to help
-solve the problem.
+<p>
+	When a memory problem occurs, an
+	<a
+		href="http://docs.oracle.com/javase/7/docs/api/java/lang/OutOfMemoryError.html">error</a>
+		is raised. This
+	<a
+		href="http://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html">throwable</a>
+	contains information about the cause of the problem and the impacted
+	memory space. Most of time, these informations are sufficient to help
+	solve the problem.
 </p>
 <p>
 	The JVM options mentioned in this post are for <i>HotSpot</i>
@@ -37,11 +38,12 @@ solve the problem.
 		href="http://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html#gbyuu"><u>java.lang.OutOfMemoryError:
 			PermGen space</u></a><br />
 <ul></ul>
-The space allocated for classes definitions is full. This can happen if
-the environment loads a large number of classes (common in Java EE
-environments). The allocated space can be configured via the JVM option
-<i>-XX:PermSize=256m</i>
-(for 256 megabytes).
+<p>
+	The space allocated for classes definitions is full. This can happen if
+	the environment loads a large number of classes (common in Java EE
+	environments). The allocated space can be configured via the JVM option
+	<i>-XX:PermSize=256m</i>
+	(for 256 megabytes).
 </p>
 <p>
 	In some situations, this saturation can be caused by a hot deployment.
