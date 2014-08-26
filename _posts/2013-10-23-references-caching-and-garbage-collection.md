@@ -9,6 +9,7 @@ title: References, caching and garbage collection
 	documentation <a
 		href="http://wiki.eclipse.org/EclipseLink/UserGuide/JPA/Basic_JPA_Development/Caching/Type_and_Size">gave
 		me the answer</a>. The Java SE platform provide special references :
+</p>
 <ul>
 	<li><a
 		href="http://docs.oracle.com/javase/7/docs/api/java/lang/ref/SoftReference.html">Soft
@@ -20,9 +21,10 @@ title: References, caching and garbage collection
 		href="http://docs.oracle.com/javase/7/docs/api/java/lang/ref/PhantomReference.html">Phantom
 			references</a></li>
 </ul>
-According to the official documentation, soft references are used to
-provide memory-sensitive properties to cached references. This can be
-very efficient.
+<p>
+	According to the official documentation, soft references are used to
+	provide memory-sensitive properties to cached references. This can be
+	very efficient.
 </p>
 <p>But access to soft-referenced objects needs to be done via
 	specific objects so that freed references can be renewed (e.g. via a
