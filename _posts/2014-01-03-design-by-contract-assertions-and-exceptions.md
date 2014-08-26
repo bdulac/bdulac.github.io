@@ -14,14 +14,12 @@ title: Design by contract, assertions and exceptions
 	Assertions are associated to an object method and qualified in
 	one of three categories :
 </p>
-<p>
 <ul>
 	<li>Preconditions are assertions true before executing the method</li>
 	<li>Postconditions are assertions true after executing the method</li>
 	<li>Invariants are assertions true before and after executing the
 		method</li>
 </ul>
-</p>
 <p>
 	Meyer includes his idea in the <a href="http://www.eiffel.com/">Eiffel</a>
 	programming language : the assertions are checked in a static way (at
@@ -51,13 +49,13 @@ title: Design by contract, assertions and exceptions
 	not be satisfied.
 </p>
 <p>I consider</p>
-<p>
 <ul>
 	<li>Runtime exceptions should be used for checking preconditions</li>
 	<li>Checked exceptions should be used when preconditions are true
 		but postconditions can not be satisfied, assuming that the method is
 		correct (e.g. the network connection is broken).&nbsp;</li>
 </ul>
+<p>
 If a runtime exception is raised, the calling method should be bugged
 (or its preconditions are not properly checked).
 </p>
