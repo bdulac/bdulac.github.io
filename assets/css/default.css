@@ -464,7 +464,7 @@ pre code {
 
 .pagination a {
 	text-decoration: none;
-	color: #888;
+	color: black;
 }
 
 .older-posts, .newer-posts {
@@ -478,6 +478,7 @@ pre code {
 
 .page-number {
 	padding: 2px 0;
+	color: black;
 }
 
 .newer-posts {
