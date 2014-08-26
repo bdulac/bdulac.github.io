@@ -3,7 +3,7 @@ layout: default
 article: true
 ---
 <div id="container" style="background-image: url({{ site.cover }});">
-<header  style="height: 150px;">
+<header>
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
 			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
@@ -13,9 +13,11 @@ article: true
 	{% endif %}
 	{% include top.html %}
 	<div id="home-title">
+	<!--
 		<a href="{{ site.url }}">
 			<img src="{{ site.icon }}" class="site-icon" />
 		</a>
+	-->
 		<h1>{{ site.title }}</h1>
 	</div>
 </header>

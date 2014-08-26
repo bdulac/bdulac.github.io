@@ -14,18 +14,10 @@
 }
 
 #home-title {
-	/* width: 700px; */
-	/*padding-top: 25px;*/
-	/*margin-left: -350px;*/
 }
 
 #article {
-	width: 700px;
-	padding: 50px 0px;
-	left: 50%;
-	margin-left: -350px;
-	text-align: justify;
-	text-justify: inter-word;
+	
 }
 
 #article br {
