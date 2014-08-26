@@ -1,6 +1,9 @@
 --- 
 layout: post 
 title: References, caching and garbage collection 
+categories:
+  - Java
+  - JPA implementation
 ---
 <p>For a long time I have been wondering how do frameworks manage
 	memory while caching.</p>

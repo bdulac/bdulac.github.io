@@ -1,6 +1,12 @@
 --- 
 layout: post 
 title: ! 'Point of view: Packaging' 
+categories:
+  - Package
+  - Software engineering
+  - Software design
+  - UML
+  - Point of view
 ---
 <p>
 	According to the <a href="http://www.worldcat.org/oclc/39516151">UML

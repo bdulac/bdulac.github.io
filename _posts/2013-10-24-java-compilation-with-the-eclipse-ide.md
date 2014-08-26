@@ -1,6 +1,10 @@
 --- 
 layout: post 
-title: Java compilation with the Eclipse IDE 
+title: Java compilation with the Eclipse IDE
+categories:
+  - Java
+  - AST
+  - Eclipse
 ---
 <p>
 	You probably have noticed that the <a href="http://www.eclipse.org/">Eclipse

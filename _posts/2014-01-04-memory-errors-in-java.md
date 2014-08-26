@@ -1,6 +1,9 @@
 --- 
 layout: post 
-title: Memory errors in Java 
+title: Memory errors in Java
+categories:
+  - Java
+  - Memory
 ---
 <p>
 	Memory in <i>Java</i> is largely made easy by garbage collection. This

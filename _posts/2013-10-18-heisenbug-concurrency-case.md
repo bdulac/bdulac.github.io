@@ -1,6 +1,11 @@
 --- 
 layout: post 
 title: Heisenbug - Concurrency case 
+categories:
+  - Software quality
+  - Heisenbug
+  - Programming
+  - Practice
 ---
 <p>
 	Solving an <a href="http://en.wikipedia.org/wiki/Debugger">Heisenbug</a>

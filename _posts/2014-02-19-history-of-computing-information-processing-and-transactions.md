@@ -1,6 +1,10 @@
 --- 
 layout: post 
 title: ! 'History of computing: information processing and transactions' 
+categories:
+  - Software engineering
+  - History of computing
+  - Databases
 ---
 
 <p>

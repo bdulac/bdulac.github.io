@@ -1,6 +1,10 @@
 --- 
 layout: post 
-title: ! 'Point of view: MVC frameworks' 
+title: ! 'Point of view: MVC frameworks'
+categories:
+  - Software engineering
+  - Point of view
+  - Software design
 ---
 <p>
 	After some (bad) experiences, I am quite sceptical about <a

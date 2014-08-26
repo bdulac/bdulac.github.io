@@ -1,6 +1,10 @@
 --- 
 layout: post 
-title: Dynamic assignation and proxy objects 
+title: Dynamic assignation and proxy objects
+categories:
+  - Java
+  - Proxy
+  - JPA implementation
 ---
 <p>
 	Still in <a href="http://en.wikipedia.org/wiki/Java_Persistence_API">JPA</a>,

@@ -1,6 +1,13 @@
 --- 
 layout: post 
 title: Design by contract, assertions and exceptions
+categories:
+  - Software engineering
+  - Software quality
+  - Point of view
+  - Design by contract
+  - Assertion
+  - Exception
 ---
 <p>Understanding design by contract is important for code quality.</p>
 <p>
