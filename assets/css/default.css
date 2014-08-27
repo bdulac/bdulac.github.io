@@ -46,6 +46,10 @@ p {
 	font-family: 'Poiret One', cursive;
 }
 
+code {
+	text-indent: 0;
+}
+
 article li {
 	font-family: 'Poiret One', cursive;
 }
