@@ -552,7 +552,7 @@ pre code {
 
 .post-date {
 	font-size: 12pt;
-	color: #999;
+	color: #555;
 	display: block;
 }
 
@@ -566,5 +566,5 @@ pre code {
 	padding: 5px;
 	font-size: 12pt;
 	text-transform: uppercase;
-	color: #999;
+	color: #555;
 }
