@@ -13,32 +13,23 @@ article: true
 	{% endif %}
 	{% include top.html %}
 	<div id="home-title">
-	<!--
-		<a href="{{ site.url }}">
-			<img src="{{ site.icon }}" class="site-icon" />
-		</a>
-	-->
 		<h1>{{ site.title }}</h1>
 	</div>
 </header>
 <div id="post-list">
-<!--
-	<div id="post-info">
-		
-		<h1>{{ page.title }}</h1>
-		{% if page.quote %}
-			<h2>{{ page.quote }}</h2>
-		{% endif %}
-		
-		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a>, in {{ page.date | date_to_long_string }}
-	</div>
-	<div id="nav-icon" style="bottom: 60px;">
-		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
-	</div>
--->
-	<article>
+	<article itemscope itemtype="http://schema.org/BlogPosting">
 		<header>
-			<h1><a href="{{ url }}">{{ page.title }}</a></h1>
+			<span itemprop="url" style="display: none;">{{url}}</span>
+			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
+			<div itemprop="author" itemscope
+        		itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        		<div itemprop="author" itemscope
+            	itemtype="http://schema.org/Person">
+            		<span itemprop="name">Bérenger Dulac</span>
+            		<link itemprop="sameAs" href="http://www.facebook.com/berenger.dulac" />
+            		<link itemprop="sameAs" href="https://github.com/bdulac" />
+            	</div>
+        	</div>
 		</header>
 		<main>
 			<div id="article" class="post-content">
@@ -48,32 +39,17 @@ article: true
 		<footer>
 			<div class="categories">
 			{% for category in page.categories %}
-				<span class="category">{{ category }}</span>
+				<span class="category" itemprop="about">{{ category }}</span>
 			{% endfor %}
 			</div>
-			<span class="post-date">{{ page.date | date_to_long_string }}</span>
+			<span class="post-date">
+				<time datetime="{{ page.date| date: '%Y-%m-%d' }}" itemprop="datePublished">
+					{{ page.date | date_to_long_string }}
+				</time>
+			</span>
 		</footer>
 	</article>
 </div>
-<!--
-{% for post in site.related_posts limit:1 %}
-<footer class="{% if post.dark %}dark{% else %}clean{% endif %}">
-	<div id="nav-icon" style="top: 25px;">
-		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
-	</div>
-	<div id="post-info">
-		<h3>Featured post</h3>
-		<a href="{{ post.url }}">
-			<h1>{{ post.title }}</h1>
-			{% if post.quote %}
-				<h2>{{ post.quote }}</h2>
-			{% endif %}
-		</a>
-	</div>
-	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
-</footer>
-{% endfor %}
--->
 <footer>
 	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
