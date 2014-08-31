@@ -3,4 +3,4 @@ layout: nil
 ---
 
 User-agent: *
-Sitemap: {{ site.url }}blog-sitemap.xml
+Sitemap: {{ site.url }}sitemap-blog.xml
