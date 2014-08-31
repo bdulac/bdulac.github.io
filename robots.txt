@@ -1,2 +1,6 @@
+---
+layout: nil
+---
+
 User-agent: *
-Sitemap: blog-sitemap.xml
+Sitemap: {{ site.url }}blog-sitemap.xml
