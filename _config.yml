@@ -19,7 +19,7 @@ paginate:	5
 
 # Custom vars
 icon:		/assets/images/home.png
-cover:		/assets/images/cover.png
+cover:		/assets/images/background.png
 
 social:
   - icon:	facebook
