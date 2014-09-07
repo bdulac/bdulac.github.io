@@ -9,6 +9,9 @@ html, body {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	background-color: #E25D00;
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
 }
 
 #container {
@@ -33,10 +36,11 @@ footer {
 	margin-top: 50px;
 	margin-bottom: 25px;
 	padding-bottom: 25px;
-	border-bottom-style: dotted;
-	border-bottom-width: 2px;
+	border-top-style: dotted;
+	border-top-width: 2px;
 	border-color: #843208;
 	font-family: 'Poiret One', cursive;
+	color: black;
 }
 
 p {
@@ -349,12 +353,17 @@ pre code {
 }
 
 .clean {
+	/*
 	color: #eee;
 	background-color: #888;
+	*/
 }
 
 .clean a {
-	color: #eee;
+	/*color: #eee;*/
+	color: white;
+	border-bottom: medium none;
+	transition: all 0.5s ease 0s;
 }
 
 .dark, .dark a {
@@ -510,7 +519,7 @@ pre code {
 	text-decoration: none;
 }
 
-#post-list {
+#post-list, #content {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 50px;
 	font-weight: 400;
