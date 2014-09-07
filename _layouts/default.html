@@ -2,6 +2,27 @@
 <html lang="en">
 {% include head.html %}
 <body>
+<div id="container">
+<header>
+	{% include top.html %}
+	<div id="home-title">
+		<h1>{{ site.title }}</h1>
+		<div itemprop="author" itemscope
+        	itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        	<div itemprop="author" itemscope
+        	   	itemtype="http://schema.org/Person">
+           		<span itemprop="name">Bérenger Dulac</span>
+           		<link itemprop="sameAs" href="http://www.facebook.com/berenger.dulac" />
+           		<link itemprop="sameAs" href="http://bdulac.github.io" />
+           		<link itemprop="sameAs" href="https://github.com/bdulac" />
+           	</div>
+        </div>
+	</div>
+</header>
 	{{ content }}
+<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
+</footer>
+</div>
 </body>
 </html>
