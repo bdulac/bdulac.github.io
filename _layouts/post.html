@@ -2,21 +2,7 @@
 layout: default
 article: true
 ---
-<div id="container" style="background-image: url({{ site.cover }});">
-<header>
-	{% if page.video %}
-		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
-			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
-			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
-		</video>
-	{% endif %}
-	{% include top.html %}
-	<div id="home-title">
-		<h1>{{ site.title }}</h1>
-	</div>
-</header>
-<div id="post-list">
+<div id="content">
 	<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<header>
 			<span itemprop="url" style="display: none;">{{url}}</span>
@@ -51,8 +37,3 @@ article: true
 		</footer>
 	</article>
 </div>
-<footer>
-	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
-</footer>
-</div>
-<script src="/assets/js/smooth-scroll.js"></script>

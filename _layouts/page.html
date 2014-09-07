@@ -1,21 +1,58 @@
 ---
 layout: default
 ---
-
-<header class="clean" style="height: 250px; background-image: url({{ site.cover }});">
+<div id="container">
+<header>
+	{% if page.video %}
+		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
+			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
+			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
+		</video>
+	{% endif %}
 	{% include top.html %}
 	<div id="home-title">
-		<a href="{{ site.url }}">
-			<img src="{{ site.icon }}" class="site-icon-page">
-		</a>
-	</div>
-	<div id="post-info" style="bottom: 30px; text-align: center; line-height: 45px;">
-		<h1>{{ page.title }}</h1>
+		<h1>{{ site.title }}</h1>
 	</div>
 </header>
-<div id="article">
-	{{ content }}
+<div id="post-list">
+	<article itemscope="" itemtype="http://schema.org/WebPage"	>
+		<header>
+			<span itemprop="url" style="display: none;">{{url}}</span>
+			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
+			<div itemprop="author" itemscope
+        		itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        		<div itemprop="author" itemscope
+            	itemtype="http://schema.org/Person">
+            		<span itemprop="name">Bérenger Dulac</span>
+            		<link itemprop="sameAs" href="http://www.facebook.com/berenger.dulac" />
+           			<link itemprop="sameAs" href="http://bdulac.github.io" />
+           			<link itemprop="sameAs" href="https://github.com/bdulac" />
+            	</div>
+        	</div>
+		</header>
+		<main>
+			<div id="article" class="post-content">
+				{{ content }}
+			</div>
+		</main>
+		<footer>
+			<div class="categories">
+			{% for category in page.categories %}
+				<span class="category" itemprop="about">{{ category }}</span>
+			{% endfor %}
+			</div>
+			{% if page.date %}
+			<span class="post-date">
+				<time datetime="{{ page.date| date: '%Y-%m-%d' }}" itemprop="datePublished">
+					{{ page.date | date_to_long_string }}
+				</time>
+			</span>
+			{% endif %}
+		</footer>
+	</article>
 </div>
-<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+<footer>
 	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
+</div>
