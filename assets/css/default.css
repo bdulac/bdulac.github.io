@@ -37,7 +37,9 @@ footer {
 	margin-bottom: 25px;
 	padding-bottom: 25px;
 	border-top-style: dotted;
-	border-top-width: 2px;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 	border-color: #843208;
 	font-family: 'Poiret One', cursive;
 	color: black;

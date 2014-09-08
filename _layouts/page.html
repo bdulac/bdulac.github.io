@@ -1,22 +1,9 @@
 ---
 layout: default
+article: true
 ---
-<div id="container">
-<header>
-	{% if page.video %}
-		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
-			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
-			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
-		</video>
-	{% endif %}
-	{% include top.html %}
-	<div id="home-title">
-		<h1>{{ site.title }}</h1>
-	</div>
-</header>
-<div id="post-list">
-	<article itemscope="" itemtype="http://schema.org/WebPage"	>
+<div id="content" class="content">
+	<article>
 		<header>
 			<span itemprop="url" style="display: none;">{{url}}</span>
 			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
@@ -32,7 +19,7 @@ layout: default
         	</div>
 		</header>
 		<main>
-			<div id="article" class="post-content">
+			<div id="article">
 				{{ content }}
 			</div>
 		</main>
@@ -42,17 +29,6 @@ layout: default
 				<span class="category" itemprop="about">{{ category }}</span>
 			{% endfor %}
 			</div>
-			{% if page.date %}
-			<span class="post-date">
-				<time datetime="{{ page.date| date: '%Y-%m-%d' }}" itemprop="datePublished">
-					{{ page.date | date_to_long_string }}
-				</time>
-			</span>
-			{% endif %}
 		</footer>
 	</article>
-</div>
-<footer>
-	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
-</footer>
 </div>
