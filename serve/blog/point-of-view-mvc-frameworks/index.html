@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="canonical" href="http://bdulac.github.io//blog/point-of-view-mvc-frameworks" />
+	<meta name="description" content="After some (bad) experiences, I am quite sceptical about MVC frameworks. The hall of fame has accepted a few names:..." />
+	<meta name="author" content="Bérenger Dulac">
+	<meta property="og:description" content="After some (bad) experiences, I am quite sceptical about MVC frameworks. The hall of fame has accepted a few names:..." />
+	<meta itemprop="image" content="http://bdulac.github.io//assets/images/home.png" />
+	<meta property="og:image" content="http://bdulac.github.io//assets/images/home.png" />
+	<meta property="og:title" content="Point of view: MVC frameworks" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://bdulac.github.io//blog/point-of-view-mvc-frameworks" />
+	<meta property="og:site_name" content="Notes of a Java developer" />
+	<title>Point of view: MVC frameworks &middot; Notes of a Java developer</title>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 1001px)" href="/assets/css/desktop.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="/assets/css/mobile.css" />
+	<link href="/assets/css/genericons.css" type="text/css" rel="stylesheet" />
+	<link href="/assets/css/syntax.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+	<link rel="apple-touch-icon" href="http://bdulac.github.io//assets/images/home.png">
+	<link rel="shortcut icon" href="http://bdulac.github.io//assets/images/favicon.ico">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://bdulac.github.io//atom.xml">
+</head>
+<body>
+	<div id="container" style="background-image: url(/assets/images/cover.png);">
+<header  style="height: 150px;">
+	
+	<label class="menu" for="_1">
+	<span class="genericon genericon-menu"></span>
+</label>
+<input id="_1" type="checkbox">
+<div class="menu-content">
+	<div class="menu" style="background-color: #777; z-index: -1;"></div>
+	
+	<a href="/">Home</a><br>
+	
+	<a href="/about">About</a><br>
+	
+</div>
+<div class="social-links">
+	
+	<a href="http://facebook.com/berenger.dulac" target="_blank" title="Join me on Facebook"><span class="genericon genericon-facebook"></span></a>
+	
+	<a href="https://github.com/bdulac" target="_blank" title="Fork me on github"><span class="genericon genericon-github"></span></a>
+	
+	<a href="http://bdulac.github.io/atom.xml" target="_blank" title="Subscribe to my Atom feed"><span class="genericon genericon-feed"></span></a>
+	
+	<a href="http://bdulac.github.io/feed.xml" target="_blank" title="Subscribe to my RSS feed"><span class="genericon genericon-feed"></span></a>
+	
+</div>
+	<div id="home-title">
+		<a href="http://bdulac.github.io/">
+			<img src="/assets/images/home.png" class="site-icon" />
+		</a>
+		<h1>Notes of a Java developer</h1>
+	</div>
+</header>
+<div id="post-list">
+<!--
+	<div id="post-info">
+		
+		<h1>Point of view: MVC frameworks</h1>
+		
+		
+		<a class="site-title" href="http://bdulac.github.io/"><img src="/assets/images/home.png" class="site-icon-small">Notes of a Java developer</a>, in 10 January 2014
+	</div>
+	<div id="nav-icon" style="bottom: 60px;">
+		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
+	</div>
+-->
+	<article>
+		<header>
+			<h1><a href="">Point of view: MVC frameworks</a></h1>
+		</header>
+		<main>
+			<div id="article" class="post-content">
+				<p>
+    After some (bad) experiences, I am quite sceptical about <a
+        href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a>
+    frameworks. The hall of fame has accepted a few names: <a
+        href="http://struts.apache.org/">Struts</a>, <a
+        href="http://www.playframework.com/">Play</a>, <a
+        href="https://wicket.apache.org/">Wicket</a>... And then ?
+</p>
+
+<p>
+    Each period has its champion. Struts, as one of the elders, had a
+    long period. So many developers had to use it. But what about software
+    maintenance and evolutions ? Struts 1 upgrade to
+    version 2 ? What about moving to another technology ?
+</p>
+
+<p>
+    Quite a nightmare, it is sometimes easier to rewrite completely
+    the application. In my point of view, long term solutions rely directly on the
+    Java platform. The classic <a
+        href="https://jcp.org/aboutJava/communityprocess/final/jsr315/">Servlet</a>
+    / <a href="https://jcp.org/aboutJava/communityprocess/final/jsr245/">JSP</a>&nbsp;tandem
+    is not an MVC implementation but is plain and simple and evolutions are
+    easy. I understand <a href="https://jcp.org/en/jsr/detail?id=314">JSF</a>
+    enthusiasts. The solution is modern and interesting on a productivity
+    point of view. I have a personal problem with JSF (and <a
+        href="http://www.youtube.com/watch?v=9ei-rbULWoA#t=47m">others</a>
+    share my opinion) : JSF and JSP are bad companions. What a shame for
+    two specifications...
+</p>
+
+<p>
+    While the RESTful architectural style is trendy, the idea of
+    integrating <a href="https://www.jcp.org/en/jsr/detail?id=339">JAX-RS</a>
+    and JSPs is interesting (<a
+        href="https://jersey.java.net/documentation/latest/mvc.html">part</a>
+    of <a href="https://jersey.java.net/">Jersey</a>). Hope it will be part of the core specification someday.
+</p>
+
+<p>
+    <b>Edit</b> <em>(2014-08-21)</em> : the JAX-RS / MVC integration was part of the 
+    <a href="https://jcp.org/en/jsr/detail?id=339">JSR 339</a> initial request but was dismissed in the final specification. 
+    A <a href="https://java.net/projects/jax-rs-spec/lists/users/archive/2014-08/message/16">recent message</a> on the 
+    specification list let me have some hope...
+</p>
+
+			</div>
+		</main>
+		<footer>
+			<span class="post-date">10 January 2014</span>
+		</footer>
+	</article>
+</div>
+<!--
+
+<footer class="clean">
+	<div id="nav-icon" style="top: 25px;">
+		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
+	</div>
+	<div id="post-info">
+		<h3>Featured post</h3>
+		<a href="/blog/history-of-computing-information-processing-and-transactions">
+			<h1>History of computing: information processing and transactions</h1>
+			
+		</a>
+	</div>
+	<p class="copyright">&copy;2014, <a href="https://github.com/bdulac" target="_blank">Bérenger Dulac</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5" target="_blank">Some rights reserved</a>.</p>
+</footer>
+
+-->
+<footer>
+	<p class="copyright">&copy;2014, <a href="https://github.com/bdulac" target="_blank">Bérenger Dulac</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5" target="_blank">Some rights reserved</a>.</p>
+</footer>
+</div>
+<script src="/assets/js/smooth-scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+---
+layout: page
+title: Jersey (integration with JSPs)
+article: true
+categories:
+  - Java
+  - Web
+---
+	<div>
+		<h2>Encoding (Jersey 2)</h2>
+		<p>
+			It seems Jersey 2 sets an encoding content type header as encoded in ISO-8859-1, even if the content is encoded in UTF-8 and a JSP page directive sets the proper value. The solution is to use servlet filter to override the behavior. Tomcat provides one out of the box, ready to use (configuration only, no coding). 
+		</p>
+	</div>
