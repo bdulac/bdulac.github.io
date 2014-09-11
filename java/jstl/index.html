@@ -7,7 +7,27 @@ categories:
   - Web
 ---
 	<div>
-		<h2>fmt (messages)</h2>
+		<h2>"fn" (functions)</h2>
+		<p>
+			There is a problem in testing the content HTTP request URL: the 
+			<a href="http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getRequestURL()">
+			HttpServletRequest method
+			</a> returns a <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html">
+			StringBuffer</a>. But the <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/contains.fn.html">
+			fn:contains(.., ..)</a> functions accepts only strings. This works 
+			but is not static-type conform.
+		</p>
+		<p>
+			The solution is to set the request URL in a variable to transform it 
+			into a string. Then the function can be used properly
+		</p>
+		<pre><c:set var="requestUrl" value="${pageContext.request.requestURL}" />
+		<c:if test"${fn:contains(requestUrl, '...')}">
+		</c:if>
+		</pre>
+	</div>
+	<div>
+		<h2>"fmt" (messages)</h2>
 		<p>
 			Using a <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fmt/message.html">message</a> 
 			tag (fmt) with <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fmt/param.html">
