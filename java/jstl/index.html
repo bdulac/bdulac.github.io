@@ -21,9 +21,9 @@ categories:
 			The solution is to set the request URL in a variable to transform it 
 			into a string. Then the function can be used properly
 		</p>
-		<pre><c:set var="requestUrl" value="${pageContext.request.requestURL}" />
-		<c:if test"${fn:contains(requestUrl, '...')}">
-		</c:if>
+		<pre>&lt;c:set var="requestUrl" value="${pageContext.request.requestURL}" /&gt;
+		&lt;c:if test"${fn:contains(requestUrl, '...')}"&gt;
+		&lt;/c:if&gt;
 		</pre>
 	</div>
 	<div>
