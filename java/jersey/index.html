@@ -2,10 +2,27 @@
 layout: page
 title: Jersey (integration with JSPs)
 article: true
+resource: true
 categories:
   - Java
   - Web
 ---
+	<div>
+		<h2>Integration with JSP (Jersey 2)</h2>
+		<p>
+		 	For non-maven project, best to use the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-mvc-jsp/dependencies.html">list 
+		 	of dependencies</a>.
+		</p>
+		<p>
+			For a maven project: 
+		</p>
+		<pre><dependency>
+    <groupId>org.glassfish.jersey.ext</groupId>
+    <artifactId>jersey-mvc-jsp</artifactId>
+    <version>2.12</version>
+</dependency>
+		</pre>
+	</div>
 	<div>
 		<h2>Encoding (Jersey 2)</h2>
 		<p>
