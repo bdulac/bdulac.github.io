@@ -1,9 +1,12 @@
 # Dependencies
 markdown:	redcarpet
-pygments:	true
+highlighter:	true
 
 # Permalinks
 permalink:	/note/:title
+
+# Categories
+category-list: [Software engineering, Programming, Java]
 
 # Setup
 title:		Notes of a (Java) developer
