@@ -1,0 +1,23 @@
+{% for cat in site.category-list %}
+<ul>
+{% for page in site.pages %}
+{% if page.resource == true %}
+{% for pc in page.categories %}
+{% if pc == cat %}
+<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% for post in site.posts %}
+{% if post.resource == true %}
+{% for pc in post.categories %}
+<li>{{ pc }}, {{ cat }}</li>
+{% if pc == cat %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+</ul>
+{% endfor %}
