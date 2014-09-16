@@ -4,6 +4,7 @@ title: Memory errors in Java
 categories:
   - Java
   - Memory
+resource: true
 ---
 <p>
 	Memory in <i>Java</i> is largely made easy by garbage collection. This

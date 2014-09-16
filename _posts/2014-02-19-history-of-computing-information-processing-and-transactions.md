@@ -5,6 +5,7 @@ categories:
   - Software engineering
   - History of computing
   - Databases
+resource: true
 ---
 
 <p>

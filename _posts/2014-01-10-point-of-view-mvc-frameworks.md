@@ -5,6 +5,7 @@ categories:
   - Software engineering
   - Point of view
   - Software design
+resource: true
 ---
 <p>
 	After some (bad) experiences, I am quite sceptical about <a

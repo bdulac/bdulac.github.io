@@ -8,6 +8,7 @@ categories:
   - Design by contract
   - Assertion
   - Exception
+resource: true
 ---
 <p>Understanding design by contract is important for code quality.</p>
 <p>

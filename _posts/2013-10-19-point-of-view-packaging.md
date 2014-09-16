@@ -7,6 +7,7 @@ categories:
   - Software design
   - UML
   - Point of view
+resource: true
 ---
 <p>
 	According to the <a href="http://www.worldcat.org/oclc/39516151">UML

@@ -5,6 +5,7 @@ categories:
   - Java
   - Proxy
   - JPA implementation
+resource: true
 ---
 <p>
 	Still in <a href="http://en.wikipedia.org/wiki/Java_Persistence_API">JPA</a>,

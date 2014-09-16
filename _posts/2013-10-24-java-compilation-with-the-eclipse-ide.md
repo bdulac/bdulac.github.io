@@ -5,6 +5,7 @@ categories:
   - Java
   - AST
   - Eclipse
+resource: true
 ---
 <p>
 	You probably have noticed that the <a href="http://www.eclipse.org/">Eclipse

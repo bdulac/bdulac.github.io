@@ -6,6 +6,7 @@ categories:
   - Heisenbug
   - Programming
   - Practice
+resource: true
 ---
 <p>
 	Solving an <a href="http://en.wikipedia.org/wiki/Debugger">Heisenbug</a>
