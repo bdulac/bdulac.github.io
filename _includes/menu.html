@@ -1,10 +1,15 @@
+<nav role="navigation">
 {% for cat in site.category-list %}
-<ul>
+	<ul>
+		<li>{{ cat }}
+			<ul>
+{% assign category = cat | upcase %}
 {% for page in site.pages %}
 {% if page.resource == true %}
 {% for pc in page.categories %}
-{% if pc == cat %}
-<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% assign pageCategory = pc | upcase %}
+{% if pageCategory == category %}
+				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}
 {% endfor %}
 {% endif %}
@@ -12,12 +17,15 @@
 {% for post in site.posts %}
 {% if post.resource == true %}
 {% for pc in post.categories %}
-<li>{{ pc }}, {{ cat }}</li>
-{% if pc == cat %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% assign postCategory = pc | upcase %}
+{% if postCategory == category %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endif %}
 {% endfor %}
 {% endif %}
 {% endfor %}
-</ul>
+			</ul>
+		</li>
+	</ul>
 {% endfor %}
+</nav>

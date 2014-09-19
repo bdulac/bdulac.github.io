@@ -31,6 +31,20 @@ header a, footer a {
 	text-decoration: none;
 }
 
+header nav > ul {
+	background-color: red;
+	display: inline-block;
+}
+
+header nav > ul > li {
+	background-color: blue;
+	display: table-cell;
+}
+
+header nav > ul > li ul {
+	display: block;	
+}
+
 footer {
 	width: 100%;
 	margin-top: 50px;
