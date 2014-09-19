@@ -18,7 +18,7 @@ categories:
 	<div>
 		<h2>Jersey 2 Integration with JSP</h2>
 		<p>
-		This guide summarizes informations from the <a href="https://jersey.java.net/documentation/2.12/mvc">Jersey 2.12</a> 
+		This guide summarizes informations from the <a href="https://jersey.java.net/documentation/2.12/mvc.html">Jersey 2.12</a> 
 		documentation. The MVC and MVC features are extensions.
 		</p>
 		<p>
@@ -47,7 +47,7 @@ categories:
 			The next step is to specialize the <a href="https://jersey.java.net/apidocs/2.0/jersey/org/glassfish/jersey/server/ResourceConfig.html">ResourceConfig</a> 
 			class and to register the <a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html">McvFeature</a> and 
 			<a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/server/mvc/jsp/JspMvcFeature.html">JspMvcFeature</a> classes so that 
-			the extensions are loaded. By the way, the JSP pages path has to be specified:
+			the extensions are loaded (in the constructor). By the way, the JSP pages path has to be specified:
 		</p>
 		<pre>super.register(org.glassfish.jersey.server.mvc.MvcFeature.class)
     .register(org.glassfish.jersey.server.mvc.jsp.JspMvcFeature.class)
