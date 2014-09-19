@@ -1,0 +1,82 @@
+---
+layout: page
+title: JAX-RS
+article: true
+resource: true
+categories:
+  - Java
+  - Web
+---
+<!--
+	<div>
+		<h2>Multipart</h2>
+		<p>
+			
+		</p>
+	</div>
+-->
+	<div>
+		<h2>Jersey 2 Integration with JSP</h2>
+		<p>
+		 	For non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-mvc-jsp/dependencies.html">list 
+		 	of dependencies</a> should be satisfied. The elements can be found in: 
+		</p>
+		<ul>
+			<li>
+				The <a href="https://jersey.java.net/download.html">RI bundle</a> 
+				(plus the ext directory)
+			</li>
+			<li>
+				The MVC and MVC-JSP extensions in the 
+				<a href="http://repo1.maven.org/maven2/org/glassfish/jersey/ext/">>maven repository</a>
+			</li>
+		 </ul>
+		<p>
+			For a maven project: 
+		</p>
+		<pre>&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-mvc-jsp&lt;/artifactId&gt;
+    &lt;version&gt;2.12&lt;/version&gt;
+&lt;/dependency&gt;
+		</pre>
+		<p>
+			The next step is to specialize the <a href="https://jersey.java.net/apidocs/2.0/jersey/org/glassfish/jersey/server/ResourceConfig.html">ResourceConfig</a> 
+			class and to register the <a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html">McvFeature</a> and 
+			<a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/server/mvc/jsp/JspMvcFeature.html">JspMvcFeature</a> classes so that 
+			the extensions are loaded. By the way, the JSP pages path has to be specified:
+		</p>
+		<pre>super.register(org.glassfish.jersey.server.mvc.MvcFeature.class)
+    .register(org.glassfish.jersey.server.mvc.jsp.JspMvcFeature.class)
+    .property(MvcProperties.TEMPLATE_BASE_PATH, "templates");
+		</pre>
+		<p>
+			Finally, jersey has to be registered as a web application. As of 2.12 version, the 
+			sevlet mapping mode (web.xml or <a href="https://jsr311.java.net/nonav/javadoc/javax/ws/rs/ApplicationPath.html">ApplicationPath</a> annotation) 
+			is not supported by the <a href="https://jersey.java.net/documentation/2.12/mvc.html#mvc.example.implicit.class">MVC extension</a>. 
+			Jersey should be deployed as <a href="https://jersey.java.net/documentation/2.12/deployment.html#deployment.servlet.2">servlet filter</a>. 
+			Extract from the doc: 
+		</p>
+		<pre>&lt;web-app&gt;
+    &lt;filter&gt;
+        &lt;filter-name&gt;MyApplication&lt;/filter-name&gt;
+        &lt;filter-class&gt;org.glassfish.jersey.servlet.ServletContainer&lt;/filter-class&gt;
+        &lt;init-param&gt;
+            ...
+        &lt;/init-param&gt;
+    &lt;/filter&gt;
+    ...
+    &lt;filter-mapping&gt;
+        &lt;filter-name&gt;MyApplication&lt;/filter-name&gt;
+        &lt;url-pattern&gt;/myApp/*&lt;/url-pattern&gt;
+    &lt;/filter-mapping&gt;
+    ...
+&lt;/web-app&gt;
+		</pre>
+	</div>
+	<div>
+		<h2>Encoding with Jersey 2</h2>
+		<p>
+			It seems Jersey 2 sets an encoding content type header as encoded in ISO-8859-1, even if the content is encoded in UTF-8 and a JSP page directive sets the proper value. The solution is to use servlet filter to override the behavior. Tomcat provides one out of the box, ready to use (configuration only, no coding). 
+		</p>
+	</div>
