@@ -38,8 +38,7 @@ categories:
     &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-mvc-jsp&lt;/artifactId&gt;
     &lt;version&gt;2.12&lt;/version&gt;
-&lt;/dependency&gt;
-		</pre>
+&lt;/dependency&gt;</pre>
 		<p>
 			The next step is to specialize the <a href="https://jersey.java.net/apidocs/2.0/jersey/org/glassfish/jersey/server/ResourceConfig.html">ResourceConfig</a> 
 			class and to register the <a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html">McvFeature</a> and 
@@ -48,8 +47,7 @@ categories:
 		</p>
 		<pre>super.register(org.glassfish.jersey.server.mvc.MvcFeature.class)
     .register(org.glassfish.jersey.server.mvc.jsp.JspMvcFeature.class)
-    .property(MvcProperties.TEMPLATE_BASE_PATH, "templates");
-		</pre>
+    .property(MvcProperties.TEMPLATE_BASE_PATH, "templates");</pre>
 		<p>
 			Finally, jersey has to be registered as a web application. As of 2.12 version, the 
 			sevlet mapping mode (web.xml or <a href="https://jsr311.java.net/nonav/javadoc/javax/ws/rs/ApplicationPath.html">ApplicationPath</a> annotation) 
@@ -71,8 +69,7 @@ categories:
         &lt;url-pattern&gt;/myApp/*&lt;/url-pattern&gt;
     &lt;/filter-mapping&gt;
     ...
-&lt;/web-app&gt;
-		</pre>
+&lt;/web-app&gt;</pre>
 	</div>
 	<div>
 		<h2>Encoding with Jersey 2</h2>
