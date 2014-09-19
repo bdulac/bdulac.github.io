@@ -17,7 +17,6 @@ contributed anything.
 In this blog I will try to sum up the useful subjects I crossed.
 </p>
 <p>
-The blog is rendered by [Jekyll](http://jekyllrb.com/) using the 
-[Thinny theme](http://camporez.com).
+The blog is rendered by <a href="http://jekyllrb.com/">Jekyll</a> with a template inspired by the <a href="http://camporez.com">Thinny theme</a>.
 </p>
 </div>
