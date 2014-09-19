@@ -47,9 +47,10 @@ header nav > ul > li ul {
 
 footer {
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 25px;
-	padding-bottom: 25px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 	border-top-style: dotted;
 	border-top-width: 1px;
 	border-bottom-style: solid;
