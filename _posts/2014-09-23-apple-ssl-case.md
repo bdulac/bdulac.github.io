@@ -16,7 +16,7 @@ categories:
 </p>
 <ul>
 	<li><a href="https://blog.codecentric.de/en/2014/02/curly-braces/">Tobias Goeschel</a></li>
-	<li><a href="https://www.imperialviolet.org/2014/02/22/applebug.html">Adam Langley</li>
+	<li><a href="https://www.imperialviolet.org/2014/02/22/applebug.html">Adam Langley</a></li>
 </ul>
 <p>
 	For sure, testing is an important point in code quality. But this is an endless debate: in a 
