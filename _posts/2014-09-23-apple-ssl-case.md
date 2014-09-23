@@ -22,7 +22,7 @@ categories:
 	For sure, testing is an important point in code quality. But this is an endless debate: in a 
 ideal world there would be a test case for any code piece. "Program testing can be used to show the presence of bugs, but never to show their absence!" said <a href="http://viaf.org/viaf/17820452">Edsger Dijkstra</a> in 
 <a href="http://dx.doi.org/10.1145/355604.361591">The humble programmer</a>. 
-For sure, there are excellent tools to make a right program, just <a href="http://dx.doi.org/10.1145/363235.363259">one kind</a> for example. 
+For sure, there are excellent tools to make a right program, just <a href="http://dx.doi.org/10.1145/363235.363259">one kind</a> for example. I won't say any practice is inappropriate.
 </p>
 <p>
 	Stop dreaming. Let the code verification/prove apart and come back to the code. Adam Langley also suggest code reviews are important. Curly braces ? Perhaps the point isn't central. What matter is a readable code, and others point of view. Many programmers write endless code sequences. What could be the solution ?
