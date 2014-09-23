@@ -51,11 +51,12 @@ ideal world there would be a test case for any code piece. "Program testing can 
 		</span>
 		in
 		<a href="http://dx.doi.org/10.1145/355604.361591">
-			The humble programmer
+			<span itemprop="name">The humble programmer</span>
 		</a>
 	</span>. 
-For sure, there are excellent tools to make a right program, just 
+For sure, there are excellent tools  
 	<span itemscope itemtype="http://schema.org/ScholarlyArticle">
+		to write a <span itemprop="about">verified program</span>, just
 		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259">one kind</a> 
 	</span>
 	for example. I won't say any practice is inappropriate.
