@@ -34,8 +34,8 @@ resource: true
 				C.A.R. Hoare
 				</span>
 			</a>
-			(<span itemprop="copyrightYear">1969</span>)
-		</span>.
+		</span>
+		(<span itemprop="copyrightYear">1969</span>).
 	</span>
 </p>
 <p>
