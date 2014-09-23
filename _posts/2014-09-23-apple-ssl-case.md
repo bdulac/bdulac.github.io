@@ -15,15 +15,18 @@ categories:
 	The point is for sure about programming practice... The thoughts easily focus on curly braces. Two comments suggested the solution could be about test cases (Tobias Goeschel provides a very simple code extract):
 </p>
 <ul>
-	<li itemtype="http://schema.org/BlogPosting">
+	<li>
+		<span itemscope itemtype="http://schema.org/BlogPosting">
 		<a itemprop="sameAs" href="https://blog.codecentric.de/en/2014/02/curly-braces/">
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name">Tobias Goeschel</span>
 				<link itemprop="sameAs" href="https://blog.codecentric.de/en/author/tobias-goeschel/"></link>
 			</span>
 		</a>
+		<span>
 	</li>
-	<li itemtype="http://schema.org/BlogPosting">
+	<li>
+		<span itemscope itemtype="http://schema.org/BlogPosting">
 		<a itemprop="sameAs" href="https://www.imperialviolet.org/2014/02/22/applebug.html">
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name">Adam Langley</span>
@@ -31,6 +34,7 @@ categories:
 				<link itemprop="sameAs" href="https://www.imperialviolet.org"></link>
 			</span>
 		</a>
+		</span>
 	</li>
 </ul>
 <p>
