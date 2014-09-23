@@ -16,7 +16,8 @@ categories:
 <ul>
 	<li>
 		<span itemscope itemtype="http://schema.org/BlogPosting">
-		<a itemprop="sameAs" href="https://blog.codecentric.de/en/2014/02/curly-braces/">
+		<link itemprop="sameAs" href="https://blog.codecentric.de/en/2014/02/curly-braces/"></link>
+		<a href="https://blog.codecentric.de/en/2014/02/curly-braces/">
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name">Tobias Goeschel</span>
 				<link itemprop="sameAs" href="https://blog.codecentric.de/en/author/tobias-goeschel/"></link>
@@ -26,7 +27,8 @@ categories:
 	</li>
 	<li>
 		<span itemscope itemtype="http://schema.org/BlogPosting">
-		<a itemprop="sameAs" href="https://www.imperialviolet.org/2014/02/22/applebug.html">
+		<link itemprop="sameAs" href="https://www.imperialviolet.org/2014/02/22/applebug.html"></link>
+		<a href="https://www.imperialviolet.org/2014/02/22/applebug.html">
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name">Adam Langley</span>
 				<link itemprop="sameAs" href="https://github.com/agl"></link>
