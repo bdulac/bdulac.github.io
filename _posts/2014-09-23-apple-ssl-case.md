@@ -40,10 +40,12 @@ categories:
 <p>
 	For sure, testing is an important point in code quality. But this is an endless debate: in a 
 ideal world there would be a test case for any code piece. "Program testing can be used to show the presence of bugs, but never to show their absence!" said 
-	<span itemscope itemtype="http://schema.org/Periodical" itemid="#periodical">
+	<span itemscope itemtype="http://schema.org/Periodical">
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/17820452">
-			<span itemprop="name">Edsger Dijkstra</span></a></span> 
+			<span itemprop="name">Edsger Dijkstra</span>
+			</span>
+			</a>
 		</span>
 		in
 		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/355604.361591">
@@ -51,7 +53,7 @@ ideal world there would be a test case for any code piece. "Program testing can 
 		</a>
 	</span>. 
 For sure, there are excellent tools to make a right program, just 
-	<span itemscope itemtype="http://schema.org/Periodical" itemid="#periodical">
+	<span itemscope itemtype="http://schema.org/Periodical">
 		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259">one kind</a> 
 	</span>
 	for example. I won't say any practice is inappropriate.
@@ -63,5 +65,5 @@ For sure, there are excellent tools to make a right program, just
 	We, French people, tend to be very verbose in our texts. At school, we are taught to be concise. We do not succeed in any case. How would it be possible in code ? Think about <a href="https://dev.twitter.com/overview/api/counting-characters">Twitter 140 characters</a>. Just think about what a French journalists  <a href="http://www.slate.fr/story/41689/140-signes-twitter-fin-google">could write in 2011</a>. Nowadays, very few journalist still criticize the system. Conciseness can be very useful.  
 </p>
 <p>
-	Why don't compilers warn when a function exceeds 100 lines (or any number suits you) ?
+	Why don't compilers warn when a function exceeds 100 lines (or any number that suits you) ?
 </p>
