@@ -4,6 +4,7 @@ title: Design by contract, assertions and exceptions
 categories:
   - Software engineering
   - Software quality
+  - Programming practice
   - Point of view
   - Design by contract
   - Assertion
