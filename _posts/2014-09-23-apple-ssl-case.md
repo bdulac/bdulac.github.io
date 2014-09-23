@@ -41,6 +41,7 @@ categories:
 	For sure, testing is an important point in code quality. But this is an endless debate: in a 
 ideal world there would be a test case for any code piece. "Program testing can be used to show the presence of bugs, but never to show their absence!" said 
 	<span itemscope itemtype="http://schema.org/Periodical">
+		<link itemprop="sameAs" href="http://dx.doi.org/10.1145/355604.361591"></link>
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/17820452">
 			<span itemprop="name">Edsger Dijkstra</span>
@@ -48,7 +49,7 @@ ideal world there would be a test case for any code piece. "Program testing can 
 			</a>
 		</span>
 		in
-		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/355604.361591">
+		<a href="http://dx.doi.org/10.1145/355604.361591">
 			The humble programmer
 		</a>
 	</span>. 
