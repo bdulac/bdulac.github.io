@@ -33,8 +33,8 @@ resource: true
 				<span itemprop="name">
 				C.A.R. Hoare
 				</span>
-				(<span itemprop="copyrightYear">1969</span>)
 			</a>
+			(<span itemprop="copyrightYear">1969</span>)
 		</span>.
 	</span>
 </p>
