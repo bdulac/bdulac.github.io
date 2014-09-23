@@ -6,7 +6,7 @@ title: Home
 	{% for post in paginator.posts %}
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 		<header>
-			<span itemprop="url" style="display: none;">{{url}}</span>
+			<link itemprop="url" href="{{url}}"></link>
 			<h1><a href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></h1>
 		</header>
 		<main>
