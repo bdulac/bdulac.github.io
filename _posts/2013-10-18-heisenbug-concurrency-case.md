@@ -4,8 +4,7 @@ title: Heisenbug - Concurrency case
 categories:
   - Software quality
   - Heisenbug
-  - Programming
-  - Practice
+  - Programming practice
 resource: true
 ---
 <p>

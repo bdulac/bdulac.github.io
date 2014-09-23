@@ -4,8 +4,7 @@ title: "Apple SSL case: code length"
 categories:
   - Software quality
   - Software engineering
-  - Programming
-  - Practice
+  - Programming practice
 ---
 
 <p>
