@@ -65,6 +65,10 @@ resource: true
 </p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
+		In 
+		<a itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332">
+			<span itemprop="name">Effective Java</span>
+		</a>, 
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/71793922">
 				<span itemprop="name">
@@ -72,10 +76,7 @@ resource: true
 				</span>
 			</a>
 		</span> 
-		defines in 
-		<a itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332">
-			<span itemprop="name">Effective Java</span>
-		</a>
+		defines 		
 		<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">checked exceptions</a> as recoverable conditions
 		<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html">runtime exceptions</a> as programming errors.
 	</span> 
@@ -97,9 +98,9 @@ resource: true
 <p>I consider</p>
 <ul>
 	<li>Runtime exceptions should be used for checking preconditions</li>
-	<li>Checked exceptions should be used when preconditions are true
-		but postconditions can not be satisfied, assuming that the method is
-		correct (e.g. the network connection is broken).&nbsp;</li>
+	<li>
+		Checked exceptions should be used when preconditions are true but postconditions can not be satisfied, assuming that the method is correct (e.g. the network connection is broken).&nbsp;
+	</li>
 </ul>
 <p>
 If a runtime exception is raised, the calling method should be bugged (or its preconditions are not properly checked).
