@@ -4,6 +4,7 @@ title: Design by contract, assertions and exceptions
 categories:
   - Software engineering
   - Software quality
+  - Programming practice
   - Point of view
   - Design by contract
   - Assertion
@@ -12,11 +13,31 @@ resource: true
 ---
 <p>Understanding design by contract is important for code quality.</p>
 <p>
-	<a href="http://viaf.org/viaf/51714577">B. Meyer</a> <a
-		href="http://www.worldcat.org/oclc/17675237">introduced the idea</a>
-	in 1988. It takes advantage of <a
-		href="http://dx.doi.org/10.1145/363235.363259">assertions as
-		defined</a> by <a href="http://viaf.org/viaf/108123782">C.A.R. Hoare</a>.
+	<span itemscope itemtype="http://schema.org/Book">
+		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/17675237"></link>
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<a itemprop="sameAs" href="http://viaf.org/viaf/51714577">
+				<span itemprop="name">B. Meyer</span>
+			</a>
+		</span>
+		<a href="http://www.worldcat.org/oclc/17675237">introduced the idea</a>
+	</span>
+	in <span itemprop="copyrightYear">1988</span>. 
+	It takes advantage of 
+	<span itemscope itemtype="http://schema.org/ScholarlyArticle">
+		<link itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259"></link>
+		<span itemprop="about">assertions</span>
+		<a href="http://dx.doi.org/10.1145/363235.363259"> as defined</a> 
+		by 
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<a itemprop="sameAs" href="http://viaf.org/viaf/108123782">
+				<span itemprop="name">
+				C.A.R. Hoare
+				</span>
+			</a>
+		</span>
+		(<span itemprop="copyrightYear">1969</span>).
+	</span>
 </p>
 <p>
 	Assertions are associated to an object method and qualified in

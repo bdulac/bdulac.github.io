@@ -6,7 +6,7 @@ highlighter:	true
 permalink:	/note/:title
 
 # Categories
-category-list: [Software engineering, Programming, Java]
+category-list: [Software engineering, Programming practice, Java]
 
 # Setup
 title:		Notes of a (Java) developer
