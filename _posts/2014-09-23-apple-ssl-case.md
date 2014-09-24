@@ -8,10 +8,10 @@ categories:
 ---
 
 <p>
-	In February 2014, Apple faced an SSL bug. This was a very simple code mistake due to 	conditional sequences.
+	The point is clearly about programming practice... In February 2014, Apple faced an SSL bug. This was a very simple code mistake due to 	conditional sequences.
 </p>
 <p>
-	The point is for sure about programming practice... The thoughts easily focus on curly braces. Two comments suggested the solution could be about test cases (Tobias Goeschel provides a very simple code extract):
+	The thoughts easily focus on curly braces. Two comments suggested the solution could be about test cases (Tobias Goeschel provides a very simple code extract of the guilty section):
 </p>
 <ul>
 	<li>
@@ -39,30 +39,20 @@ categories:
 	</li>
 </ul>
 <p>
-	For sure, testing is an important point in code quality. But this is an endless debate: in a 
-ideal world there would be a test case for any code piece. "Program testing can be used to show the presence of bugs, but never to show their absence!" said 
+	For sure, testing is an important point in code quality. But this is an utopia: in a 
+ideal world there would be a test case for any code piece. For sure, there are excellent other tools, I previously wrote about <a href="http://bdulac.github.io/note/design-by-contract-assertions-and-exceptions/">design by contract</a>.  
 	<span itemscope itemtype="http://schema.org/ScholarlyArticle">
-		<link itemprop="sameAs" href="http://dx.doi.org/10.1145/355604.361591"></link>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<a itemprop="sameAs" href="http://viaf.org/viaf/17820452">
-			<span itemprop="name">Edsger Dijkstra</span>
-			</span>
+		Writing a <span itemprop="about">verified program</span>, 
+		checking 
+			<a itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259">
+				<span itemprop="about">axioms</span>
 			</a>
-		</span>
-		in
-		<a href="http://dx.doi.org/10.1145/355604.361591">
-			<span itemprop="name">The humble programmer</span>
-		</a>
+		is an important topic. 
 	</span>. 
-For sure, there are excellent tools  
-	<span itemscope itemtype="http://schema.org/ScholarlyArticle">
-		to write a <span itemprop="about">verified program</span>, just
-		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259">one kind</a> 
-	</span>
-	for example. I won't say any practice is inappropriate.
+	I won't say any practice is inappropriate.
 </p>
 <p>
-	Stop dreaming. Let the code verification/prove apart and come back to the code. Adam Langley also suggest code reviews are important. Curly braces ? Perhaps the point isn't central. What matter is a readable code, and others point of view. Many programmers write endless code sequences. What could be the solution ?
+	Stop dreaming about a world with perfect programs. Let the code verification/prove apart and come back to the code. Adam Langley also suggests code reviews are important. Curly braces ? Perhaps the point isn't central. What matter is a readable code, and others point of view. Many programmers write endless code sequences. What could be the solution ?
 </p> 
 <p>
 	We, French people, tend to be very verbose in our texts. At school, we are taught to be concise. We do not succeed in any case. How would it be possible in code ? Think about <a href="https://dev.twitter.com/overview/api/counting-characters">Twitter 140 characters</a>. Just think about what a French journalists  <a href="http://www.slate.fr/story/41689/140-signes-twitter-fin-google">could write in 2011</a>. Nowadays, very few journalist still criticize the system. Conciseness can be very useful.  
