@@ -3,8 +3,20 @@ layout: default
 title: Home
 ---
 <div id="post-list" itemscope itemtype="http://schema.org/Blog">
+	<div itemprop="audience" itemscope itemtype="http://schema.org/OrganizationRole style="display: none;">
+		<span itemprop="audienceType">Software developers</span>
+		<span itemprop="audienceType">Programmers</span>
+	</div>
+	<div itemprop="author" itemscope itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+        	<span itemprop="name">Bérenger Dulac</span>
+        	<link itemprop="sameAs" href="http://www.facebook.com/berenger.dulac" />
+        	<link itemprop="sameAs" href="http://bdulac.github.io" />
+        	<link itemprop="sameAs" href="https://github.com/bdulac" />
+		</div>
+     </div>
 	{% for post in paginator.posts %}
-	<article itemscope itemtype="http://schema.org/BlogPosting">
+	<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 		<header>
 			<link itemprop="url" href="{{url}}"></link>
 			<h1><a href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></h1>
