@@ -45,7 +45,7 @@ resource: true
 	</span>, 
 	I discovered he described the processes involving bank transactions in one	of his works:
 	<a itemprop="sameAs" href="http://books.google.fr/books/about/On_the_Economy_of_Machinery_and_Manufact.html?id=4QWZq4FDoH4C">
-		<span name="name">On the Economy of Machinery and Manufactures</span>
-	</a>.
+		<span itemprop="name">On the Economy of Machinery and Manufactures.</span>
+	</a>
 </p>
 </div>
