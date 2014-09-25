@@ -20,7 +20,7 @@ resource: true
 			<a itemprop="sameAs" href="http://viaf.org/viaf/51714577">
 				<span itemprop="name">
 					B. 
-					<span itemprop="givenName" style="display:none;>Bertrand</span>
+					<span itemprop="givenName" style="display:none;">Bertrand</span>
 					<span itemprop="familyName">Meyer</span>
 				</span>
 			</a>
