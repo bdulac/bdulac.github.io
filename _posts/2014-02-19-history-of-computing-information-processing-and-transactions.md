@@ -42,8 +42,7 @@ resource: true
 	<span itemscope itemType="http://schema.org/ScholarlyArticle">
 		<a itemprop="sameAs" href="http://dx.doi.org/10.1145/1831407.1831417">an article</a>
 		<link itemprop="about" href="#babagebook"></link>
-	</span>, 
-	I discovered he described the processes involving bank transactions in one	of his works:
+	</span> I discovered he described the processes involving bank transactions in one	of his works:
 	<a itemprop="sameAs" href="http://books.google.fr/books/about/On_the_Economy_of_Machinery_and_Manufact.html?id=4QWZq4FDoH4C">
 		<span itemprop="name">On the Economy of Machinery and Manufactures.</span>
 	</a>
