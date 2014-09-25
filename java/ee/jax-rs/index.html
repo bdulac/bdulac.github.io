@@ -12,11 +12,61 @@ categories:
 			<a href="https://jax-rs-spec.java.net/">Java API for RESTful Services (JAX-RS)</a> is defined in three specifications:
 		</p>
 		<ul>
-			<li>JAX-RS 1.0</li>
-			<li>JAX-RS 1.1</li>
-			<li>JAX-RS 2.0</li>
+			<li>JAX-RS 1.0 (<a href="https://jcp.org/en/jsr/detail?id=311">JSR 311</a>, part of <em>Java EE</em> 6, <em>Java SE/EE</em> 5 compliant)</li>
+			<li>JAX-RS 1.1(<a href="https://jcp.org/aboutJava/communityprocess/maintenance/jsr311/">JSR 311 maintenance release</a>)</li>
+			<li>JAX-RS 2.0 (<a href="https://jcp.org/en/jsr/detail?id=339">JSR 339</a>, part of <em>Java EE</em> 7, <em>Java SE/EE</em> 6 compliant)</li>
 		</ul>
-		<p>Here are some personal notes about JAX-RS components...</p>
+		<p>
+			The reference implementation is <em>Jersey</em>. 
+			Here we consider JAX-RS development outside of any <em>Java EE</em> 
+			application server.
+		</p>
+		<p>
+			For non-maven developers, dependencies for pure JAX-RS development are limited.
+			The only needed libraries are JARs in the <a href="https://jersey.java.net/download.html">RI bundle</a> 
+			<em>lib</em> and <em>api</em> directories.
+		</p>
+		<p>
+			For a maven project: 
+		</p>
+		<pre>&lt;dependency&gt;
+    &lt;groupId&gt;javax.ws.rs&lt;/groupId&gt;
+    &lt;artifactId&gt;javax.ws.rs-api&lt;/artifactId&gt;
+    &lt;version&gt;2.12&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+		<p>
+			To use jersey-specific features, the following dependecies should 
+			be specified:
+		</p>
+		<pre>&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
+    &lt;version&gt;2.12&lt;/version&gt;
+&lt;/dependency&gt;
+<!-- For Jersey client-specific features -->
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
+    &lt;version&gt;2.12&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+		<p>
+			<b>TODO</b> concise conf & environment note for JAX-RS dev 
+			with <em>Jersey</em> in <em>Java SE</em> env...
+		</p>
+		<p>Here are some personal notes about JAX-RS components and extensions...</p>
+		<h2>Client API</h2>
+		<p>
+			The RESTful client API is part of the specification since JAX-RS 2.0. 
+			The classifiers are defined in the <a href="http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/package-summary.html">javax.ws.rs.client</a> package. 
+			The component implementation is identified in <a href="http://cxf.apache.org/docs/jax-rs-client-api.html">CXF</a>, 
+			<a href="http://docs.jboss.org/resteasy/docs/3.0-beta-3/userguide/html/RESTEasy_Client_Framework.html">RestEasty</a> and
+			<a href="https://jersey.java.net/documentation/2.12/client.html">Jersey</a>.
+		</p>
+		<p>
+			Since JAX-RS 2.0, as the client API is part of the specification, 
+			Jersey does not require any more libraries than the <a href="https://jersey.java.net/download.html">RI bundle</a> 
+			<em>lib</em> directory.
+		</p>
 		<h2>Multipart</h2>
 		<p>
 			<a href="http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html">Multipart</a> does 
