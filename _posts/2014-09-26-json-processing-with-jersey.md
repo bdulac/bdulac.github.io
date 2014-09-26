@@ -6,7 +6,8 @@ categories:
   - JSON
   - Programming practice
 ---
-	<p>Today I tried to use <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">JSONP</a> with <a href="https://jersey.java.net/"><em>Jersey</em></a>. Simple use case: turn a JSON server response into POJOs...</p>
+<p>
+Today I tried to use <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">JSONP</a> with <a href="https://jersey.java.net/"><em>Jersey</em></a>. Simple use case: turn a JSON server response into POJOs...</p>
 	<p>For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-json-processing/dependencies.html">list of dependencies</a> should be satisfied in addition to the core framework. The elements can be found in:</p>
 	<ul>
 		<li>
