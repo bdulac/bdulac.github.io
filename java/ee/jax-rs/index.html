@@ -108,51 +108,8 @@ categories:
 		File f
 		</pre>
 	</div>
-	<div>
-		<p>TURN INTO A BLOG POST</p>
-		<h2>JSON processing with Jersey 2</h2>
-		<p>Tried <a href="https://jersey.java.net/documentation/latest/media.html#json.json-p">JSONP</a>...</p>
-		<p>
-			For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-json-processing/dependencies.html">list of dependencies</a> 
-			should be satisfied. The elements can be found in:
-		</p>
-		<ul>
-			<li>
-				The <a href="https://jersey.java.net/download.html">RI bundle</a> 
-			</li>
-			<li><a href="http://search.maven.org/remotecontent?filepath=javax/json/javax.json-api/1.0/javax.json-api-1.0.jar">JSONP-API</a></li>
-			<li><a href="http://search.maven.org/remotecontent?filepath=org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar">JSONP</a></li>
-			<li><a href="http://central.maven.org/maven2/org/glassfish/jsonp-jaxrs/1.0/jsonp-jaxrs-1.0.jar">JSONP-JAX-RS</</a></li>
-			<li><a href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-processing/">Jersey-Media-Json-Processing</a></li>
-		</ul>
-		<p>
-			For a maven project: 
-		</p>
-		<pre>&lt;dependency&gt;
-    &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
-    &lt;artifactId&gt;jersey-media-json-processing&lt;/artifactId&gt;
-    &lt;version&gt;2.12&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-		<p>
-			Well, all I got is :
-		</p>
-		<pre>MessageBodyReader not found for media type=application/json</pre>
-		<p>
-			Then, I discovered the following 
-			<a hre="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">following </a>.
-			I added a default constructor. Same error. Then I read the 
-			<a href="https://jersey.java.net/documentation/latest/media.html#json.json-p">doc</a> 
-			again. What a shit: 
-		</p>
-		<pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
-
-Media modules that support this approach are MOXy and Jackson</pre>
-		<p>
-			It seems JSONP is not able to provide a simple POJO support. 
-			I came back to <a href="http://www.json.org/java/">the basics</a>.
-			All that mess with Jackson, Moxy, JSONP reminds me of an XML nightmare a few years ago... 
-		</p>
-	</div>
+	<div>JSON processing with Jersey 2</div>
+	<p>See <a href="../../note/json-processing-with-jersey">this note</a>.</p>
 	<div>
 		<h2>Jersey 2 Integration with JSP</h2>
 		<p>
