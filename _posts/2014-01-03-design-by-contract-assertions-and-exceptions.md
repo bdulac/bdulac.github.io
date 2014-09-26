@@ -16,9 +16,13 @@ resource: true
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/17675237"></link>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person" itemid="#meyer">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/51714577">
-				<span itemprop="name">B. Meyer</span>
+				<span itemprop="name">
+					B. 
+					<span itemprop="givenName" style="display:none;">Bertrand</span>
+					<span itemprop="familyName">Meyer</span>
+				</span>
 			</a>
 		</span>
 		<a href="http://www.worldcat.org/oclc/17675237">introduced the idea</a>
@@ -33,7 +37,11 @@ resource: true
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/108123782">
 				<span itemprop="name">
-				C.A.R. Hoare
+					C.A.R. 
+					<span itemprop="givenName" style="display:none;">Charles</span>
+					<span itemprop="additionalName" style="display:none;">Anthony</span>
+					<span itemprop="additionalName" style="display:none;">Richard</span>
+					<span itemprop="familyName">Hoare</span>
 				</span>
 			</a>
 		</span>
@@ -50,8 +58,13 @@ resource: true
 	<li>Invariants are assertions true before and after executing the method</li>
 </ul>
 <p>
-	Meyer includes his idea in the <a href="http://www.eiffel.com/">Eiffel</a>
-	programming language : the assertions are checked in a static way (at
+	<span itemscope itemtype="http://schema.org/SoftwareApplication">
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person" itemid="#meyer">
+			<link itemprop="sameAs" href="#meyer">Meyer</link>
+		</span> includes his idea in the 
+		<a itemprop="url" href="http://www.eiffel.com/">Eiffel</a> 
+		<span itemprop="applicationCategory">programming language</span>
+	</span> : the assertions are checked in a static way (at
 	compile time).
 </p>
 <p>
@@ -72,7 +85,7 @@ resource: true
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://viaf.org/viaf/71793922">
 				<span itemprop="name">
-					Bloch
+					<span itemprop="familyName">Bloch</span>
 				</span>
 			</a>
 		</span> 

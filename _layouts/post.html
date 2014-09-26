@@ -7,11 +7,18 @@ article: true
 		<header>
 			<link itemprop="url" href="{{url}}"></link>
 			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
+			<div itemprop="audience" itemscope itemtype="http://schema.org/Audience" style="display: none;">
+				<span itemprop="audienceType">Software developers</span>
+				<span itemprop="audienceType">Programmers</span>
+			</div>
 			<div itemprop="author" itemscope
         		itemtype="http://schema.org/OrganizationRole" style="display: none;">
         		<div itemprop="author" itemscope
             	itemtype="http://schema.org/Person">
-            		<span itemprop="name">Bérenger Dulac</span>
+            		<span itemprop="name">
+            			<span itemprop="givenName">Bérenger</span> 
+            			<span itemprop="familyName">Dulac</span>
+            		</span>
             		<link itemprop="sameAs" href="http://www.facebook.com/berenger.dulac" />
            			<link itemprop="sameAs" href="http://bdulac.github.io" />
            			<link itemprop="sameAs" href="https://github.com/bdulac" />
