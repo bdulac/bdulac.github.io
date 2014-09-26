@@ -22,18 +22,17 @@ For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/
 	<li><a href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-processing/">Jersey-Media-Json-Processing</a></li>
 </ul>
 <p>What Well, all I got is :</p>
-	<pre>MessageBodyReader not found for media type=application/json</pre>
-	<p>
+<pre>MessageBodyReader not found for media type=application/json</pre>
+<p>
 		Then, I discovered the following 
 		<a href="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">post</a>.
 		I added an explicit default constructor. Same error. Then I read again the <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">doc</a> again. What a shit: 
-		</p>
-		<pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
+<:p>
+<pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
 
 Media modules that support this approach are MOXy and Jackson</pre>
-		<p>
+<p>
 			It seems JSONP is not able to provide a simple POJO support. 
 			I came back to <a href="http://www.json.org/java/">the basics</a>.
 			All that mess with Jackson, Moxy, JSONP reminds me of an XML nightmare a few years ago... 
-		</p>
-	</div>
+</p>
