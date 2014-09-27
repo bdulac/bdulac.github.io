@@ -21,12 +21,12 @@ First step, Jersey installation: for a non-maven project, the <a href="https://j
 	<li><a href="http://central.maven.org/maven2/org/glassfish/jsonp-jaxrs/1.0/jsonp-jaxrs-1.0.jar">JSONP-JAX-RS</</a></li>
 	<li><a href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-processing/">Jersey-Media-Json-Processing</a></li>
 </ul>
-<p>What Well, all I got was: </p>
+<p>For the client code, I followed the <a href="https://jersey.java.net/documentation/2.12/client.html#client.ex.formpost">Jersey client doc sample</a>. Well, all I got was: </p>
 <pre>MessageBodyReader not found for media type=application/json</pre>
 <p>
 		Then, I discovered the following 
 		<a href="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">post</a>.
-		I added an explicit default constructor. Same error. Then I read again the <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">doc</a> again. What a shame: 
+		I added an explicit default constructor. Same error. I read the <a href="https://jersey.java.net/documentation/2.12/media.html#d0e6497">Jersey-JSON doc</a> again. What a shame: 
 </p>
 <pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
 
