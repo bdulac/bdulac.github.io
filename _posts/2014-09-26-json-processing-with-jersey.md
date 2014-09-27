@@ -10,7 +10,7 @@ categories:
 Today I tried to use <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">JSONP</a> with <a href="https://jersey.java.net/"><em>Jersey</em></a>. Simple use case: turn a JSON server response into POJOs (a Jersey service is client of another RESTful service)...
 </p>
 <p>
-First step, Jersey installation: for a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-json-processing/dependencies.html">list of dependencies</a> should be satisfied in addition to the core framework. The elements can be found in:
+First step, Jersey installation: for a non-maven project in a <a href="http://tomcat.apache.org/">Tomcat</a> environment, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-json-processing/dependencies.html">list of dependencies</a> should be satisfied in addition to the core framework. The elements can be found in:
 </p>
 <ul>
 	<li>
