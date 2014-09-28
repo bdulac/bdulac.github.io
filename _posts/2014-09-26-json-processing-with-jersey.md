@@ -29,7 +29,7 @@ First step, Jersey installation: for a non-maven project in a <a href="http://to
 	</li>
 	<li><a itemprop="requirements" href="http://search.maven.org/remotecontent?filepath=javax/json/javax.json-api/1.0/javax.json-api-1.0.jar">JSONP-API</a></li>
 	<li><a itemprop="requirements" href="http://search.maven.org/remotecontent?filepath=org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar">JSONP</a></li>
-	<li><a itemprop="requirements" href="http://central.maven.org/maven2/org/glassfish/jsonp-jaxrs/1.0/jsonp-jaxrs-1.0.jar">JSONP-JAX-RS</</a></li>
+	<li><a itemprop="requirements" href="http://central.maven.org/maven2/org/glassfish/jsonp-jaxrs/1.0/jsonp-jaxrs-1.0.jar">JSONP-JAX-RS</a></li>
 	<li><a itemprop="requirements" href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-processing/">Jersey-Media-Json-Processing</a></li>
 </ul>
 <p>For the client code, I followed the <a href="https://jersey.java.net/documentation/2.12/client.html#client.ex.formpost">Jersey client doc sample</a>. Well, all I got was: </p>
@@ -40,7 +40,6 @@ First step, Jersey installation: for a non-maven project in a <a href="http://to
 		I added an explicit default constructor. Same error. I read the <a href="https://jersey.java.net/documentation/2.12/media.html#d0e6497">Jersey-JSON doc</a> again. What a shame: 
 </p>
 <pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
-
 Media modules that support this approach are MOXy and Jackson</pre>
 <p>
 			It seems JSONP is not able to provide a simple POJO support. 
