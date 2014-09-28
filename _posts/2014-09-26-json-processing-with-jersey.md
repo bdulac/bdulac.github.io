@@ -7,7 +7,7 @@ categories:
   - JSON
   - Programming practice
 ---
-<span itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
+<div itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
 <p>
 Today I tried to use 
 <a itemprop="url" href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">
@@ -46,4 +46,4 @@ Media modules that support this approach are MOXy and Jackson</pre>
 			I came back to <a href="http://www.json.org/java/">the basics</a>.
 			All that mess with Jackson, Moxy, JSONP for such basic operations reminds me of an XML nightmare a few years ago... 
 </p>
-</span>
+</div>
