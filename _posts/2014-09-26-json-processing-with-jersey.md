@@ -7,14 +7,14 @@ categories:
   - JSON
   - Programming practice
 ---
-<div itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
+<div itemprop="about" itemtype="http://schema.org/SoftwareApplication">
 <p>
 Today I tried to use 
 <a itemprop="url" href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">
 	<span itemprop="name">JSONP</span>
 </a>
  with 
-<span itemprop="isPartOf" itemscope itemtype="http://schema.org/SoftwareApplication>
+<span itemprop="isPartOf" itemtype="http://schema.org/SoftwareApplication>
 	<a itemprop="url" href="https://jersey.java.net/">
 		<span itemprop="name"><em>Jersey</em></span>
 	</a>
