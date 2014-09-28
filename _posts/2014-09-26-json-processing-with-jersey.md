@@ -8,7 +8,18 @@ categories:
   - Programming practice
 ---
 <p>
-Today I tried to use <a href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">JSONP</a> with <a href="https://jersey.java.net/"><em>Jersey</em></a>. Simple use case: turn a JSON server response into POJOs (a Jersey service is client of another RESTful service)...
+Today I tried to use 
+	<span itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
+		<a itemprop="url" href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">
+			<span itemprop="name">JSONP</span>
+		</a>
+		 with 
+		<span itemprop="isPartOf" itemscope itemtype="http://schema.org/SoftwareApplication>
+			<a itemprop="url" href="https://jersey.java.net/">
+				<span itemprop="name"><em>Jersey</em></span>
+			</a>
+		</span>
+	</span>. Simple use case: turn a JSON server response into POJOs (a Jersey service is client of another RESTful service)...
 </p>
 <p>
 First step, Jersey installation: for a non-maven project in a <a href="http://tomcat.apache.org/">Tomcat</a> environment, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-json-processing/dependencies.html">list of dependencies</a> should be satisfied in addition to the core framework. The elements can be found in:
