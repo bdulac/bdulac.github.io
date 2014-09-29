@@ -34,13 +34,15 @@ Well, if the proof of a program has to be made, this would be at compile time. S
 <a href="http://dl.acm.org/results.cfm?query=static%20checking">some works about static checking</a>. But what is the popularity in <a href="http://www.google.com/trends/explore#q=static%20checking%2C%20unit%20testing&cmpt=q">comparison</a> with testing ?
 </p>
 <p>
-	I previously wrote about using taking advantage of the design by contract  
-	<span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting>
-		<a itemprop="sameAs" href="../note/design-by-contract-assertions-and-exceptions">
+<a href="http://en.wikipedia.org/wiki/Black-box_testing">Black Box</a> / functional testing
+<br />
+<a href="http://en.wikipedia.org/wiki/White-box_testing">White Box</a> / structural testing
+</p>
+<p>
+	I previously wrote about taking advantage of the design by contract  
+	<span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
+		<a itemprop="sameAs" href="{{ site.url }}/note/design-by-contract-assertions-and-exceptions">
 			in the use of exceptions
 		</a>
 	</span>. 
 </p>
-<a href="http://en.wikipedia.org/wiki/Black-box_testing">Black Box</a> / functional testing
-<br />
-<a href="http://en.wikipedia.org/wiki/White-box_testing">White Box</a> / structural testing
