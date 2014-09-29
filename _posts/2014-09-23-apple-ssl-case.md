@@ -1,4 +1,4 @@
---- 
+---
 layout: post 
 title: "Apple SSL case: code length"
 categories:
@@ -23,7 +23,10 @@ categories:
 			</a>
 			by 
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-				<span itemprop="name">Adam Langley</span>
+				<span itemprop="name">
+					<span itemprop="givenName">Adam</span> 
+					<span itemprop="familyName">Langley</span>
+				</span>
 				<link itemprop="sameAs" href="https://github.com/agl"></link>
 				<link itemprop="sameAs" href="https://www.imperialviolet.org"></link>
 			</span>
@@ -36,7 +39,10 @@ categories:
 			</a>
 			by
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-				<span itemprop="name">Tobias Goeschel</span>
+				<span itemprop="name">
+					<span itemprop="givenName">Tobias</span> 
+					<span itemprop="familyName">Goeschel</span>
+				</span>
 				<link itemprop="sameAs" href="https://blog.codecentric.de/en/author/tobias-goeschel/"></link>
 			</span>
 		<span>
@@ -49,7 +55,7 @@ categories:
 		checking 
 			<a itemprop="sameAs" href="http://dx.doi.org/10.1145/363235.363259">
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<span itemprop="name">Hoare</span>
+					<span itemprop="familyName">Hoare</span>
 					<link itemprop="sameAs" href="http://viaf.org/viaf/108123782"></link>
 				</span>'s
 				<span itemprop="about">axioms</span>
