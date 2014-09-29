@@ -1,4 +1,4 @@
---- 
+---
 layout: post 
 title: "JSON processing with Jersey 2"
 categories:
