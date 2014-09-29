@@ -62,8 +62,8 @@ categories:
 	Stop dreaming about a world with perfect programs. Let the code verification/prove apart and come back to the code. Adam Langley also suggests code reviews are important. Curly braces ? Perhaps the point isn't central. What matter is a <span itemprop="about">readable code</span>. Many programmers write endless code sequences. What could be the solution ?
 </p> 
 <p>
-	We, French people, tend to be very verbose in our texts. At school, we are taught to be concise. We do not succeed in any case. How would it be possible in code ? Think about <a href="https://dev.twitter.com/overview/api/counting-characters">Twitter 140 characters</a>. Just consider what a French journalist <a href="http://www.slate.fr/story/41689/140-signes-twitter-fin-google">could write in 2011</a>. Nowadays, very few journalist still criticize the system. Conciseness can be very useful.  
+	We, French people, tend to be very verbose in our texts. At school, we are taught to be concise. We do not succeed in any case. How would it be possible in code ? Think about <a href="https://dev.twitter.com/overview/api/counting-characters">Twitter 140 characters</a>. Just consider what a French journalist <a href="http://www.slate.fr/story/41689/140-signes-twitter-fin-google">could write in 2011</a>. Nowadays, very few journalists still criticize the system. Conciseness can be very precious. 
 </p>
 <p>
-	Why don't compilers warn when a function exceeds 100 lines (or any number that suits you, 100 being quite long) ?
+	Why don't compilers warn when a function exceeds 100 lines (or any number that suits you, 100 being already quite long) ?
 </p>
