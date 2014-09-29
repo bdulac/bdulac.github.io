@@ -12,17 +12,20 @@ category-list: [Software engineering, Programming practice, Java]
 title:		Notes of a (Java) developer
 tagline:	'blog'
 description:	'Notes of a Java developer'
-url:		http://bdulac.github.io/
+url:		http://bdulac.github.io
 
 author:
   name:		'Bérenger Dulac'
-  url:		http://bdulac.github.io/
 
 paginate:	5
 
 # Custom vars
 icon:		/assets/images/home.png
 cover:		/assets/images/background.png
+
+audience:
+ - 'Software developer'
+ - Programmer
 
 social:
   - icon:	facebook
