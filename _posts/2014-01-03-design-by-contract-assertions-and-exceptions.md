@@ -12,12 +12,13 @@ categories:
   - Exception
 resource: true
 ---
-<p>Understanding design by contract is important for code quality.</p>
+<p>Understanding design by contract is, I think, important for code quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).</p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/17675237"></link>
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person" itemid="#meyer">
-			<a itemprop="sameAs" href="http://viaf.org/viaf/51714577">
+			<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Bertrand_Meyer">
+				<link itemprop="sameAs" href="http://viaf.org/viaf/51714577"></link>
 				<span itemprop="name">
 					B. 
 					<span itemprop="givenName" style="display:none;">Bertrand</span>
@@ -25,7 +26,7 @@ resource: true
 				</span>
 			</a>
 		</span>
-		<a href="http://www.worldcat.org/oclc/17675237">introduced the idea</a>
+		<a href="http://en.wikipedia.org/wiki/Object-Oriented_Software_Construction">introduced the idea</a>
 		in <span itemprop="copyrightYear">1988</span>. 
 	</span>
 	It takes advantage of 
@@ -35,7 +36,8 @@ resource: true
 		<a href="http://dx.doi.org/10.1145/363235.363259"> as defined</a> 
 		by 
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<a itemprop="sameAs" href="http://viaf.org/viaf/108123782">
+			<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Tony_Hoare">
+				<link itemprop="sameAs" href="http://viaf.org/viaf/108123782"></link>
 				<span itemprop="name">
 					C.A.R. 
 					<span itemprop="givenName" style="display:none;">Charles</span>
@@ -79,11 +81,14 @@ resource: true
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		In 
-		<a itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332">
+		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332"></link>
+		<a itemprop="sameAs" href="http://www.pearsonhighered.com/educator/product/Effective-Java/9780321356680.page">
 			<span itemprop="name">Effective Java</span>
 		</a>, 
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<a itemprop="sameAs" href="http://viaf.org/viaf/71793922">
+			<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Joshua_Bloch">
+				<link itemprop="sameAs" href="http://viaf.org/viaf/71793922"></link>
+				<link itemprop="sameAs" href="https://twitter.com/joshbloch"></link>
 				<span itemprop="name">
 					<span itemprop="familyName">Bloch</span>
 				</span>
@@ -98,7 +103,8 @@ resource: true
 	In an non-Java context, 
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<a itemprop="sameAs" href="http://viaf.org/viaf/5145169">
+			<a itemprop="sameAs" http://en.wikipedia.org/wiki/Martin_Fowler">
+				<link itemprop="sameAs" href="http://viaf.org/viaf/5145169"></link>
 				<span itemprop="name">
 					Fowler
 				</span>
