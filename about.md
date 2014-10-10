@@ -13,7 +13,7 @@ as a software developer. Not to be exclusive, my main activity focus on the Java
 In the everyday, I largely use online documentations, blogs, forum posts. After many years without contributing anything, perhaps is it time to share some elements.
 </p>
 <p>
-In this blog I will try to sum up the useful subjects I crossed. Informations are organized in two categories:
+In this blog I try to sum up the useful subjects I cross. Informations are organized in two categories:
 </p>
 <ul>
 	<li>Blog posts</li>
