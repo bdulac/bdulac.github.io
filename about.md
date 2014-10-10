@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 title: About
 permalink: /about/
 ---
-<div id="content" class="content">
+<div>
 <p>
 My name is Bérenger Dulac, this website is my personal technical blog. I define myself primarily 
 as a software developer. Not to be exclusive, my main activity focus on the Java platform 
