@@ -44,6 +44,6 @@ Media modules that support this approach are MOXy and Jackson</pre>
 <p>
 			It seems JSONP is not able to provide a simple POJO support. 
 			I came back to <a href="http://www.json.org/java/">the basics</a>.
-			All that mess with Jackson, Moxy, JSONP for such basic operations reminds me of an XML nightmare a few years ago... 
+			All that mess with Jackson, Moxy, JSONP for such simple operations reminds me of an XML nightmare a few years ago... 
 </p>
 </div>
