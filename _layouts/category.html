@@ -30,6 +30,7 @@ article: true
 				{{ content }}
 			</div>
 		</main>
+		{% if page.categories.size > 0 %}
 		<footer>
 			<div class="categories">
 			{% for category in page.categories %}
@@ -37,19 +38,18 @@ article: true
 			{% endfor %}
 			</div>
 		</footer>
+		{% endif %}
 	</article>
-{% for cat in page.categories %}
-{% assign category = cat | upcase %}
-{% for p in site.posts %}
-{% if p.resource == true %}
-{% for pc in p.categories %}
-{% assign pCategory = pc | upcase %}
-{% if pCategory == category %}
-	{% assign blogPost = p %}
-	{% include blogPost.html param="blogPost" %}
-{% endif %}
-{% endfor %}
-{% endif %}
-{% endfor %}
+{% assign categoryPage = page.categoryPage | upcase %}
+{% for myPost in site.posts %}
+	{% if myPost.resource == true %}
+		{% for cat in myPost.categories %}
+		{% assign myPostCategory = cat | upcase %}
+		{% if myPostCategory == categoryPage %}
+{% assign blogPost = myPost %}
+	{% include blogPost.html %}
+		{% endif %}
+		{% endfor %}
+	{% endif %}
 {% endfor %}
 </div>
