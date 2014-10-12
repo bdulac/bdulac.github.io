@@ -3,6 +3,7 @@ layout: post
 title: "JSON processing with Jersey 2"
 categories:
   - Java
+  - JAX-RS
   - Jersey
   - JSON
   - Programming practice
