@@ -3,44 +3,6 @@ layout: default
 article: true
 ---
 <div id="content">
-	<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<header>
-			<link itemprop="url" href="{{url}}"></link>
-			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
-			<div itemprop="audience" itemscope itemtype="http://schema.org/Audience" style="display: none;">
-				{% for audience in site.audience %}
-				<span itemprop="audienceType">{{ audience }}</span>
-				{% endfor %}
-			</div>
-			<div itemprop="author" itemscope
-        		itemtype="http://schema.org/OrganizationRole" style="display: none;">
-        		<div itemprop="author" itemscope
-            	itemtype="http://schema.org/Person">
-            		<span itemprop="name">{{ site.author.name }}</span>
-            		{% for social in site.social %}
-            		{% unless social.icon == 'feed' %}
-            		<link itemprop="sameAs" href="{{ social.url }}" />
-            		{% endunless %}
-            		{% endfor %}
-            	</div>
-        	</div>
-		</header>
-		<main>
-			<div id="article" itemprop="articleBody" class="post-content">
-				{{ content }}
-			</div>
-		</main>
-		<footer>
-			<div class="categories">
-			{% for category in page.categories %}
-				<span class="category" itemprop="about">{{ category }}</span>
-			{% endfor %}
-			</div>
-			<span class="post-date">
-				<time datetime="{{ page.date| date: '%Y-%m-%d' }}" itemprop="datePublished">
-					{{ page.date | date_to_long_string }}
-				</time>
-			</span>
-		</footer>
-	</article>
+	{% assign blogPost = page %}
+	{% include blogPost.html param="blogPost" %}
 </div>
