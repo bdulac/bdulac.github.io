@@ -17,7 +17,7 @@ title: Home
      </div>
 	{% for post in paginator.posts %}
 	{% assign blogPost = post %}
-	{% include blogPost.html param="blogPost" %}
+	{% include blogPost.html %}
 	{% endfor %}
 </div>
 <nav class="pagination" role="navigation">
