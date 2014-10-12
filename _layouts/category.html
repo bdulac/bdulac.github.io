@@ -1,0 +1,88 @@
+---
+layout: default
+article: true
+---
+<div id="content" class="content" itemscope itemtype="http://schema.org/WebPage">
+	<article>
+		<header>
+			<span itemprop="url" style="display: none;">{{url}}</span>
+			<h1><a href="{{ url }}"><span itemprop="name">{{ page.title }}</span></a></h1>
+			<div itemprop="audience" itemscope itemtype="http://schema.org/Audience" style="display: none;">
+				{% for audience in site.audience %}
+				<span itemprop="audienceType">{{ audience }}</span>
+				{% endfor %}
+			</div>
+			<div itemprop="author" itemscope
+        		itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        		<div itemprop="author" itemscope
+            	itemtype="http://schema.org/Person">
+            		<span itemprop="name">{{ site.author.name }}</span>
+            		{% for social in site.social %}
+            		{% unless social.icon == 'feed' %}
+            		<link itemprop="sameAs" href="{{ social.url }}" />
+            		{% endunless %}
+            		{% endfor %}
+            	</div>
+        	</div>
+		</header>
+		<main>
+			<div id="article">
+				{{ content }}
+			</div>
+		</main>
+		<footer>
+			<div class="categories">
+			{% for category in page.categories %}
+				<span class="category" itemprop="about">{{ category }}</span>
+			{% endfor %}
+			</div>
+		</footer>
+	</article>
+{% for cat in page.categories %}
+{% assign category = cat | upcase %}
+{% for p in site.posts %}
+{% if p.resource == true %}
+{% for pc in p.categories %}
+{% assign pCategory = pc | upcase %}
+{% if pCategory == category %}
+	<article>
+		<header>
+			<span itemprop="url" style="display: none;">{{p.url}}</span>
+			<h1><a href="{{ p.url }}"><span itemprop="name">{{ p.title }}</span></a></h1>
+			<div itemprop="audience" itemscope itemtype="http://schema.org/Audience" style="display: none;">
+				{% for audience in site.audience %}
+				<span itemprop="audienceType">{{ audience }}</span>
+				{% endfor %}
+			</div>
+			<div itemprop="author" itemscope
+        		itemtype="http://schema.org/OrganizationRole" style="display: none;">
+        		<div itemprop="author" itemscope
+            	itemtype="http://schema.org/Person">
+            		<span itemprop="name">{{ site.author.name }}</span>
+            		{% for social in site.social %}
+            		{% unless social.icon == 'feed' %}
+            		<link itemprop="sameAs" href="{{ social.url }}" />
+            		{% endunless %}
+            		{% endfor %}
+            	</div>
+        	</div>
+		</header>
+		<main>
+			<div class="article">
+				{{ p.content }}
+			</div>
+		</main>
+		<footer>
+			<div class="categories">
+			{% for category in p.categories %}
+				<span class="category" itemprop="about">{{ category }}</span>
+			{% endfor %}
+			</div>
+		</footer>
+	</article>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+</div>
