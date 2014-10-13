@@ -7,7 +7,7 @@ permalink: /about/
 <p>
 My name is Bérenger Dulac, this website is my personal technical blog. I define myself primarily 
 as a software developer. Not to be exclusive, my main activity focus on the Java platform 
-(Swing + Web).
+(<a href="en.wikipedia.org/wiki/Web_development">Web</a> + <a href="http://en.wikipedia.org/wiki/Swing_%28Java%29">Swing</a>).
 </p>
 <p>
 In the everyday, I largely use online documentations, blogs, forum posts. After many years without contributing anything, perhaps is it time to share some elements.
