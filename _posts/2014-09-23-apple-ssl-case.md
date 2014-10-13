@@ -6,6 +6,7 @@ categories:
   - Software quality
   - Software engineering
   - Programming practice
+resource: true
 ---
 
 <p>
