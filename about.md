@@ -13,13 +13,11 @@ as a software developer. Not to be exclusive, my main activity focus on the Java
 In the everyday, I largely use online documentations, blogs, forum posts. After many years without contributing anything, perhaps is it time to share some elements.
 </p>
 <p>
-In this blog I try to sum up the useful subjects I cross. Informations are organized in two categories:
+In this blog I try to sum up the useful subjects I cross. The posts are accessible in the general index or in categories accessible from the footer.
 </p>
-<ul>
-	<li>Blog posts</li>
-	<li>Individual pages</li>
-</ul>
-<p>The pages are technical notes grouped by subject. Each individual page don't try to be a documentation, only elements noted when crossed.</p>
+<p>
+These category pages are detailing a subject. Each individual page don't try to be a documentation, only a gathering of relative posts enriched with some static content.
+</p>
 <p>
 The blog is rendered by <a href="http://jekyllrb.com/">Jekyll</a> with a template derived from the <a href="http://camporez.com">Thinny theme</a>.
 </p>
