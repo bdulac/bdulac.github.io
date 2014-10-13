@@ -46,7 +46,7 @@ article: true
 		{% for cat in myPost.categories %}
 		{% assign myPostCategory = cat | upcase %}
 		{% if myPostCategory == categoryPage %}
-{% assign blogPost = myPost %}
+		{% assign blogPost = myPost %}
 	{% include blogPost.html %}
 		{% endif %}
 		{% endfor %}
