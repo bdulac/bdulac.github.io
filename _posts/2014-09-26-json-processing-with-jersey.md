@@ -6,7 +6,7 @@ categories:
   - JAX-RS
   - Jersey
   - JSON
-  - Programming practice
+  - Point of view
 ---
 <div itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
 <p>
