@@ -4,7 +4,7 @@ title: "Apple SSL case: code length"
 categories:
   - Apple SSL / TLS bug (goto fail)
   - Software quality
-  - Software engineering
+  - Point of view
   - Programming practice
 resource: true
 ---
