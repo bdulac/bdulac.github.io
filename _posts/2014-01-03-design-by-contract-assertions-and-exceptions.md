@@ -12,7 +12,7 @@ categories:
   - Exception
 resource: true
 ---
-<p>Understanding design by contract is, I think, important for code quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).</p>
+<p>Understanding design by contract is, I think, important for software quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).</p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/17675237"></link>
