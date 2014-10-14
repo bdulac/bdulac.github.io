@@ -90,6 +90,7 @@ h1 {
 
 h1, h2, h3, h4 {
 	font-family: 'Poiret One', cursive;
+	color: #843208;
 }
 
 h2 {
@@ -164,14 +165,7 @@ article header {
 	text-justify: inter-word;
 }
 
-.post-content a, .content a {
-	color: #C63;
-	border-bottom: none;
-	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease;
-}
-
-.post-content a:hover, .content a:hover {
+a:hover {
 	color: #C63;
 	border-bottom: 2px solid #C63;
 	-webkit-transition: 0.5s ease;
