@@ -77,7 +77,7 @@ article li {
 	font-family: 'Poiret One', cursive;
 }
 
-a {
+h1 a {
 	color: #843208;
 	text-decoration: none;
 }
@@ -163,6 +163,11 @@ article header {
 	margin-left: auto;
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+a {
+	color: #C42;
+	text-decoration: none;
 }
 
 a:hover {
