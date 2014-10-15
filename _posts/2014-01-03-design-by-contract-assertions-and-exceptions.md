@@ -47,7 +47,7 @@ resource: true
 				</span>
 			</a>
 		</span>
-		(<span itemprop="copyrightYear">1969</span>).
+		(<span itemprop="copyrightYear">1969</span>), the seminal work of an <a itemprop="about" href="http://en.wikipedia.org/wiki/Hoare_logic">eponymous logic</a>.
 	</span>
 </p>
 <p>
