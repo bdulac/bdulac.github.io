@@ -76,7 +76,7 @@ resource: true
 	<a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/">exceptions</a>
 	are largely used instead of assertions. 
 	In <i>Java</i>, a <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">proper</a> use of
-	exceptions is more expressive than a proper use of assertions.
+	exceptions can more expressive than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
 </p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
@@ -95,7 +95,7 @@ resource: true
 			</a>
 		</span> 
 		defines 		
-		<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">checked exceptions</a> as recoverable conditions
+		<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">checked exceptions</a> as recoverable conditions and
 		<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html">runtime exceptions</a> as programming errors.
 	</span> 
 </p>
@@ -103,7 +103,7 @@ resource: true
 	In an non-Java context, 
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<a itemprop="sameAs" http://en.wikipedia.org/wiki/Martin_Fowler">
+			<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Martin_Fowler">
 				<link itemprop="sameAs" href="http://viaf.org/viaf/5145169"></link>
 				<span itemprop="name">
 					Fowler
