@@ -100,5 +100,5 @@ resource: true
 	garbage collection. Literally, there is no memory saturation but the
 	system uses most of its memory despite garbage collections. A simple
 	workaround can be to extend the Heap space. If the problem persists,
-	tuning the GC configuration will probably be the solution.
+	tuning the GC configuration will probably be the solution. A hint can be the option <i>+UseParallelGC</i> JVM option (some documentation is available <a href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#par_gc">here</a>).
 </p>
