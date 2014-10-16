@@ -85,3 +85,6 @@ resource: true
 	a double check (null reference test + null test on a mandatory
 	property) in order to ensure the method filter call.
 </p>
+<p>
+	<b>Edit</b> <em>(2014-10-16)</em> : this last point requires further explanations (in a few words this was a misuse). I used Javassist proxies to implement lazy-loading of an object-relational mapped attribute. The point was about replacing the proxy object. To do so, I was only listening to method calls on the proxy. But a field access is not a method call: it was possible to create direct references on the proxy object before replacing it. It seemed then impossible to replace all the assignated references and the proxy object was still assignated (that caused the null tests to fail).
+</p>
