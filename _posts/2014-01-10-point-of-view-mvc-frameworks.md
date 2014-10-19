@@ -16,10 +16,7 @@ resource: true
 		href="https://wicket.apache.org/">Wicket</a>... And then ?
 </p>
 <p>
-	Each period has its champion. Struts, as one of the elders, had a
-	long period. So many developers had to use it. But what about software
-	maintenance and evolutions ? Struts 1 upgrade to
-	version 2 ? What about moving to another technology ?
+	Each period has its champion. Struts, as one of the elders, had a long period. So many developers had to use it. But what about software maintenance and evolutions ? Software dependencies between the model, the view and the controller can make moves very challenging. Struts 1 upgrade to version 2 ? What about moving to another technology ?
 </p>
 <p>
 	Quite a nightmare, it is sometimes easier to rewrite completely
