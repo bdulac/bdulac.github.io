@@ -8,7 +8,6 @@ categories:
   - Programming practice
 resource: true
 ---
-
 <p>
 	The point is clearly about programming practice. In February 2014, 
 	<a href="http://www.theguardian.com/technology/2014/feb/25/apples-ssl-iphone-vulnerability-how-did-it-happen-and-what-next">Apple faced an SSL bug</a>. This was a very simple code mistake due to 	conditional sequences.
@@ -20,23 +19,24 @@ resource: true
 	<li>
 		<span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
 			<a itemprop="sameAs" href="https://www.imperialviolet.org/2014/02/22/applebug.html">
-				Apple's SSL/TLS bug
+				<em><span itemprop="name">Apple's SSL/TLS bug</span></em>
 			</a>
 			by 
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<a itemprop="sameAs" href="https://github.com/agl">
 				<span itemprop="name">
 					<span itemprop="givenName">Adam</span> 
 					<span itemprop="familyName">Langley</span>
 				</span>
-				<link itemprop="sameAs" href="https://github.com/agl"></link>
-				<link itemprop="sameAs" href="https://www.imperialviolet.org"></link>
+			</a>
+			<link itemprop="sameAs" href="https://www.imperialviolet.org"></link>
 			</span>
 		</span>
 	</li>
 	<li>
 		<span itemprop="citation"  itemscope itemtype="http://schema.org/BlogPosting">
 			<a itemprop="sameAs" href="https://blog.codecentric.de/en/2014/02/curly-braces/">
-				<span itemprop="name">Reflections on Curly Braces</span>
+				<em><span itemprop="name">Reflections on Curly Braces</span></em>
 			</a>
 			by
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
