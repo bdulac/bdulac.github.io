@@ -15,7 +15,7 @@ In my <a href="../note/apple-ssl-case">latest post</a> I wrote about code qualit
 Here is the point: how would it be possible to proceed that kind of control without rewriting a compiler from scratch ?
 </p>
 <p>
-The <a href="../java/">Java</a> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. Annotations can be processed at compile-time or runtime. 
+The <em><a href="../java/">Java</a></em> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. Annotations can be processed at compile-time or runtime. 
 </p>
 <!--
 <p>
@@ -25,7 +25,7 @@ The <a href="../java/">Java</a> platform provides a very interesting feature to 
 <p>
 </p>
 <p>
-The Sun Java SE distribution provided from the starting point a facility for annotation processing at compile-time called <a href="http://docs.oracle.com/javase/1.5.0/docs/guide/apt/">APT</a> (for Annotation Processing Tool). This was a vendor-specific feature (in <em>Sun</em> packages) executed in a specific eponym command line tool.
+The Sun Java SE distribution provided from the starting point a facility for annotation processing at compile-time called <a href="http://docs.oracle.com/javase/1.5.0/docs/guide/apt/">APT</a> (for Annotation Processing Tool). This was a vendor-specific feature (in <em>Sun</em> packages) executed in a specific and eponymous command line tool.
 </p>
 <p>
 Since Java 6, that function is part of the platform with <a href="https://www.jcp.org/en/jsr/detail?id=269">JSR 269</a> (<em><a href="http://docs.oracle.com/javase/6/docs/api/javax/annotation/processing/package-summary.html">javax.annotation.processing</a></em> package, reference implementation part of the <a href="https://jcp.org/aboutJava/communityprocess/mrel/jsr269/index2.html">Java SE</a> distribution). The contributed processing can be executed along compilation. With Java SE 8, the historical APT packaging and specific tool <a href="http://openjdk.java.net/jeps/117">is removed</a> (after <a href="docs.oracle.com/javase/7/docs/technotes/guides/apt/">deprecation in Java SE 7</a>).

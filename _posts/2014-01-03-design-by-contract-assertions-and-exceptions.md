@@ -64,7 +64,11 @@ resource: true
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person" itemid="#meyer">
 			<link itemprop="sameAs" href="#meyer">Meyer</link>
 		</span> includes his idea in the 
-		<a itemprop="url" href="http://www.eiffel.com/">Eiffel</a> 
+		<em>
+			<a itemprop="url" href="http://www.eiffel.com/">
+			<span itemprop="name">Eiffel</span>
+			</a>
+		</em>
 		<span itemprop="applicationCategory">programming language</span>
 	</span> : the assertions are checked in a static way (at
 	compile time).
@@ -83,7 +87,7 @@ resource: true
 		In 
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332"></link>
 		<a itemprop="sameAs" href="http://www.pearsonhighered.com/educator/product/Effective-Java/9780321356680.page">
-			<span itemprop="name">Effective Java</span>
+			<em><span itemprop="name">Effective Java</span></em>
 		</a>, 
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Joshua_Bloch">

@@ -40,7 +40,7 @@ First step, Jersey installation: for a non-maven project in a <a href="http://to
 		<a href="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">post</a>.
 		Consequently, I added an explicit default constructor. Same error. I read the <a href="https://jersey.java.net/documentation/2.12/media.html#d0e6497">Jersey-JSON doc</a> again. What a shame: 
 </p>
-<pre>POJO support represents the easiest way to convert your Java Objects to JSON and back.
+<pre>POJO support represents the easiest way to convert your <em>Java</em> Objects to JSON and back.
 Media modules that support this approach are MOXy and Jackson</pre>
 <p>
 			It seems JSONP is not able to provide a simple POJO support. 
