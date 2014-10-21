@@ -8,7 +8,7 @@ categories:
   - Plug-in
 ---
 <div>
-<h2>EMF model change listener</2>
+<h2>EMF model change listener</h2>
 <p>
 As explained in the <a href="http://www.eclipsezone.com/eclipse/forums/t115262.html">EclipseZone forum exchange</a>, two strategies are available to listen to changes on an EMF model:  
 </p>
