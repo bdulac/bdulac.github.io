@@ -21,7 +21,21 @@ As explained in the <a href="http://www.eclipsezone.com/eclipse/forums/t115262.h
 	</li>
 </ol>
 <p>
-The <em>EContentAdapter</em> notifies of change on any EMF object (<em>EObject</em>). This requires to have a direct access on the object, what does not help much to listen on third-party changes (external editor on anything else).
+The <em>EContentAdapter</em> notifies of change on any EMF object (<em>EObject</em>). This requires to have a direct access on the object, what does not help much to listen on third-party changes (external editor on anything else). A 
+	<span itemprop="citation" itemscope itemtype="itemscope itemtype="http://schema.org/TechArticle">
+		<a itemprop="url" href="http://www.vogella.com/tutorials/EclipseEMFNotification/article.html">
+			<span itemprop="learningResourceType">tutorial</span>
+		</a> by 
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name">
+				<a itemprop="sameAs" href="http://www.vogella.com/people/larsvogel.html">
+				<link itemprop="sameAs" href="https://twitter.com/vogella"></link>
+				<span itemprop="givenName">Lars</span> 
+				<span itemprop="familyName">Vogel</span>
+				</a>
+			</span>
+		</span>
+	</span> details how to use it.
 </p>
 <p>
 The <em>ResourceSetListener</em> solution, far more complete on the transaction point of view, helps to listen on external editor changes. An access to the editor's editing domain is required, it must be of type <em><a href="http://download.eclipse.org/modeling/emf/transaction/javadoc/1.1.1/org/eclipse/emf/transaction/TransactionalEditingDomain.html">TransactionalEditingDomain</a></em>. 
