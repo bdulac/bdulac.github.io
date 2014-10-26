@@ -47,7 +47,7 @@ If the topic seems basic for the Java platform, there is a lack of exhaustive do
 		<link itemprop="sameAs" href="http://kerebus.com"></link>
 	</span>
 </span>. 
-The <a href="../eclipse/plug-in/">Eclipse platform</a> provide very precious functions with the <a href="http://www.eclipse.org/jdt/apt/">JDT-APT project</a>. 
+The <a href="../eclipse/platform/">Eclipse platform</a> provide very precious functions with the <a href="http://www.eclipse.org/jdt/apt/">JDT-APT project</a>. 
 </p>
 <p>
 <span itemprop="citation" itemscope itemtype="http://schema.org/Creativework">

@@ -13,6 +13,6 @@ Eclipse is in the same time the name of a foundation, an IDE produced by the fou
 <p>Technical elements are grouped in two distinct pages: </p>
 <ul>
 	<li><a href="use">Using the IDE</a></li>
-	<li><a href="plug-in">The eclipse platform</a></li>
+	<li><a href="platform">The eclipse platform</a></li>
 </ul>
 </div>
