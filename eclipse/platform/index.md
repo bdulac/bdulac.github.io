@@ -94,7 +94,7 @@ The <em>EContentAdapter</em> notifies of change on any EMF object (<em>EObject</
 	</span> details how to use it.
 </p>
 <p>
-The <em>ResourceSetListener</em> solution, far more complete on the transaction point of view, helps to listen on external editor changes. It is <a href="http://en.wikipedia.org/wiki/Observer_pattern">observer pattern</a>. An access to the editor's editing domain is required, it must be of type <em><a href="http://download.eclipse.org/modeling/emf/transaction/javadoc/1.1.1/org/eclipse/emf/transaction/TransactionalEditingDomain.html">TransactionalEditingDomain</a></em> in order to expose the <a href="http://download.eclipse.org/modeling/emf/transaction/javadoc/1.1.1/org/eclipse/emf/transaction/TransactionalEditingDomain.html#addResourceSetListener%28org.eclipse.emf.transaction.ResourceSetListener%29">registration method</em>. 
+The <em>ResourceSetListener</em> solution, far more complete on the transaction point of view, helps to listen on external editor changes. It is <a href="http://en.wikipedia.org/wiki/Observer_pattern">observer pattern</a>. An access to the editor's editing domain is required, it must be of type <em><a href="http://download.eclipse.org/modeling/emf/transaction/javadoc/1.1.1/org/eclipse/emf/transaction/TransactionalEditingDomain.html">TransactionalEditingDomain</a></em> in order to expose the <a href="http://download.eclipse.org/modeling/emf/transaction/javadoc/1.1.1/org/eclipse/emf/transaction/TransactionalEditingDomain.html#addResourceSetListener%28org.eclipse.emf.transaction.ResourceSetListener%29">registration method</a>. 
 </p>
 </div>
 <div>
