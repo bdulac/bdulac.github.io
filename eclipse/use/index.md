@@ -38,12 +38,12 @@ The desired option just have to be checked here. Don't forget to save the perspe
 <h2>Default shortcuts</h2>
 <div>
 <h3>Vertical selection</h3>
-<p>(to enable an disable)</p>
+<p>To enable an disable</p>
 <pre>ALT+SHIT+A</pre>
 </div>
 <div>
 <h3>Compilation proposals</h3>
-<p>(to propose the menu)</p>
+<p>To propose the proposals menu on a compilation problem</p>
 <pre>CTRL+SHIT+1</pre>
 </div>
 </div>
