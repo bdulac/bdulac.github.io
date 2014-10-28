@@ -8,6 +8,7 @@ categories:
   - Polymer
   - Google
   - Software engineering
+resource: true
 ---
 
 <p>
@@ -39,11 +40,8 @@ At
 		<link itemprop="sameAs" href="http://www.google.com"></link>
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
 	</span>
-</span>
-</p>
-<p>
-<em>Polymer</em> is a very interesting move by Google promoting in some way a W3C work: 
-<a href="http://www.w3.org/TR/components-intro/">Web components</a>. As a summary, I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
+</span><em>Polymer</em> is a very interesting move by Google promoting in some way a W3C work: 
+<a href="http://www.w3.org/TR/components-intro/">Web components</a>. I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
 </p>
 <p>
 What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/"><em>Polymer</em> project</a> (as lead by Google) ? In a few words, <em>Polymer</em> bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
@@ -59,7 +57,7 @@ The negative point in using <em>Polymer</em> is that, probably because of the on
 </p>
 <ul>
 	<li>
-	If the definition of components becomes standard, <em>Polymer</em>-written components will have to be adapted (is the tag has just to be removed, a slightest pain)
+	If the definition of components becomes standard, <em>Polymer</em>-written components will have to be adapted (a slightest pain if the tag has just to be removed)
 	</li>
 	<li>
 	If the definition of components stays an implementation-specific feature, Web components will be a real mess
