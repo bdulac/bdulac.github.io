@@ -52,7 +52,7 @@ What is the relationship between Web components (as a W3C recommendation) and th
 Web components are custom HTML tags. How is the behavior and rendering of such elements defined ?
 </p>
 <p>
-The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, this allows to include an external resource into an HTML resource. The practice is to use these resources to define the behavior.
+The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>. This allows to include an external resource into an HTML resource. The practice is to use these resources to define the behavior.
 </p>
 <p>
 The negative point in using <em>Polymer</em> is that, probably because of the ongoing draft recommendation process, components definition requires the use of a <em>Polymer</em>-specific tag. I guess things should evolve here. The problem is that:
