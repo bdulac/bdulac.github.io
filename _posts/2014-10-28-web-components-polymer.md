@@ -33,6 +33,7 @@ At
 			</span>
 		</a>
 	</span>
+	.	 
 	<span itemprop="organizer" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="Google inc." />
 		<link itemprop="sameAs" href="http://www.google.com"></link>
@@ -42,13 +43,13 @@ At
 </p>
 <p>
 Polymer is a very interesting move by Google promoting in some way a W3C work: 
-<a href="http://www.w3.org/TR/components-intro/">Web components</a>. In this post, I try to sum up in one place all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the Polymer tutorial</a>.
+<a href="http://www.w3.org/TR/components-intro/">Web components</a>. As a summary, I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the Polymer tutorial</a>.
 </p>
 <p>
 What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/">Polymer project</a> (as lead by Google) ? In a few words, Polymer bridges the Gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
 </p>
 <p>
-Web components are custom HTML elements. How is the behavior and rendering of such elements defined ?
+Web components are custom HTML tags. How is the behavior and rendering of such elements defined ?
 </p>
 <p>
 The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, this allows to include an external resource into an HTML resource. The practice is to use these resources to define the behavior.
