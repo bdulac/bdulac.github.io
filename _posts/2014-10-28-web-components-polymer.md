@@ -46,7 +46,7 @@ Polymer is a very interesting move by Google promoting in some way a W3C work:
 <a href="http://www.w3.org/TR/components-intro/">Web components</a>. As a summary, I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the Polymer tutorial</a>.
 </p>
 <p>
-What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/">Polymer project</a> (as lead by Google) ? In a few words, Polymer bridges the Gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
+What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/">Polymer project</a> (as lead by Google) ? In a few words, Polymer bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
 </p>
 <p>
 Web components are custom HTML tags. How is the behavior and rendering of such elements defined ?
