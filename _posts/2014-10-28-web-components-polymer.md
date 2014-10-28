@@ -49,7 +49,7 @@ At
 What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/"><em>Polymer</em> project</a> (as lead by Google) ? In a few words, <em>Polymer</em> bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
 </p>
 <p>
-Web components are custom HTML tags. How is the behavior and rendering of such elements defined ?
+Web components are custom HTML tags. <b>How is the behavior and rendering of such elements defined ?</b>
 </p>
 <p>
 The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>. This allows to include an external resource into an HTML resource. The practice is to use these resources to define the behavior.

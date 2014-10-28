@@ -31,8 +31,12 @@ In this single vision, classes are grouped on structural criteria. In a same pac
 <p>
 But in my point of view, we let apart behavioral criteria. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages.
 </p>
+<ol>
+	<li>Usually, <b>package grouping is based on classes roles</b></li>
+	<li><b>Package grouping should also be based on classes interactions</b></li>
+</ol>
 <p>
-If we would like to design really modular applications, I think we should consider these two axes in packaging. On a pure design point of view, a class should belong to two packages : one structural and one behavioral. This could be possible because one class usually has interactions with a few classes.
+If we would like to design really modular applications, I think we should consider these two axes in packaging. On a pure design point of view, a class should belong to two packages : one structural (1) and one behavioral (2). This could be possible because one class usually has interactions with a few classes.
 </p>
 <p>
 In <em>Java</em>, one solution to help set up this second kind of packages could be annotations. But the problem would be in class loading. This wouldn't be a real problem if we all time use to <a href="http://dx.doi.org/10.1145/1176617.1176622">write APIs</a>.

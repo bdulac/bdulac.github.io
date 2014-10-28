@@ -78,7 +78,7 @@ Assertions are associated to an object method and qualified in one of three cate
 	If the <em>Java</em> programming language provides support for <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html">assertions</a>, these are checked only in a dynamic way (at runtime) and disabled by default. Because of runtime checking, <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/">exceptions</a> are largely used instead of assertions.	In <em>Java</em>, a <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">proper</a> use of exceptions can be more meaningful to the programmer than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
 </p>
 <p>
-	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
+	<span itemprop="citation" itemscope itemtype="http://schema.org/Book" itemid="#bloch-terms">
 		In 
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/124025332"></link>
 		<a itemprop="sameAs" href="http://www.pearsonhighered.com/educator/product/Effective-Java/9780321356680.page">
@@ -113,11 +113,11 @@ Assertions are associated to an object method and qualified in one of three cate
 		 an exception is a situation where preconditions are satisfied but postconditions can not be satisfied.
 	</span>
 </p>
-<p>I think that</p>
+<p>I think that, to respect <link itemprop="sameAs" href="#bloch-terms">Bloch terms</link></p>
 <ul>
-	<li>Runtime exceptions should be used for checking preconditions</li>
+	<li><b>Runtime exceptions should be used for checking preconditions</b></li>
 	<li>
-		Checked exceptions should be used when preconditions are true but postconditions can not be satisfied, assuming that the method is correct (e.g. the network connection is broken).&nbsp;
+		<b>Checked exceptions should be used when preconditions are true but postconditions can not be satisfied</b>, assuming that the method is correct (e.g. the network connection is broken).&nbsp;
 	</li>
 </ul>
 <p>
