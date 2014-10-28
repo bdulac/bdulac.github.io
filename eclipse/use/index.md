@@ -8,7 +8,9 @@ categories:
   - Practice
 ---
 <div>
-<h2>Menus configuration</h2>
+<h2>Configuration</h2>
+<div>
+<h3>Menus content</h3>
 <p>The menus are configured with the perspectives:</p>
 <ul>
 	<li>Window
@@ -33,7 +35,15 @@ The desired option just have to be checked here. Don't forget to save the perspe
 </p>
 </div>
 <div>
-<h2>Vertical selection</h2>
-<p>There is a a simple shortcut (to enable an disable):</p>
+<h2>Default shortcuts</h2>
+<div>
+<h3>Vertical selection</h3>
+<p>(to enable an disable)</p>
 <pre>ALT+SHIT+A</pre>
+</div>
+<div>
+<h3>Compilation proposals</h3>
+<p>(to propose the menu)</p>
+<pre>CTRL+SHIT+1</pre>
+</div>
 </div>
