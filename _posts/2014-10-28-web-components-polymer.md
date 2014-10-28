@@ -17,7 +17,7 @@ At
 	<meta itemprop="endDate" content="2014-06-26" />
 	<span itemprop="name">Google I/O 2014<span>, 
 	<span itemprop="subEvent" itemtype="http://schema.org/Event">
-		<em><a itemprop="url" href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">Polymer</a></em>.
+		<em><a itemprop="url" href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">Polymer</a></em>
 		<meta itemprop="name" content="Polymer and Web Components change everything you know about Web development" />
 		<meta itemprop="startDate" content="2014-06-25T01:00" />
 		<meta itemprop="endDate" content="2014-06-25T01:45" />
