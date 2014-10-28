@@ -114,7 +114,7 @@ Assertions are associated to an object method and qualified in one of three cate
 	</span>
 </p>
 <p>
-I think that, to respect <span itemprop="citation">Bloch terms<link itemprop="sameAs" href="#bloch-terms"></link></span>
+I think that, to respect <link itemprop="sameAs" href="#bloch-terms">Bloch terms</link>
 </p>,
 <ul>
 	<li><b>Runtime exceptions</b> should be used for <b>checking preconditions</b></li>
