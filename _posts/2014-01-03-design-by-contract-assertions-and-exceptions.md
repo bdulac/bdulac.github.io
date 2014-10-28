@@ -80,7 +80,7 @@ resource: true
 	<a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/">exceptions</a>
 	are largely used instead of assertions. 
 	In <i>Java</i>, a <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">proper</a> use of
-	exceptions can more expressive than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
+	exceptions can be more meaningful to the programmer than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
 </p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
