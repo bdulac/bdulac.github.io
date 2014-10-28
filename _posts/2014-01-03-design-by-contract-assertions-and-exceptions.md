@@ -12,7 +12,9 @@ categories:
   - Exception
 resource: true
 ---
-<p>Understanding design by contract is, I think, important for software quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).</p>
+<p>
+Understanding design by contract is, I think, important for software quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).
+</p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
 		<link itemprop="sameAs" href="http://www.worldcat.org/oclc/17675237"></link>
@@ -51,8 +53,7 @@ resource: true
 	</span>
 </p>
 <p>
-	Assertions are associated to an object method and qualified in
-	one of three categories :
+Assertions are associated to an object method and qualified in one of three categories :
 </p>
 <ul>
 	<li>Preconditions are assertions true before executing the method</li>
@@ -74,13 +75,7 @@ resource: true
 	compile time).
 </p>
 <p>
-	If the <em>Java</em> programming language provides support for 
-	<a href="http://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html">assertions</a>,
-	these are checked only in a dynamic way (at runtime) and disabled by default. Because of runtime checking, 
-	<a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/">exceptions</a>
-	are largely used instead of assertions. 
-	In <i>Java</i>, a <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">proper</a> use of
-	exceptions can be more meaningful to the programmer than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
+	If the <em>Java</em> programming language provides support for <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html">assertions</a>, these are checked only in a dynamic way (at runtime) and disabled by default. Because of runtime checking, <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/">exceptions</a> are largely used instead of assertions.	In <em>Java</em>, a <a href="http://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">proper</a> use of exceptions can be more meaningful to the programmer than a proper use of assertions because it provides more details about the malfunction conditions (the stack trace). At first glance, assertions (in the design by contract way) seem to be very far from exceptions. This is to some extent a paradox: I think the developer should consider assertions concepts every time he uses exceptions.
 </p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
@@ -118,7 +113,7 @@ resource: true
 		 an exception is a situation where preconditions are satisfied but postconditions can not be satisfied.
 	</span>
 </p>
-<p>I consider</p>
+<p>I think that</p>
 <ul>
 	<li>Runtime exceptions should be used for checking preconditions</li>
 	<li>
@@ -129,6 +124,5 @@ resource: true
 If a runtime exception is raised, the calling method should be bugged (or its preconditions are not properly checked).
 </p>
 <p>
-	Some extensions to the <em>Java</em> platform provide support for static
-	testing (assertions checking at compile time). For example, <a href="http://www.eecs.ucf.edu/~leavens/JML/">JML</a> takes advantage of <em>Java</em> comments: this is interesting for traditional compiling compliance.
+Some extensions to the <em>Java</em> platform provide support for static testing (assertions checking at compile time). For example, <a href="http://www.eecs.ucf.edu/~leavens/JML/">JML</a> takes advantage of <em>Java</em> comments: this is interesting for traditional compiling compliance.
 </p>
