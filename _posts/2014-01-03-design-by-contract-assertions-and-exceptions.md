@@ -113,11 +113,11 @@ Assertions are associated to an object method and qualified in one of three cate
 		 an exception is a situation where preconditions are satisfied but postconditions can not be satisfied.
 	</span>
 </p>
-<p>I think that, to respect <link itemprop="sameAs" href="#bloch-terms">Bloch terms</link></p>
+<p>I think that, to respect <link itemprop="sameAs" href="#bloch-terms">Bloch terms</link></p>,
 <ul>
-	<li><b>Runtime exceptions should be used for checking preconditions</b></li>
+	<li><b>Runtime exceptions</b> should be used for <b>checking preconditions</b></li>
 	<li>
-		<b>Checked exceptions should be used when preconditions are true but postconditions can not be satisfied</b>, assuming that the method is correct (e.g. the network connection is broken).&nbsp;
+		<b><b>Checked exceptions</b> should be used when <b>preconditions are true but postconditions can not be satisfied</b>, assuming that the method is correct (e.g. the network connection is broken).&nbsp;
 	</li>
 </ul>
 <p>
