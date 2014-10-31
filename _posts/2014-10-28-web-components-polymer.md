@@ -13,7 +13,7 @@ resource: true
 
 <p>
 At 
-<span itemscope itemtype="http://schema.org/Event">
+<span itemprop="about" itemscope itemtype="http://schema.org/Event">
 	<meta itemprop="startDate" content="2014-06-24" />
 	<meta itemprop="endDate" content="2014-06-26" />
 	<span itemprop="name">Google I/O 2014<span>, 
@@ -70,5 +70,5 @@ In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> st
 On a software engineering point of view, the step could be a real revolution: information provided by the Web server could have a same structure for a Web browser and for any software client. HTML would really look like an XML document, except for the head imports.
 </p>
 <p>
-What will make the real success of Web components is the behavior of software giants. And with <em>Polymer</em>, Googles seems to be seriously involved. Could it be a serious move to use Web standards in replacement of any Android API challenged by the <a href="http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCEQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOracle_v._Google&ei=GoNPVJr-KIfeaM69gsgJ&usg=AFQjCNGcs0490Akq-aklYP09IHZlns9imA&bvm=bv.77880786,d.d2s">Oracle lawsuit</a> ? Perhaps the end of the mobile native / Web apps dichotomy ? Is it a dream ? Still a long way to go for involved engineers, but so many promises...
+What will make the real success of Web components is the behavior of software giants. And with <em>Polymer</em>, Google seems to be seriously involved. Could it be a serious move to use Web standards in replacement of any Android API challenged by the <a href="http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCEQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOracle_v._Google&ei=GoNPVJr-KIfeaM69gsgJ&usg=AFQjCNGcs0490Akq-aklYP09IHZlns9imA&bvm=bv.77880786,d.d2s">Oracle lawsuit</a> ? Perhaps the end of the mobile native / Web apps dichotomy ? Is it a dream ? Still a long way to go for involved engineers, but so many promises...
 </p>

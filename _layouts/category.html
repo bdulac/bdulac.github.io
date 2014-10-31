@@ -40,6 +40,7 @@ article: true
 		</footer>
 		{% endif %}
 	</article>
+	<div itemscope itemtype="http://schema.org/Blog">
 {% assign categoryPage = page.categoryPage | upcase %}
 {% for myPost in site.posts %}
 	{% if myPost.resource == true %}
@@ -52,4 +53,5 @@ article: true
 		{% endfor %}
 	{% endif %}
 {% endfor %}
+	</div>
 </div>
