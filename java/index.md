@@ -16,7 +16,7 @@ Java is the trademark of a software platform consisting in three sets of element
 	<li>Runtime environments (JRE and others)</li>
 </ol>
 <p>
-Each component of the platform is defined by a specification. Different implementations of each specifications allow the support of Java programs in multiple environments.
+Each component of the platform is defined by a specification. Different implementations of each specification allow the support of Java programs in multiple environments.
 </p>
 <p>
 The Java platform components where initiated by <a href="http://en.wikipedia.org/wiki/Sun_Microsystems">Sun Microsystems</a>. They currently evolve in the frame of the <a href="http://en.wikipedia.org/wiki/Java_Community_Process">JCP</a>, a gathering of partners around <a href="http://en.wikipedia.org/wiki/Oracle_Corporation">Oracle Corp.</a> (after acquisition of Sun).
