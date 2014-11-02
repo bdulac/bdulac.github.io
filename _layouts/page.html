@@ -16,6 +16,7 @@ article: true
         		itemtype="http://schema.org/OrganizationRole" style="display: none;">
         		<div itemprop="author" itemscope
             	itemtype="http://schema.org/Person">
+            		<link itemprop="url" href="{{ site.url }}/about/"></link>
             		<span itemprop="name">{{ site.author.name }}</span>
             		{% for social in site.social %}
             		{% unless social.icon == 'feed' %}

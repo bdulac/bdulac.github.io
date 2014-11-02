@@ -12,6 +12,7 @@
        		<div itemprop="author" itemscope
         		itemtype="http://schema.org/Person">
         		<span itemprop="name">{{ site.author.name }}</span>
+        		<link itemprop="url" href="{{ site.url }}/about/"></link>
         		{% for social in site.social %}
         		{% unless social.icon == 'feed' %}
         		<link itemprop="sameAs" href="{{ social.url }}" />
