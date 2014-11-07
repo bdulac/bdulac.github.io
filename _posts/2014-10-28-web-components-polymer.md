@@ -30,11 +30,10 @@ At
 		<a itemprop="sameAs" href="https://twitter.com/ebidel">
 			<span itemprop="name"> 
 				<span itemprop="givenName">Eric</span>
-				<span itemprop="familyName">Bidelman</span>
+				<span itemprop="familyName">Bidelman</span>.
 			</span>
 		</a>
-	</span>
-	.	 
+	</span>	 
 	<span itemprop="organizer" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="Google inc." />
 		<link itemprop="sameAs" href="http://www.google.com"></link>
@@ -53,7 +52,7 @@ Web components are custom HTML tags. <b>How is the behavior and rendering of suc
 The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use these included resources to define the behavior.
 </p>
 <p>
-The negative point in using <em>Polymer</em> is that, probably because of the ongoing draft recommendation process, components definition requires the use of a <em>Polymer</em>-specific tag. I guess things should evolve here. The problem is that:
+The negative point in using <em>Polymer</em> is that, probably because of the ongoing draft recommendation process, components definition require the use of a <em>Polymer</em>-specific tag. I guess things should evolve here. As a consequence:
 </p>
 <ul>
 	<li>
