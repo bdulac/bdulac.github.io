@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: 'Eclipse JDT: how to go from an IJavaElement to an ASTNode ?'
+title: 'Eclipse JDT: get the ASTNode from an IJavaElement'
 categories:
   - Java
   - AST
