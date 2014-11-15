@@ -49,7 +49,26 @@ What is the relationship between Web components (as a W3C recommendation) and th
 Web components are custom HTML tags. <b>How is the behavior and rendering of such elements defined ?</b>
 </p>
 <p>
-The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use these included resources to define the behavior.
+The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource to define the behavior of each custom element.
+</p>
+<p>
+One important point is in the naming of custom element. As explained in 
+<span itemprop="citation" itemscope itemtype="http://schema.org/Article">
+			<a itemprop="sameAs" href="http://webcomponents.org/articles/how-should-i-name-my-element/">
+			    that article
+				<em><meta itemprop="name" content="How should I name my element?" /></em>
+			</a>
+			by 
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			  <a itemprop="sameAs" href="https://github.com/zenorocha">
+				<span itemprop="name">
+					<span itemprop="givenName">Zeno</span> 
+					<span itemprop="familyName">Rocha</span>
+				</span>,
+			  </a>
+			  <link itemprop="sameAs" href="https://twitter.com/zenorocha"></link>
+			</span>
+		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
 <p>
 The negative point in using <em>Polymer</em> is that, probably because of the ongoing draft recommendation process, components definition require the use of a <em>Polymer</em>-specific tag. I guess things should evolve here. As a consequence:
