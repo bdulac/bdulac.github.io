@@ -23,7 +23,7 @@ At
 		<meta itemprop="startDate" content="2014-06-25T01:00" />
 		<meta itemprop="endDate" content="2014-06-25T01:45" />
 	</span>
-	was introduced
+	was introduced in deep 
 	by 
 	<span itemprop="performer" itemscope itemtype="http://schema.org/Person" itemid="#bidelman">
 		<link itemprop="sameAs" href="https://plus.google.com/+EricBidelman/posts"></link>
@@ -40,7 +40,16 @@ At
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
 	</span>
 </span><em>Polymer</em> is a very interesting move by Google promoting in some way a W3C work: 
-<a href="http://www.w3.org/TR/custom-elements/">Web components</a>. I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
+<span itemprop="about" itemscope itemtype="http://schema.org/TechArticle">
+	<a itemprop="url" href="http://www.w3.org/TR/custom-elements/">Web components</a>.
+	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<meta itemprop="legalName" content="World Wide Web Consortium" />
+		<link itemprop="sameAs" href="http://www.w3.org/"></link>
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+	</span>
+	http://schema.org/publisher
+</span> 
+I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
 </p>
 <p>
 What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/"><em>Polymer</em> project</a> (as lead by Google) ? In a few words, <em>Polymer</em> bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
@@ -60,13 +69,18 @@ One important point is in the naming of custom element. As explained in
 			</a>
 			by 
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			  <a itemprop="sameAs" href="https://github.com/zenorocha">
-				<span itemprop="name">
-					<span itemprop="givenName">Zeno</span> 
-					<span itemprop="familyName">Rocha</span>
-				</span>,
-			  </a>
-			  <link itemprop="sameAs" href="https://twitter.com/zenorocha"></link>
+				<a itemprop="sameAs" href="https://twitter.com/zenorocha">
+						<span itemprop="name">
+						<span itemprop="givenName">Zeno</span> 
+						<span itemprop="familyName">Rocha</span>
+					</span>,
+			  	</a>
+			  	<link itemprop="sameAs" href="https://github.com/zenorocha"></link>
+			  	<meta itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+			  		<meta itemprop="legalName" content="Google inc." />
+			  		<link itemprop="sameAs" href="http://www.google.com"></link>
+			  		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
+				</meta>
 			</span>
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
