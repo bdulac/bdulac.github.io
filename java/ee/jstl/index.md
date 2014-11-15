@@ -16,7 +16,7 @@ There is a problem in testing the content of an HTTP request URL: the <a href="h
 In order to code in a static-type way, the solution is to set the <code>StringBuffer</code> in a variable to transform it into a string. Then the function can be used properly without any validation problem:  
 </p>
 <pre>&lt;c:set var="requestUrl" value="${pageContext.request.requestURL}" /&gt;
-&lt;c:if test"${fn:contains(requestUrl, '...')}"&gt;
+&lt;c:if test="${fn:contains(requestUrl, '...')}"&gt;
 &lt;/c:if&gt;</pre>
 </div>
 <div>
