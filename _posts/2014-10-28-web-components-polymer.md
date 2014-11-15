@@ -83,11 +83,11 @@ One important point is in the naming of custom element. As explained in
 					</span>,
 			  	</a>
 			  	<link itemprop="sameAs" href="https://github.com/zenorocha"></link>
-			  	<meta itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+			  	<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
 			  		<meta itemprop="legalName" content="Google inc." />
 			  		<link itemprop="sameAs" href="http://www.google.com"></link>
 			  		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
-				</meta>
+				</span>
 			</span>
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
