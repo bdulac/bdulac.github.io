@@ -16,7 +16,7 @@ At
 <span itemprop="about" itemscope itemtype="http://schema.org/Event">
 	<meta itemprop="startDate" content="2014-06-24" />
 	<meta itemprop="endDate" content="2014-06-26" />
-	<span itemprop="name">Google I/O 2014<span>, 
+	<span itemprop="name">Google I/O 2014</span>, 
 	<span itemprop="subEvent" itemtype="http://schema.org/Event">
 		<em><a itemprop="url" href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">Polymer</a></em>
 		<meta itemprop="name" content="Polymer and Web Components change everything you know about Web development" />
@@ -34,12 +34,20 @@ At
 			</span>
 		</a>
 	</span>	 
-	<span itemprop="organizer" itemscope itemtype="http://schema.org/Organization">
+	<span itemprop="organizer" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
 		<meta itemprop="legalName" content="Google inc." />
 		<link itemprop="sameAs" href="http://www.google.com"></link>
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
 	</span>
-</span><em>Polymer</em> is a very interesting move by Google promoting in some way a W3C work: 
+</span>
+<span itemprop="about" itemscope itemtype="http://schema.org/Code">
+	<em>Polymer</em>
+	<meta itemprop="url" content="https://www.polymer-project.org/">
+	<meta itemprop="codeRepository" content="https://github.com/Polymer/">
+	is a very interesting move by 
+	<link itemprop="sameAs" href="#goog">Google</link>
+</span> 
+promoting in some way a W3C work: 
 <span itemprop="about" itemscope itemtype="http://schema.org/TechArticle">
 	<a itemprop="url" href="http://www.w3.org/TR/custom-elements/">Web components</a>.
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -47,8 +55,7 @@ At
 		<link itemprop="sameAs" href="http://www.w3.org/"></link>
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
 	</span>
-	http://schema.org/publisher
-</span> 
+	http://schema.org/publisher 
 I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
 </p>
 <p>
