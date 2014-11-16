@@ -83,8 +83,13 @@ One important point is in the naming of custom element. As explained in
 					</span>,
 			  	</a>
 			  	<link itemprop="sameAs" href="https://github.com/zenorocha"></link>
-			  	<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
-			  		<link itemprop="sameAs" href="#goog"></link>
+			  	<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
+					<meta itemprop="legalName" content="Liferay, Inc." />
+					<link itemprop="sameAs" href="http://www.liferay.com/"></link>
+				</span>
+				<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
+					<meta itemprop="legalName" content=" Google Developer Experts program" />
+					<link itemprop="sameAs" href="https://developers.google.com/experts/"></link>
 				</span>
 			</span>
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
