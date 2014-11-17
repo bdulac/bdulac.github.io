@@ -187,7 +187,7 @@ It seems Jersey 2 sets the encoding content type header as ISO-8859-1, even if t
 <div>
 <h2>HTTP 301 status code: Moved Permanently</h2>
 <p>
-The JAX-RS API does not expose an out-of-the box method to produce an <a href="http://en.wikipedia.org/wiki/HTTP_301">HTTP 301</a> response (as available for a temporary redirect - HTTP 307). The solution is to produce a <a href="http://en.wikipedia.org/wiki/HTTP_location">Location</a> header, here is the code:
+The JAX-RS API does not expose an out-of-the box method to produce an <a href="http://en.wikipedia.org/wiki/HTTP_301">HTTP 301</a> response (as available for a temporary redirect - HTTP 307). The solution is to produce a <a href="http://en.wikipedia.org/wiki/HTTP_location">Location</a> header, here is the code (<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2">see here</a> for more details):
 </p>
 <pre>String redirUri = ...;
     return Response.status(Status.MOVED_PERMANENTLY)
