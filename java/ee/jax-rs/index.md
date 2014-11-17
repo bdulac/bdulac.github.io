@@ -184,3 +184,13 @@ Finally, jersey has to be registered as a web application. As of 2.12 version, t
 It seems Jersey 2 sets the encoding content type header as ISO-8859-1, even if the content is encoded in UTF-8 and a JSP page directive sets the proper value. The solution is to use a servlet filter to override the behavior. Tomcat provides <a href="https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/catalina/filters/SetCharacterEncodingFilter.html">one</a> out of the box, ready to use (configuration only, no coding).
 </p>
 </div>
+<div>
+<h2>HTTP 301 status code: Moved Permanently</h2>
+<p>
+The JAX-RS API does not expose an out-of-the box method to produce an <a href="http://en.wikipedia.org/wiki/HTTP_301">HTTP 301</a> response (as available for a temporary redirect - HTTP 307). The solution is to produce a <a href="http://en.wikipedia.org/wiki/HTTP_location">Location</a> header, here is the code:
+</p>
+<pre>String redirUri = ...;
+    return Response.status(Status.MOVED_PERMANENTLY)
+        .header("Location", redirUri).build();
+</pre>
+</div>
