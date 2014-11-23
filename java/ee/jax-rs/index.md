@@ -3,7 +3,6 @@ layout: page
 title: JAX-RS (category)
 article: true
 resource: true
-categoryPage: JAX-RS
 categories:
   - Java
   - Web
