@@ -19,7 +19,8 @@ Software modeling is interesting because it provides a graphical representation 
 <p>  
 In the discovery of the Polymer platform came the idea of <em><a href="https://github.com/bdulac/polymeria">Polymeria</a></em>: bridging the gap between the XML representation of an UML model and its graphical representation. The principle sounds simple: writing a Web component for each UML element. This is an echo to the idea <a href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">exposed </a> by E. Bidelman that every framework is compatible with 
 <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
-	<a itemprop="url" href="http://www.w3.org/DOM/#what">DOM</a>
+	<a href="http://www.w3.org/DOM/#what">DOM</a>
+	<meta itemprop="url" content="http://www.w3.org/DOM/#what" />
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Document_Object_Model#cite_note-Introduction-1" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />

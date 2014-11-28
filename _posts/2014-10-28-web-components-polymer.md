@@ -18,7 +18,8 @@ At
 	<meta itemprop="endDate" content="2014-06-26" />
 	<span itemprop="name">Google I/O 2014</span>, 
 	<span itemprop="subEvent" itemtype="http://schema.org/Event">
-		<em><a itemprop="url" href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">Polymer</a></em>
+		<em><a href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">Polymer</a></em>
+		<meta itemprop="url" content="http://www.youtube.com/watch?v=8OJ7ih8EE7s" />
 		<meta itemprop="name" content="Polymer and Web Components change everything you know about Web development" />
 		<meta itemprop="startDate" content="2014-06-25T01:00" />
 		<meta itemprop="endDate" content="2014-06-25T01:45" />
@@ -42,14 +43,17 @@ At
 </span>
 <span itemprop="about" itemscope itemtype="http://schema.org/Code">
 	<em>Polymer</em>
-	<meta itemprop="url" content="https://www.polymer-project.org/">
+	<meta itemprop="url" content="https://www.polymer-project.org/" />
 	<meta itemprop="codeRepository" content="https://github.com/Polymer/">
 	is a very interesting move by 
-	<link itemprop="sameAs" href="#goog">Google</link>
+	<meta itemprop="author">
+		<link itemprop="sameAs" href="#goog">Google</link>
+	</meta>
 </span> 
 promoting in some way a W3C work: 
 <span itemprop="about" itemscope itemtype="http://schema.org/TechArticle">
-	<a itemprop="url" href="http://www.w3.org/TR/custom-elements/">Web components</a>.
+	<a href="http://www.w3.org/TR/custom-elements/">Web components.</a>
+	<meta itemprop="url" content="href="http://www.w3.org/TR/custom-elements/" />
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Web_Components" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
@@ -68,7 +72,8 @@ Web components are custom HTML tags. <b>How is the behavior and rendering of suc
 <p>
 The components definition relies by convenience on another W3C recommendation, 
 <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
-	<a itemprop="url" href="http://www.w3.org/TR/html-imports/">HTML imports</a>.
+	<a href="http://www.w3.org/TR/html-imports/">HTML imports.</a>
+	<meta itemprop="url" content="http://www.w3.org/TR/html-imports/" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
 		<link itemprop="sameAs" href="http://www.w3.org/"></link>
@@ -76,7 +81,8 @@ The components definition relies by convenience on another W3C recommendation,
 	</span>
 </span>
 Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
-	<a itemprop="url" href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>
+	<a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>
+	<meta itemprop="url" content="http://www.w3.org/TR/html5/links.html#linkTypes" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
 		<link itemprop="sameAs" href="http://www.w3.org/"></link>
@@ -114,7 +120,8 @@ One important point is in the naming of custom element. As explained in
 <p>
 In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> states that every framework is compatible with 
 <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
-	<a itemprop="url" href="http://www.w3.org/DOM/#what">DOM</a>
+	<a href="http://www.w3.org/DOM/#what">DOM</a>
+	<meta itemprop="url" content="http://www.w3.org/DOM/#what" />
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Document_Object_Model#cite_note-Introduction-1" />.
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
