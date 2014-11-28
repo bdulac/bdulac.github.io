@@ -65,7 +65,7 @@ What is the relationship between Web components (as a W3C recommendation) and th
 Web components are custom HTML tags. <b>How is the behavior and rendering of such elements defined ?</b>
 </p>
 <p>
-The components definition relies on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>, <em>import</em>, the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource to define the behavior of each custom element.
+The components definition relies by convenience on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest.
 </p>
 <p>
 One important point is in the naming of custom element. As explained in 
@@ -94,17 +94,6 @@ One important point is in the naming of custom element. As explained in
 			</span>
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
-<p>
-The negative point in using <em>Polymer</em> is that, probably because of the ongoing draft recommendation process, components definition require the use of a <em>Polymer</em>-specific tag. I guess things should evolve here. As a consequence:
-</p>
-<ul>
-	<li>
-	If the definition of components becomes standard, <em>Polymer</em>-written components will have to be adapted (a slightest pain if the tag has just to be removed)
-	</li>
-	<li>
-	If the definition of components stays an implementation-specific feature, Web components will be a real mess
-	</li>
-</ul>
 <p>
 In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> states that every framework is compatible with DOM. Indeed, as a result of the document structure simplification induced by Web components, this is a huge change in the way information is provided on the Web. This won't change so much for end users in the first place.
 </p>
