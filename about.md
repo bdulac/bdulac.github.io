@@ -13,6 +13,9 @@ In the everyday, I largely use online documentations, blogs, forum posts. After 
 <p><a href="../categories/">Categories</a> group the notes by topic. Blog posts are personal opinions available in the <a href="{{ site.url }}">general index</a>. Each post is related to its categories displayed in the footer, with links when general notes are available.
 </p>
 <p>
-The blog is rendered by <a href="http://jekyllrb.com/">Jekyll</a> with a template derived from the <a href="http://camporez.com">Thinny theme</a>.
+Because I know that there is a plenty of informations on the Web and that reading can be long, important points are <b>emphasized</b>. This is not to be rude, but rather to save the reader's time.
+</p>
+<p>
+The site is rendered by <a href="http://jekyllrb.com/">Jekyll</a> with a template derived from the <a href="http://camporez.com">Thinny theme</a>.
 </p>
 </div>
