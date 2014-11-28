@@ -50,12 +50,13 @@ At
 promoting in some way a W3C work: 
 <span itemprop="about" itemscope itemtype="http://schema.org/TechArticle">
 	<a itemprop="url" href="http://www.w3.org/TR/custom-elements/">Web components</a>.
+	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Web_Components" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
 		<link itemprop="sameAs" href="http://www.w3.org/"></link>
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
 	</span>
-	http://schema.org/publisher 
+</span>
 I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
 </p>
 <p>
@@ -65,7 +66,23 @@ What is the relationship between Web components (as a W3C recommendation) and th
 Web components are custom HTML tags. <b>How is the behavior and rendering of such elements defined ?</b>
 </p>
 <p>
-The components definition relies by convenience on another W3C recommendation, <a href="http://www.w3.org/TR/html-imports/">HTML imports</a>. Introduced as a new <a href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest.
+The components definition relies by convenience on another W3C recommendation, 
+<span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
+	<a itemprop="url" href="http://www.w3.org/TR/html-imports/">HTML imports</a>.
+	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<meta itemprop="legalName" content="World Wide Web Consortium" />
+		<link itemprop="sameAs" href="http://www.w3.org/"></link>
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+	</span>
+</span>
+Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
+	<a itemprop="url" href="http://www.w3.org/TR/html5/links.html#linkTypes">link type</a>
+	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<meta itemprop="legalName" content="World Wide Web Consortium" />
+		<link itemprop="sameAs" href="http://www.w3.org/"></link>
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+	</span>
+</span> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest.
 </p>
 <p>
 One important point is in the naming of custom element. As explained in 
@@ -95,7 +112,17 @@ One important point is in the naming of custom element. As explained in
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
 <p>
-In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> states that every framework is compatible with DOM. Indeed, as a result of the document structure simplification induced by Web components, this is a huge change in the way information is provided on the Web. This won't change so much for end users in the first place.
+In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> states that every framework is compatible with 
+<span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
+	<a itemprop="url" href="http://www.w3.org/DOM/#what">DOM</a>
+	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Document_Object_Model#cite_note-Introduction-1" />.
+	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<meta itemprop="legalName" content="World Wide Web Consortium" />
+		<link itemprop="sameAs" href="http://www.w3.org/"></link>
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+	</span>
+</span>
+Indeed, as a result of the document structure simplification induced by Web components, this is a huge change in the way information is provided on the Web. This won't change so much for end users in the first place.
 </p>
 <p>
 On a software engineering point of view, the step could be a real revolution: information provided by the Web server could have a same structure for a Web browser and for any software client. HTML would really look like an XML document, except for the head imports.
