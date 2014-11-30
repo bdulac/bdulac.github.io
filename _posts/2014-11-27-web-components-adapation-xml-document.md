@@ -38,3 +38,6 @@ The main issue comes with the Web component for an UML attribute: the XML tag ge
 <p>
 Every framework is compatible with DOM. But DOM is not necessarily compatible with Web components. After these three limitations, it seems Web components are perhaps XML compliant. However <b>an XML model is tricky to adapt as a Web components document</b>. The random support of self-closing tags can be rather disappointing for a first contact with Web components...
 </p>
+<p>
+<a href="../sample/polymeria">Here</a> is an HTML sample of <em>Polymeria</em> showing the transformations needed and the Web components obtained (a proper rendering has been tested with Chrome and Firefox).
+</p>
