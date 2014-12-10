@@ -13,9 +13,9 @@ resource: true
 	facing a memory error.
 </p>
 <p>
-	The memory is divided in two distinct spaces, even if this <a
+	The memory is divided in two distinct spaces, <b>even if this <a
 		href="http://openjdk.java.net/jeps/122">might change in Java 8</a><a
-		href="http://www.blogger.com/null">.</a><br />
+		href="http://www.blogger.com/null"></b></a>.
 <ul>
 	<li>The PermGen space contains classes definitions</li>
 	<li>The Heap space contains objects</li>
@@ -100,5 +100,5 @@ resource: true
 	garbage collection. Literally, there is no memory saturation but the
 	system uses most of its memory despite garbage collections. A simple
 	workaround can be to extend the Heap space. If the problem persists,
-	tuning the GC configuration will probably be the solution. A hint can be the <i>+UseParallelGC</i> JVM option (some documentation is available <a href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#par_gc">here</a>).
+	tuning the GC configuration will probably be the solution. A hint can be the <i>-XX:-UseParallelGC</i> JVM option (some documentation is available <a href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#par_gc">here</a>).
 </p>
