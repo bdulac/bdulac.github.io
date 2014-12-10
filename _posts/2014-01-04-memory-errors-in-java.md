@@ -13,9 +13,9 @@ resource: true
 	facing a memory error.
 </p>
 <p>
-	The memory is divided in two distinct spaces, even if this <a
+	The memory is divided in two distinct spaces, <b>even if this <a
 		href="http://openjdk.java.net/jeps/122">might change in Java 8</a><a
-		href="http://www.blogger.com/null">.</a><br />
+		href="http://www.blogger.com/null"></b></a>.
 <ul>
 	<li>The PermGen space contains classes definitions</li>
 	<li>The Heap space contains objects</li>
