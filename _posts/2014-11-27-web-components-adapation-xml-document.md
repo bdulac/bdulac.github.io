@@ -7,8 +7,6 @@ categories:
   - W3C
   - Polymer
   - UML
-  - Software design
-  - Software engineering
 resource: true
 ---
 <p>
