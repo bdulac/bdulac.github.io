@@ -23,6 +23,11 @@ But what about the access proposed by specific APIs ?
   </li>
 </ul>
 <p>
+-->https://github.com/eclipse/javax.persistence/blob/master/src/javax/persistence/spi/PersistenceProviderResolverHolder.java
+</p>
+<pre>
+Thread.currentThread().getContextClassLoader()</pre>
+<p>
 Before calling <a href="https://docs.oracle.com/javaee/6/api/javax/persistence/Persistence.html#createEntityManagerFactory(java.lang.String)">Persistence.createEntityManagerFactory(...)</a>
 </p>
 <pre>ClassLoader cLoader = getClass().getClassLoader();
