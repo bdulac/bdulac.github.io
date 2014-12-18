@@ -7,7 +7,6 @@ categories:
   - W3C
   - Polymer
   - Google
-  - Software engineering
 resource: true
 ---
 
