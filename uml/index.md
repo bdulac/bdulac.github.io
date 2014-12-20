@@ -23,10 +23,9 @@ defined in
 </span>. 
 A 
 <span itemscope itemtype="http://schema.org/Book"> 
-guide
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>guide</a>
 <meta itemprop="datePublished" content="1998"/>
 by the same authors 
-<link itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Modeling Language User Guide"/>
 <meta itemprop="author" content="Grady Booch"/>
@@ -36,9 +35,8 @@ by the same authors
 </span>
 defines the way the UML elements should be used. It is important to note that UML is distinct from any software development methodology: the authors introduced in a same time the Unified Process with a 
 <span itemscope itemtype="http://schema.org/Book"> 
-third book
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/613267531">third book</a>
 <meta itemprop="datePublished" content="1998"/> 
-<link itemprop="sameAs" href="http://www.worldcat.org/oclc/613267531"/>
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Software Development Process"/>
 <meta itemprop="author" content="Ivar Jacobson"/>
@@ -48,14 +46,14 @@ third book
 </span>. The UML language was completely independent from that process.
 </p>
 <p>
-UML evolves nowadays in the frame of the <a href="http://omg.org/"><em>Object Management Group</em></a> (OMG). The UML is there considered as a component of the <a href="http://omg.org/mof/"><em>Meta Object Facility</em></a> (MOF). It is a general architecture consisting in four layers. The first one is a metamodel which allows to define the elements of the language (UML) which is the second level. The third layer is the reality being modeled (using the language) and the at the latest layer comes the object structure.
+UML evolves nowadays in the frame of the <a href="http://omg.org/"><em>Object Management Group</em></a> (OMG). The UML is there considered as a component of the <a href="http://omg.org/mof/"><em>Meta Object Facility</em></a> (MOF). It is a general architecture consisting in four layers. The first one is a metamodel which allows to define the elements of the language (UML) which is the second level. The third layer is the reality being modeled (using the language). At the latest layer comes the object structure.
 </p>
 <p>
 In a 
 <span itemscope itemtype="http://schema.org/Book"> 
-pragmatic book, 
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/892608752">
+pragmatic book</a>, 
 <meta itemprop="datePublished" content="2013"/> 
-<link itemprop="sameAs" href="http://www.worldcat.org/oclc/892608752"/>
 <link itemprop="bookFormat" href="http://schema.org/Paperback"/>
 <meta itemprop="name" content="UML distilled : a brief guide to the standard object modeling language"/>
 <span itemprop="author">Martin Fowler</span>
