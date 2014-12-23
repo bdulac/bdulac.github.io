@@ -1,10 +1,12 @@
 --- 
 layout: post 
-title: Java compilation with the Eclipse IDE
+title: Java compilation with the Eclipse IDE and Tomcat
 categories:
   - Java
   - AST
   - Eclipse
+  - Tomcat
+  - JDT
 resource: true
 ---
 <p>
