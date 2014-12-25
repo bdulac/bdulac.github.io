@@ -10,7 +10,7 @@ categories:
 resource: true
 ---
 <p>
-Following my <a href="../note/web-components-polymer">previous post</a>, I tried to play with <em><a href="https://www.polymer-project.org/">Polymer</a></em> on my spare time. In my mind, Web components could be an important point for the architecture of the Web. On one side the Web would be easier to handle for automated systems because of the separation of information and presentation. On the other side Web applications would become easier to design for the same reason.
+Following my <a href="http://bdulac.github.io/note/web-components-polymer">previous post</a>, I tried to play with <em><a href="https://www.polymer-project.org/">Polymer</a></em> on my spare time. In my mind, Web components could be an important point for the architecture of the Web. On one side the Web would be easier to handle for automated systems because of the separation of information and presentation. On the other side Web applications would become easier to design for the same reason.
 </p>
 <p>
 Software modeling is interesting because it provides a graphical representation of software. As a consequence, UML is an expressive representation for design and documentation. The <a href="http://wiki.eclipse.org/MDT-UML2">Eclipse UML2</a> project relies on an XML file which <a href="http://modeling-languages.com/eclipse-mdtuml2-xmi-de-facto-standard/">tends to become</a> a standard form for the persistence of UML models. In that XML file all the informations relative to an UML model are available.

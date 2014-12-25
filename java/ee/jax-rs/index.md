@@ -92,7 +92,7 @@ The use is rather simple, e.g. with a file:
 <div  itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
 <h2><a id="jersey-json">JSON processing with Jersey 2</a></h2>
 <!--
-<p>See <a href="../../../note/json-processing-with-jersey">this note</a>.</p>
+<p>See <a href="http://bdulac.github.io/note/json-processing-with-jersey">this note</a>.</p>
 -->
 <p>
 An experience (first published in the blog - 2014-09-26 - too technical)...
