@@ -63,7 +63,7 @@ promoting in some way a W3C work:
 I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
 </p>
 <p>
-What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/"><em>Polymer</em> project</a> (as lead by Google) ? In a few words, <em>Polymer</em> bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>.
+What is the relationship between Web components (as a W3C recommendation) and the <a href="http://polymer-project.org/"><em>Polymer</em> project</a> (as lead by Google) ? In a few words, <em>Polymer</em> bridges the gap between the work pending in the frame of the recommendation working group and the features implemented by browsers. This is done via a simple Javascript, <em>platform.js</em>. The <em>Polymer</em> project also provides a set of <a href="https://www.polymer-project.org/docs/elements/">initial web components</a> to simplify the development of web-component-based applications.
 </p>
 <p>
 Web components are custom HTML tags. <b>How is the behavior and rendering of such elements defined ?</b>
@@ -135,4 +135,7 @@ On a software engineering point of view, the step could be a real revolution: in
 </p>
 <p>
 What will make the real success of Web components is the behavior of software giants. And with <em>Polymer</em>, Google seems to be seriously involved. Could it be a serious move to use Web standards in replacement of any Android API challenged by the <a href="http://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCEQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FOracle_v._Google&ei=GoNPVJr-KIfeaM69gsgJ&usg=AFQjCNGcs0490Akq-aklYP09IHZlns9imA&bvm=bv.77880786,d.d2s">Oracle lawsuit</a> ? Perhaps the end of the mobile native / Web apps dichotomy ? Is it a dream ? Still a long way to go for involved engineers, but so many promises...
+</p>
+<p>
+<b>Edit</b> <em>(2014-12-26)</em>: the <em>platform.js</em> script <a href="https://blog.polymer-project.org/announcements/2014/10/16/platform-becomes-webcomponents/">has become</a> <em>webcomponents.js</em>.
 </p>
