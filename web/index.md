@@ -6,10 +6,10 @@ resource: true
 categoryPage: Web
 ---
 <p>
-The <a href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>, commonly referred to as <em>The Web</em>, is the web constituted by links between <a href="http://en.wikipedia.org/wiki/Hypertext">hypertext</a> documents. These document are text files respecting the <em>HyperText Markup Language</em> (<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>). These files are exchanged using the <em>HyperText Transfer Protocol</em> (<a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>) and usually visualized by human users in <a href="http://en.wikipedia.org/wiki/Web_browser">Web brower</a> (e.g. <em>Internet Explorer</em>, <em>Mozilla Firefox</em>, <em>Apple Safari</em>, <em>Google Chrome</em>).
+The <a href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>, commonly referred to as <em>The Web</em>, is the web constituted by links between <a href="http://en.wikipedia.org/wiki/Hypertext">hypertext</a> documents. These document are text files respecting the <em>HyperText Markup Language</em> (<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>). These files are exchanged using the <em>HyperText Transfer Protocol</em> (<a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>). A basic Web transaction is between a Web server (e.g <a href="http://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache HTTP server</a>, <a href="http://en.wikipedia.org/wiki/Apache_Tomcat">Apache Tomcat</a>, <a href="http://en.wikipedia.org/wiki/Internet_Information_Services">IIS</a>) and a computer workstation where it is visualized by human users in <a href="http://en.wikipedia.org/wiki/Web_browser">Web brower</a> (e.g. <em>Internet Explorer</em>, <em>Mozilla Firefox</em>, <em>Apple Safari</em>, <em>Google Chrome</em>).
 </p>
 <p>
-Initially, the Web was  
+It was initially 
 <span itemprop="about" itemscope itemtype="http://schema.org/TechArticle">
   <a href="http://www.w3.org/Proposal.html">proposed</a>
   <meta itemprop="datePublished" content="1990-11-12" />
@@ -30,7 +30,7 @@ Initially, the Web was
   </span>
   <link itemprop="sameAs" href="http://www.w3.org/Proposal.html"></link>
 </span>
- in 1990. The Web currently evolves in the frame of an international group: the <em>World Wide Web Consortium</em> (<a href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a>). This group produces recommendations which act as standards to be respected by Web browsers.
+ in 1990 at the <a href="http://en.wikipedia.org/wiki/CERN">CERN</a>. The Web currently evolves in the frame of an international group: the <em>World Wide Web Consortium</em> (<a href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium">W3C</a>). This group produces recommendations which act as standards to be respected by Web browsers.
 </p>
 <p>
 In 2001, 
