@@ -16,7 +16,7 @@ I recently resurrected on my spare time an old idea: a tool to transform a <em>B
 Limited was my experience in text parsing. A first idea was to convert the grammar of BNF in BNF available in the Wikipedia article to ANTLR in order to generate a parser for the transformation tool itself. A tank to move move a pineapple was my opinion: I chose to process the initial file in a single class. The early ANTLR grammars where generated a few minutes later. Unfortunately, these grammars failed generation with ANTLR with many errors in the output. I had to write a parser: the BNF BNF to ANTLR manual transformation was finally a good option. 
 </p>
 <p>
-A few hours later, my parser did the same job as the single text transformation class. And as many errors in the ANTLR output. I had a look at the JPQL BNF input. Here where is a single mysterious expression that challenged me:
+A few hours later, my parser did the same job as the single text transformation class. And as many errors in the ANTLR output. I had a look at the JPQL BNF input. Here is a single mysterious expression that challenged me:
 </p>
 <pre>{AVG |MAX |MIN |SUM} ([DISTINCT] state_field_path_expression) | COUNT ([DISTINCT] identification_variable | state_field_path_expression | single_valued_association_path_expression)
 </pre>
