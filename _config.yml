@@ -45,11 +45,24 @@ social:
     desc:	Subscribe to my RSS feed    
 
 menu:
-  - title:	Home
+  - title:	Blog
     url:	/
     
   - title:	About
     url:	/about
+
+  - title:	Point of views
+    url:	/point-of-view/
+    
+  - title:	Programming
+    url:	/programming-practice/
+    
+  - title:	Web
+    url:	/web/
+    
+  - title:	Java
+    url:	/java/
+    
     
 copyright:
   author:	Bérenger Dulac
