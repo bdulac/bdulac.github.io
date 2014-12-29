@@ -3,7 +3,7 @@ layout: category
 title: Point of view (category)
 article: true
 resource: true
-categoryPage: Points of view
+categoryPage: Point of view
 ---
 <div>
 <p>
