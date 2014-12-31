@@ -81,7 +81,7 @@ resource: true
 <p>
 	I personally generate an <i>hprof</i> file with the JVM option <i>-XX:+HeapDumpOnOutOfMemory</i>.
 	Another JVM option <i>-XX:HeapDumpPath=...</i> allows to specify the
-	generated file location.The <a href="http://www.eclipse.org/mat/">Eclipse
+	generated file location. The <a href="http://www.eclipse.org/mat/">Eclipse
 		MAT</a> tools helps to visualize the generated file.
 </p>
 <p>
