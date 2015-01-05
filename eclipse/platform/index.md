@@ -59,7 +59,7 @@ This post is interesting on the definition point of view. A simple element is mi
 				</a>
 			</span>
 		</span>
-		detail such a procedure (in section 3).
+		details such a procedure (in section 3).
 	</span> 
 <p>
 </div>
@@ -136,8 +136,8 @@ An <a href="http://stackoverflow.com/a/27777064/1207019">exchange on stackoverfl
 </p>
 </div>
 <div>
-<h2>Programmatically refactor with the JDT</h2>
+<h2><a href="#programmatically-refactor-jdt" name="programmatically-refactor-jdt">Programmatically refactor with the JDT</a></h2>
 <p>
-Using the internal <a href="http://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/plain/org.eclipse.jdt.ui/core%20refactoring/org/eclipse/jdt/internal/corext/refactoring/rename/">rename package</a> is not a very good idea (discouraged access warning). There is an <a href="http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html">official documentation</a> on that topic. A <a href="http://stackoverflow.com/questions/9129689/is-there-any-eclipse-refactoring-api-that-i-can-call-programmatically">stackoverflow exchange</a> also mentions interesting informations.
+Using the internal <a href="http://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/plain/org.eclipse.jdt.ui/core%20refactoring/org/eclipse/jdt/internal/corext/refactoring/rename/">rename package</a> is not a very good idea (discouraged access warning). There is an <a href="http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html">official documentation</a> on that topic. A <a href="http://stackoverflow.com/q/9129689/1207019">stackoverflow exchange</a> also mentions interesting informations.
 </p>
 </div>

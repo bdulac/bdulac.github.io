@@ -6,6 +6,7 @@ resource: true
 categoryPage: UML
 ---
 <div>
+<h2><a href="#origin" name="origin">Origins</a></h2>
 <p>
 The graphical UML language is generally considered to be standard in the field 
 of <a href="../software/engineering">software engineering</a>. Its terms (the UML elements) where  originally 
@@ -45,9 +46,15 @@ defines the way the UML elements should be used. It is important to note that UM
 <meta itemprop="bookEdition" content="1st print"/>
 </span>. The UML language was completely independent from that process.
 </p>
+</div>
+<div>
+<h2><a href="#omg" name="omg">The OMG</a></h2>
 <p>
 UML evolves nowadays in the frame of the <a href="http://omg.org/"><em>Object Management Group</em></a> (OMG). The UML is there considered as a component of the <a href="http://omg.org/mof/"><em>Meta Object Facility</em></a> (MOF). It is a general architecture consisting in four layers. The first one is a metamodel which allows to define the elements of the language (UML) which is the second level. The third layer is the reality being modeled (using the language). At the latest layer comes the object structure.
 </p>
+</div>
+<div>
+<h2><a href="#ways" name="ways">Using UML ?</a></h2>
 <p>
 In a 
 <span itemscope itemtype="http://schema.org/Book"> 

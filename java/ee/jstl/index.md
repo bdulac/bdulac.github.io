@@ -8,7 +8,7 @@ categories:
   - Web
 ---
 <div>
-<h2>"fn" (functions)</h2>
+<h2><a href="#fn" name="fn">"fn" (functions)</a></h2>
 <p>
 There is a problem in testing the content of an HTTP request URL: the <a href="http://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getRequestURL()">HttpServletRequest method</a> returns a <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html">	StringBuffer</a>. The <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fn/contains.fn.html">fn:contains(.., ..)</a> function accepts only strings. Using the <code>getRequestURL()</code> result as an argument works fine. But this is not static-type conform. Here the Eclipse IDE Web page validation complains.
 </p>
@@ -20,7 +20,7 @@ In order to code in a static-type way, the solution is to set the <code>StringBu
 &lt;/c:if&gt;</pre>
 </div>
 <div>
-<h2>"fmt" (messages)</h2>
+<h2><a href="#fmt" name="fmt">"fmt" (messages)</a></h2>
 <p>
 Using a <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fmt/message.html">message</a> tag (fmt) with <a href="http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/fmt/param.html">param</a> children, I had to escape quotes unless the message would not include the parameters.
 </p>

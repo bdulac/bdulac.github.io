@@ -51,7 +51,7 @@ To use jersey-specific features, the following dependecies should be specified:
 <p>Here are some personal notes about JAX-RS components and extensions...</p>
 </div>
 <div>
-<h2><a id="client-api">Client API</a></h2>
+<h2><a href="#client-api" name="client-api">Client API</a></h2>
 <p>
 The RESTful client API is part of the specification since JAX-RS 2.0. The classifiers are defined in the <a href="http://docs.oracle.com/javaee/7/api/javax/ws/rs/client/package-summary.html">javax.ws.rs.client</a> package. The component implementation is identified in <a href="http://cxf.apache.org/docs/jax-rs-client-api.html">CXF</a>, <a href="http://docs.jboss.org/resteasy/docs/3.0-beta-3/userguide/html/RESTEasy_Client_Framework.html">RestEasty</a> and <a href="https://jersey.java.net/documentation/2.12/client.html">Jersey</a>.
 </p>
@@ -60,7 +60,7 @@ Since JAX-RS 2.0, as the client API is part of the specification, Jersey does no
 </p>
 </div>
 <div>
-<h2><a id="multipart">Multipart</a></h2>
+<h2><a href="#multipart" name="multipart">Multipart</a></h2>
 <p>
 <a href="http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html">Multipart</a> does not seem to be covered by the JAX-RS specifications. However, <a href="http://cxf.apache.org/docs/jax-rs-multiparts.html#JAX-RSMultiparts-MultipartannotationandOptionalattachments">CXF</a>, <a href="http://docs.jboss.org/resteasy/docs/1.1.GA/userguide/html/Multipart.html">RestEasy</a> and <a href="https://jersey.java.net/apidocs/2.12/jersey/org/glassfish/jersey/media/multipart/package-summary.html">Jersey</a> provide a non-standard support for such a content-type.
 </p>
@@ -90,12 +90,12 @@ The use is rather simple, e.g. with a file:
 		</pre>
 </div>
 <div  itemprop="about" itemscope itemtype="http://schema.org/SoftwareApplication">
-<h2><a id="jersey-json">JSON processing with Jersey 2</a></h2>
+<h2><a href="#jersey-json" name="jersey-json">JSON processing with Jersey 2</a></h2>
 <!--
 <p>See <a href="http://bdulac.github.io/note/json-processing-with-jersey">this note</a>.</p>
 -->
 <p>
-An experience (first published in the blog - 2014-09-26 - too technical)...
+An experience (first published in the blog - 2014-09-26 - too technical for such a place)...
 </p>
 <p>
 I tried to use 
@@ -133,7 +133,7 @@ It seems JSONP is not able to provide a simple POJO support. I came back to <a h
 </p>
 </div>
 <div>
-<h2><a href="#jersey-mvc-jsp">Jersey 2 Integration with JSP</a></h2>
+<h2><a href="#jersey-mvc-jsp" name="jersey-mvc-jsp">Jersey 2 Integration with JSP</a></h2>
 <p>
 This guide summarizes informations from the <a href="https://jersey.java.net/documentation/2.12/mvc.html">Jersey 2.12</a> documentation. The MVC and MVC features are extensions.
 </p>
@@ -178,13 +178,13 @@ Finally, jersey has to be registered as a web application. As of 2.12 version, t
 &lt;/web-app&gt;</pre>
 </div>
 <div>
-<h2><a id="jersey-encoding">Encoding with Jersey 2</a></h2>
+<h2><a href="#jersey-encoding" name="jersey-encoding">Encoding with Jersey 2</a></h2>
 <p>
 It seems Jersey 2 sets the encoding content type header as ISO-8859-1, even if the content is encoded in UTF-8 and a JSP page directive sets the proper value. The solution is to use a servlet filter to override the behavior. Tomcat provides <a href="https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/catalina/filters/SetCharacterEncodingFilter.html">one</a> out of the box, ready to use (configuration only, no coding).
 </p>
 </div>
 <div>
-<h2><a id="http-301-code">HTTP 301 status code: Moved Permanently</a></h2>
+<h2><a href="#http-301-code" name="http-301-code">HTTP 301 status code: Moved Permanently</a></h2>
 <p>
 The JAX-RS API does not expose an out-of-the box method to produce an <a href="http://en.wikipedia.org/wiki/HTTP_301">HTTP 301</a> response (as available for a temporary redirect - HTTP 307). The solution is to produce a <a href="http://en.wikipedia.org/wiki/HTTP_location">Location</a> header, here is the code (<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2">see here</a> for more details):
 </p>
