@@ -132,7 +132,7 @@ The following code returns the first full name of a method return type:
 	}
 	return name;</pre>
 <p>
-An <a href="http://stackoverflow.com/a/27777064/1207019">exchange on stackoverflow</a> details the code for parameter types.
+An <a href="http://stackoverflow.com/a/27777064/1207019">exchange on stackoverflow</a> details the code for parameters types full names.
 </p>
 </div>
 <div>
