@@ -134,28 +134,6 @@ The following code returns the first full name of a method return type:
 <p>
 An <a href="http://stackoverflow.com/a/27777064/1207019">exchange on stackoverflow</a> details the code for parameter types.
 </p>
-<pre>ILocalVariable parameterVariable = ...
-IType type = parameterVariable.getTypeRoot();
-String name = parameterVariable.getTypeSignature();
-String simpleName = Signature.getSignatureSimpleName(name);
-String[][] allResults = type.resolveType(simpleName);
-String fullName = null;
-if(allResults != null) {
-    String[] nameParts = allResults[0];
-    if(nameParts != null) {
-        fullName = new String();
-        for(int i=0 ; i < nameParts.length ; i++) {
-            if(name.length() > 0) {
-                fullName += '.';
-            }
-            if(nameParts[i] != null) {
-                fullName += nameParts[i];
-            }
-        }
-    }
-}
-return fullName;
-</pre>
 </div>
 <div>
 <h2>Programmatically refactor with the JDT</h2>
