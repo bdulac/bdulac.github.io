@@ -64,7 +64,7 @@ This post is interesting on the definition point of view. A simple element is mi
 <p>
 </div>
 <div>
-<h2>EMF model change listener</h2>
+<h2><a href="#emf-model-change-listener" name="emf-model-change-listener">EMF model change listener</a></h2>
 <p>
 As explained in the <a href="http://www.eclipsezone.com/eclipse/forums/t115262.html">EclipseZone forum exchange</a> on the topic, two strategies are available to listen to changes on an EMF model:  
 </p>
@@ -98,7 +98,7 @@ The <em>ResourceSetListener</em> solution, far more complete on the transaction 
 </p>
 </div>
 <div>
-<h2>Decode simple JDT signatures</h2>
+<h2><a href="#jdt-decode-signatures" name="jdt-decode-signatures">Decode simple JDT signatures</a></h2>
 <p>
 The JDT sometimes returns simplified type signatures, for example the <em><a href="http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.isv/reference/api/org/eclipse/jdt/core/IMethod.html#getParameterTypes--">IMethod#getParameterTypes()</a></em> method can return values such as <em>QString</em> instead of <em>java.lang.String</em>. 
 </p>
@@ -131,7 +131,8 @@ The following code returns the first full name of a method return type:
 		}
 	}
 	return name;</pre>
-<p>TO BE TESTED ! Perhaps fixing -->http://stackoverflow.com/questions/27775320/how-to-get-fully-qualified-name-of-parameter-value-in-a-method/27777064#27777064
+<p>
+An <a href="http://stackoverflow.com/a/27777064/1207019">exchange on stackoverflow</a> details the code for parameter types.
 </p>
 <pre>ILocalVariable parameterVariable = ...
 IType type = parameterVariable.getTypeRoot();
