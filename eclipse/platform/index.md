@@ -113,7 +113,7 @@ The following code returns the first full name of a method return type:
 <pre>
 	String name = method.getReturnType();
 	String simpleName = Signature.getSignatureSimpleName(name);
-	IType type = method.getTypeRoot();
+	IType type = method.getDeclaringType();
 	String[][] allResults = type.resolveType(simpleName);
 	String fullName = null;
 	if(allResults != null) {
