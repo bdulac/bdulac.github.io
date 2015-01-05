@@ -121,11 +121,11 @@ The following code returns the first full name of a method return type:
 		if(nameParts != null) {
 			fullName = new String();
 			for(int i=0 ; i < nameParts.length ; i++) {
-				if(name.length() > 0) {
-					name += '.';
+				if(fullName.length() > 0) {
+					fullName += '.';
 				}
 				if(nameParts[i] != null) {
-					name += nameParts[i];
+					fullName += nameParts[i];
 				}
 			}
 		}
