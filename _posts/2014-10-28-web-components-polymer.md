@@ -87,7 +87,29 @@ Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.
 		<link itemprop="sameAs" href="http://www.w3.org/"></link>
 		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
 	</span>
-</span> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest.
+</span> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest. A singularity about HTML imports is detailed in a
+<span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
+	<a itemprop="sameAs" href="http://tjvantoll.com/2014/08/12/the-problem-with-using-html-imports-for-dependency-management/">
+			     blog post
+		<em><meta itemprop="name" content="The Problem With Using HTML Imports For Dependency Management" /></em>
+	</a>
+	by 
+	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		<a itemprop="sameAs" href="http://tjvantoll.com/">
+			<span itemprop="name">
+				TJ
+				<span itemprop="familyName">Van Toll</span>
+			</span>:
+		</a>
+		<link itemprop="sameAs" href="https://github.com/tjvantoll"></link>
+		<link itemprop="sameAs" href="https://twitter.com/tjvantoll"></link>
+		<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+			<meta itemprop="legalName" content="Telerik - A progress company" />
+			<link itemprop="sameAs" href="http://www.telerik.com/"></link>
+		</span>
+	</span>
+</span>
+defining multiple imports using a same library (e.g. jQuery) can be challenging to load for browsers. Strategies have to be found to reduce loadings.
 </p>
 <p>
 One important point is in the naming of custom element. As explained in 
