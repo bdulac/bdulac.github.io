@@ -2,14 +2,23 @@
 <html>
   <head>
     <title>Polymeria sample</title>
-    <script src="polymer/platform/platform.js">
+    <script src="polymer/webcomponentsjs/webcomponents.js">
     </script>
-    <link rel="import" href="polymer/polymer/polymer.html">
-    <link rel="import" href="components/uml-model.html">
-    <link rel="import" href="components/uml-packagedElement.html">
-    <link rel="import" href="components/uml-ownedAttribute.html">
-    <link rel="import" href="components/uml-ownedOperation.html">
-    <link rel="import" href="components/uml-ownedParameter.html">
+    <script src="jquery/dist/jquery.min.js">
+    </script>
+    <script src="jquery-ui/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet" href="jquery-ui/themes/humanity/jquery-ui.css">
+    <link rel="import" href="components/uml-polymeria.html">
+    <script>
+$(function() {
+$( "#accordion" ).accordion({
+collapsible: true, 
+active: false, 
+heightStyle: "content"
+});
+});
+    </script>
   </head>
   <style>
     body {
@@ -18,15 +27,27 @@
 	  width: 100%;
 	  height: 100%;
 	}
+	.label {
+	  max-width: 300px;
+	  text-align: left;
+	  font-size: 0.7em;
+	  padding: 0.5em;
+	  border: 1px solid #000; 
+	  background: #eee; 
+	  color: #333;
+	  border-radius: 5px;
+	}
 	.cite-xml {
-	    background-color: lightgray;
-	    max-height: 100px;
-	    overflow: auto;
+	  background-color: #ffe;
+	  border-style: ridge;
 	}
   </style>
   <body unresolved>
-    <section>
-      <h4>Initial XML:</h4>
+  <section>
+  	<div id="accordion">
+      <h3 title="Initial XML source">Eclipse UML2 model</h3>
+      <div>
+      <p class="label">The initial XML source of the <a href="http://wiki.eclipse.org/MDT-UML2" target="_blank">Eclipse EMF-based</a> UML2 metamodel</p>
       <pre class="cite-xml">
 &lt;model name="My model"&gt;
   &lt;packagedElement type="Class" name='MyClass'&gt;
@@ -44,11 +65,11 @@
       &lt;ownedParameter name="mySecondParam" /&gt;
     &lt;/ownedOperation&gt;
   &lt;/packagedElement&gt;
-&lt;/model&gt;
-      </pre>
-    </section>
-    <section>
-      <h4>Adapted UML model (for Web components names compatibility and self-closing tags removal):</h4>
+&lt;/model&gt;</pre>
+      </div>
+      <h3 title="Adaptation of the XML source">Web components</h3>
+      <div>
+      <p class="label"><a href="http://bdulac.github.io/note/web-components-adapation-xml-document/" target="_blank">Adaptation of the XML source</a>: Web components names compatibility and self-closing tags removal</p>
       <pre class="cite-xml">
 &lt;uml-model name="My model"&gt;
   &lt;uml-packagedElement type="uml-Class" name='MyClass'&gt;
@@ -71,11 +92,11 @@
       &lt;/uml-ownedParameter&gt;
     &lt;/uml-ownedOperation&gt;
   &lt;/uml-packagedElement&gt;
-&lt;/uml-model&gt;
-      </pre>
-    </section>
+&lt;/uml-model&gt;</pre>
+      </div>
+    </div>
+  </section>
     <section>
-      <h4>Result:</h4>
       <uml-model name="My model">
           <uml-packagedElement type="uml-Class" name='MyClass'>
             <uml-ownedAttribute name="myAttribute">
