@@ -1,17 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>Polymeria sample</title>
-    <!-- Polymeria -->
-    <script src="polymer/webcomponentsjs/webcomponents.js">
+    <titled>Polymeria sample</title>
+		    <!-- Polymeria -->
+    <script src="bower_components/webcomponentsjs/webcomponents.js">
     </script>
-    <link rel="import" href="components/uml-polymeria.html">
+    <link rel="import" href="bower_components/polymeria/components/uml-polymeria.html">
     <!-- jQuery UI for page components (not Polymeria) -->
-    <script src="jquery/dist/jquery.min.js">
+    <script src="bower_components/jquery/dist/jquery.min.js">
     </script>
-    <script src="jquery-ui/jquery-ui.min.js">
+    <script src="bower_components/jquery-ui/jquery-ui.min.js">
     </script>
-    <link rel="stylesheet" href="jquery-ui/themes/humanity/jquery-ui.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/humanity/jquery-ui.css">
     <script>
 $(function() {
 $( "#accordion" ).accordion({
@@ -53,16 +53,16 @@ heightStyle: "content"
       <pre class="cite-xml">
 &lt;model name="My model"&gt;
   &lt;packagedElement type="Class" name='MyClass'&gt;
-    &lt;ownedAttribute name="myAttribute" /&gt;
-    &lt;ownedOperation name="myOperation" /&gt;
+    &lt;ownedAttribute name="myAttribute" visibility="private" /&gt;
+    &lt;ownedOperation name="myOperation" visibility="protected" /&gt;
   &lt;/packagedElement&gt;
-  &lt;packagedElement type="Package" name='My package'&gt;
-    &lt;packagedElement type="Class" name='MyPackageClass'&gt;
-      &lt;packagedElement type="Class" name='MyNestedClass' /&gt;
+  &lt;packagedElement type="Package" name="My package"&gt;
+    &lt;packagedElement type="Class" name="MyPackageClass"&gt;
+      &lt;packagedElement type="Class" name="MyNestedClass" /&gt;
     &lt;/packagedElement&gt;
   &lt;/packagedElement&gt;
-  &lt;packagedElement type="Class" name='MyOtherClass'&gt;
-    &lt;ownedOperation name="myOperationWithParameters"&gt;
+  &lt;packagedElement type="Class" name="MyOtherClass"&gt;
+    &lt;ownedOperation name="myOperationWithParameters" visibility="private"&gt;
       &lt;ownedParameter name="myFirstParam" /&gt;
       &lt;ownedParameter name="mySecondParam" /&gt;
     &lt;/ownedOperation&gt;
@@ -74,20 +74,20 @@ heightStyle: "content"
       <p class="label"><a href="http://bdulac.github.io/note/web-components-adapation-xml-document/" target="_blank">Adaptation of the XML source</a>: Web components names compatibility and self-closing tags removal</p>
       <pre class="cite-xml">
 &lt;uml-model name="My model"&gt;
-  &lt;uml-packagedElement type="uml-Class" name='MyClass'&gt;
-    &lt;uml-ownedAttribute name="myAttribute"&gt;
+  &lt;uml-packagedElement type="uml-Class" name="MyClass"&gt;
+    &lt;uml-ownedAttribute name="myAttribute" visibility="private"&gt;
     &lt;/uml-ownedAttribute&gt;
-    &lt;uml-ownedOperation name="myOperation"&gt;
+    &lt;uml-ownedOperation name="myOperation" visibility="protected"&gt;
     &lt;/uml-ownedOperation&gt;
   &lt;/uml-packagedElement&gt;
-  &lt;uml-packagedElement type="uml-Package" name='My package'&gt;
-    &lt;uml-packagedElement type="uml-Class" name='MyPackageClass'&gt;
-      &lt;uml-packagedElement type="uml-Class" name='MyNestedClass'&gt;
+  &lt;uml-packagedElement type="uml-Package" name="My package"&gt;
+    &lt;uml-packagedElement type="uml-Class" name="MyPackageClass"&gt;
+      &lt;uml-packagedElement type="uml-Class" name="MyNestedClass"&gt;
       &lt;/uml-packagedElement&gt;
     &lt;/uml-packagedElement&gt;
   &lt;/uml-packagedElement&gt;
-  &lt;uml-packagedElement type="uml-Class" name='MyOtherClass'&gt;
-    &lt;uml-ownedOperation name="myOperationWithParameters"&gt;
+  &lt;uml-packagedElement type="uml-Class" name="MyOtherClass"&gt;
+    &lt;uml-ownedOperation name="myOperationWithParameters" visibility="private"&gt;
       &lt;uml-ownedParameter name="myFirstParam"&gt;
       &lt;/uml-ownedParameter&gt;
       &lt;uml-ownedParameter name="mySecondParam"&gt;
@@ -101,9 +101,9 @@ heightStyle: "content"
     <section>
       <uml-model name="My model">
           <uml-packagedElement type="uml-Class" name='MyClass'>
-            <uml-ownedAttribute name="myAttribute">
+            <uml-ownedAttribute name="myAttribute" visibility="private">
             </uml-ownedAttribute>
-            <uml-ownedOperation name="myOperation">
+            <uml-ownedOperation name="myOperation" visibility="protected">
             </uml-ownedOperation>
           </uml-packagedElement>
           <uml-packagedElement type="uml-Package" name='My package'>
@@ -113,7 +113,7 @@ heightStyle: "content"
             </uml-packagedElement>
           </uml-packagedElement>
           <uml-packagedElement type="uml-Class" name='MyOtherClass'>
-            <uml-ownedOperation name="myOperationWithParameters">
+            <uml-ownedOperation name="myOperationWithParameters" visibility="private">
               <uml-ownedParameter name="myFirstParam">
               </uml-ownedParameter>
               <uml-ownedParameter name="mySecondParam">
