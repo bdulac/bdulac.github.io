@@ -2,9 +2,11 @@
 layout: post 
 title: "Polymeria pages and Material Jekyll"
 categories:
-  - Stackoverflow
-  - UML
-  - SysML
+  - Web
+  - Jekyll
+  - Web components
+  - Polymer
+  - GitHub
 resource: true
 ---
 <div>
