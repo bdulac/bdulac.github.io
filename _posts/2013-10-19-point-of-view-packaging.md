@@ -11,7 +11,7 @@ resource: true
 ---
 <p>
 According to <span itemscope itemtype="http://schema.org/Book"> 
-<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>The Unified Modeling Language User Guide</a>
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>The Unified Modeling Language User Guide</a>,
 <meta itemprop="datePublished" content="1998"/>
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Modeling Language User Guide"/>
@@ -19,7 +19,7 @@ According to <span itemscope itemtype="http://schema.org/Book">
 <meta itemprop="author" content="James Rumbaugh"/>
 <meta itemprop="author" content="Ivar Jacobson"/>
 <meta itemprop="bookEdition" content="1st print"/>
-</span>, object-oriented software elements belong to these four categories:
+</span> object-oriented software elements belong to these four categories:
 </p>
 <p>
 <ul>
@@ -35,10 +35,10 @@ Obviously, classes are structural elements. According to this same book, <a href
 Something is bothering me about packaging. All programs I have been working on, and all courses I have been following, share a single vision of the way these groups should be considered.
 </p>
 <p>
-In this single vision, classes are grouped on structural criteria. In a same package, we will find objects assuming a single role. This helps designing interesting <a href="http://en.wikipedia.org/wiki/Class_diagram">class</a> diagrams. To be honest, this has a real interest to build effective heritage hierarchies.
+In this single vision, classes are grouped on structural criteria. In a same package, we will find objects assuming a single role: DAOs with DAOs, entities with entities, controllers with controllers. This helps designing interesting <a href="http://en.wikipedia.org/wiki/Class_diagram">class</a> diagrams. To be honest, this has a real interest to build effective heritage hierarchies.
 </p>
 <p>
-But in my point of view, we let apart behavioral criteria. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages.
+But in my point of view, we let apart behavioral criteria. One DAO object usually interacts only with a single entity class. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages.
 </p>
 <ol>
 	<li><b>Usually</b>, package elements grouping is based on <b>classes roles</b></li>
