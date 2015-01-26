@@ -24,6 +24,6 @@ Things become more complex to find the proper way to render a <em>Callout</em>. 
 <p>Here is the table explaining the notation of allocations:</p>
 <img src="/assets/images/allocation.png" style="border-style: solid;" />
 <p>
-To be synthetic, relationships between model elements that appear on different diagram kinds are an important element of models. But the representation is, in my opinion, not very simple and clear.
+To be synthetic, relationships between model elements that appear on different diagram kinds are an important element of models. But the representation if a <em>Callout</em> is, in my opinion, not very simple and clear.
 </p>
 </div>
