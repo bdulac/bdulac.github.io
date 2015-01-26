@@ -27,6 +27,6 @@ Things become more complex to find the proper way to render a <em>Callout</em>. 
 In some way, the SysML <em>Callout</em> overlaps the <em>CallBehaviorAction</em> action defined in the <a target="_blank" href="http://www.omg.org/spec/UML/2.4.1/">UML Superstructure 2.4.1 formal specification</a>, section 1.3.9 on p. 251. This is probably because SysML, as an UML profile, relies on the UML infrastructure.
 </p>
 <p>
-To be synthetic, relationships between model elements that appear on different diagrams are an important element of modeling. But the representation of a <em>Callout</em> is, in my opinion, not very simple and clear.
+To be synthetic, relationships between model elements that appear on different diagrams are an important part of modeling. But the representation of a <em>Callout</em> is, in my opinion, not very simple and clear.
 </p>
 </div>
