@@ -8,9 +8,9 @@ categories:
   - Web
 ---
 <div>
-<h2>Custom EL functions</h2>
+<h2><a href="#custom-el-functions" name="custom-el-functions">Custom EL functions</a></h2>
 <p>
-The first official documentation available on the topic is <em><a href="http://docs.oracle.com/javaee/5/tutorial/doc/bnahq.html#bnaio" target="_blank">The Java EE 5 tutorial</a></em>. The <a href="https://jcp.org/en/jsr/detail?id=52">original JSTL JSR</a> was targeting a broader compatibility, but functions where introduced in a maintenance release. Since then (and the introduction of the <em>functions</em> expression set) JSTL allows to define custom expressions. This is done easily with simple static methods specified in a <em>Tag Library Definition</em> (tld) file. For example, a file located at <em>/WEB-INF/tags/my-functions.tld</em>:
+The first official documentation available on the topic is <em><a href="http://docs.oracle.com/javaee/5/tutorial/doc/bnahq.html#bnaio" target="_blank">The Java EE 5 tutorial</a></em>. The JSTL specification allows to define custom expressions. This is done easily with a simple static methods specified in a <em>Tag Library Definition</em> (tld) file. For example, a file located at <em>/WEB-INF/tags/my-functions.tld</em>:
 </p>
 <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;taglib xmlns="http://java.sun.com/xml/ns/j2ee"
