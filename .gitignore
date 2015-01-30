@@ -1,3 +1,4 @@
 _site
 .settings
 .project
+sample/polymeria/bower_components/*
