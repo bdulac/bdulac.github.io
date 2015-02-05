@@ -79,8 +79,8 @@ resource: true
 	identify the problem nature.
 </p>
 <p>
-	I personally generate an <i>hprof</i> file with the JVM option <i>-XX:+HeapDumpOnOutOfMemory</i>.
-	Another JVM option <i>-XX:HeapDumpPath=...</i> allows to specify the
+	I personally generate an <i>hprof</i> file with the JVM option <em>-XX:+HeapDumpOnOutOfMemoryError</em>.
+	Another JVM option <em>-XX:HeapDumpPath=...</em> allows to specify the
 	generated file location. The <a href="http://www.eclipse.org/mat/">Eclipse
 		MAT</a> tools helps to visualize the generated file.
 </p>
