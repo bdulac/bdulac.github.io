@@ -13,7 +13,7 @@ categories:
 resource: true
 ---
 <p>
-Understanding design by contract is, I think, important for software quality (at least in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>).
+Understanding design by contract is, I think, important for software quality in <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a> because the principles are clear and efficient.
 </p>
 <p>
 	<span itemprop="citation" itemscope itemtype="http://schema.org/Book">
@@ -60,6 +60,7 @@ Assertions are associated to an object method and qualified in one of three cate
 	<li>Postconditions are assertions true after executing the method</li>
 	<li>Invariants are assertions true before and after executing the method</li>
 </ul>
+<div><h3>In practice...</h3></div>
 <p>
 	<span itemscope itemtype="http://schema.org/SoftwareApplication">
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person" itemid="#meyer">
