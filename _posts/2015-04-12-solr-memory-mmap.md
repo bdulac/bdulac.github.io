@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: Apache Solr: JVM memory management and <em>mmap</em> system calls
+title: "Apache Solr: JVM memory management and <em>mmap</em> system calls"
 categories:
   - Web
   - Solr
