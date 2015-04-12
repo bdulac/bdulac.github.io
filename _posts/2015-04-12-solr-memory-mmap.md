@@ -2,12 +2,10 @@
 layout: post 
 title: "Apache Solr: JVM memory management and <em>mmap</em> system calls"
 categories:
-  - Web
+  - Java
   - Solr
+resource: true
 ---
-<p>
-In the frame of my professional practice, I built most of an architecture based on <em><a href="http://lucene.apache.org/solr/">Apache Solr</a></em>. This platform is in a few words an <a href=="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> interface handling one or several <em><a href="http://lucene.apache.org/">Apache Lucene</a></em> indexes. The classical access to <em>Solr</em>-managed indexes is made with an HTTP client. Some solutions like the <em><a href="https://wiki.apache.org/solr/DataImportHandler">DataImportHandler</a></em> allow to write directly in the <em>Lucene</em> files on the server side: for several reasons we chose to use the traditional client API called <em><a href="https://wiki.apache.org/solr/Solrj">SolrJ</a></em>.
-</p>
 <p>
 Unlike other indexing software like <em><a href="https://github.com/elastic/elasticsearch">Elasticsearch</a></em>, <em>Solr</em> can be deployed in any <a href="http://en.wikipedia.org/wiki/Web_container"><em>Java Servlet</em> container</a>. The documentation provides an <a href="https://wiki.apache.org/solr/SolrTomcat">example with <em>Apache Tomcat</em></a>: this is our target environment. Like in any other <em>Tomcat</em> installation, there is the question of memory allocation to the JVM. Reading the <a href="https://wiki.apache.org/solr/SolrPerformanceFactors#Memory_allocated_to_the_Java_VM "><em>Solr</em> section on the topic</a>, it was chosen to allow a large part of the RAM to the JVM (5GB on a total of 6: one single spared for the system). 
 </p>
