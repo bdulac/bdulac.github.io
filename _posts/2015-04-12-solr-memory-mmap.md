@@ -1,4 +1,4 @@
---- 
+---
 layout: post 
 title: "Apache Solr: JVM memory management and <em>mmap</em> system calls"
 categories:
@@ -7,7 +7,7 @@ categories:
 resource: true
 ---
 <p>
-Unlike other indexing software like <em><a href="https://github.com/elastic/elasticsearch">Elasticsearch</a></em>, <em>Solr</em> can be deployed in any <a href="http://en.wikipedia.org/wiki/Web_container"><em>Java Servlet</em> container</a>. The documentation provides an <a href="https://wiki.apache.org/solr/SolrTomcat">example with <em>Apache Tomcat</em></a>: this is our target environment. Like in any other <em>Tomcat</em> installation, there is the question of memory allocation to the JVM. Reading the <a href="https://wiki.apache.org/solr/SolrPerformanceFactors#Memory_allocated_to_the_Java_VM "><em>Solr</em> section on the topic</a>, it was chosen to allow a large part of the RAM to the JVM (5GB on a total of 6: one single spared for the system). 
+Unlike other indexing software like <em><a href="https://github.com/elastic/elasticsearch">Elasticsearch</a></em>, <em>Solr</em> can be deployed in any <a href="http://en.wikipedia.org/wiki/Web_container"><em>Java Servlet</em> container</a>. The documentation provides an <a href="https://wiki.apache.org/solr/SolrTomcat">example with <em>Apache Tomcat</em></a>: this is our target environment at the <em>MNHN</em>. Like in any other <em>Tomcat</em> installation, there is the question of memory allocation to the JVM. Reading the <a href="https://wiki.apache.org/solr/SolrPerformanceFactors#Memory_allocated_to_the_Java_VM "><em>Solr</em> section on the topic</a>, it was chosen to allow a large part of the RAM to the JVM (5GB on a total of 6: one single spared for the system). 
 </p>
 <p>
 We identified quickly a main problem: while indexing, the <em>Solr</em> engine issued <em>timeout</em> errors on <em>select</em> queries. A <a href="http://stackoverflow.com/q/14635381/1207019">stackoverflow exchange</a> describes a similar behavior. We noticed on server side an important usage of <a href="http://en.wikipedia.org/wiki/Virtual_memory">virtual memory</a>.
