@@ -5,6 +5,7 @@ categories:
   - Software quality
   - Heisenbug
   - Programming practice
+  - UML
 resource: true
 ---
 <p>
