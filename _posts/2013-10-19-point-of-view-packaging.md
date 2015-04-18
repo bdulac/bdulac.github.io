@@ -19,7 +19,7 @@ According to <span itemscope itemtype="http://schema.org/Book">
 <meta itemprop="author" content="James Rumbaugh"/>
 <meta itemprop="author" content="Ivar Jacobson"/>
 <meta itemprop="bookEdition" content="1st print"/>
-</span> object-oriented software elements belong to these four categories:
+</span> object-oriented software elements belong to one of these four categories:
 </p>
 <p>
 <ul>
@@ -38,15 +38,19 @@ Something is bothering me about packaging. All programs I have been working on, 
 In this single vision, classes are grouped on structural criteria. In a same package, we will find objects assuming a single role: DAOs with DAOs, entities with entities, controllers with controllers. This helps designing interesting <a href="http://en.wikipedia.org/wiki/Class_diagram">class</a> diagrams. To be honest, this has a real interest to build effective heritage hierarchies.
 </p>
 <p>
-But in my point of view, we let apart behavioral criteria. One DAO object usually interacts only with a single entity class. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages.
+But in my point of view, we let apart behavioral criteria. One DAO object usually interacts only with a single entity class. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages. This would be very helpful to help software maintenance: in a single set we have all the relevant elements.
 </p>
+Here is a summary:
 <ol>
-	<li><b>Usually</b>, package elements grouping is based on <b>classes roles</b></li>
-	<li>Package elements grouping should also be based on <b>classes interactions</b></li>
+	<li><b>Usually</b>, package elements grouping is based on <b>classes roles</b> to help software design</li>
+	<li>Package elements grouping should also be based on <b>classes interactions</b> to help software maintenance</li>
 </ol>
 <p>
 If we would like to design really modular applications, I think we should consider these two axes while packaging. On a pure design point of view, a class should belong to two packages : one <b>structural (1)</b> and <b>one behavioral (2)</b>. This could be possible because one class usually has interactions with a few classes.
 </p>
 <p>
 In <em>Java</em>, one solution to help set up this second kind of packages could be annotations. But the problem would be in class loading. This wouldn't be a real problem if we all time use to <a href="http://dx.doi.org/10.1145/1176617.1176622">write APIs</a>.
+</p>
+<p>
+A pragmatic solution would be to change the packaging in the development process. Once the software has been designed building interesting heritage hierarchies based on roles, packaging should be modified to follow classes interactions in order to help software maintenance.
 </p>
