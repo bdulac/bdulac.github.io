@@ -46,6 +46,6 @@ I did not solve properly that problem and modified the input BNF: just introduce
 about the form of BNF that it was <em> "not a normal form in the conventional sense"</em>. This is probably why such a tool was not available online before. A main problem is that there is no strict definition of BNF. 
 </p>
 <p>
-BNF is largely more used that EBNF in formal definitions. Is the literal limitation a real problem ? As a conclusion, if it was definitely stated that <b>literals and other expression terms should be delimited with whitespaces</b> (instead of quotes or anything else), wouldn't it simplify the use of BNF for anyone ? Well, I hear the coming problem: it wouldn't be possible to express whitespaces in a grammar. But why should whitespaces be part of a grammar ? The background problem is that BNF definition, because of its origins, is fuzzy and its current use is approximative.
+BNF is largely more used than EBNF in formal definitions. Is the literal limitation a real problem ? As a conclusion, if it was definitely stated that <b>literals and other expression terms should be delimited with whitespaces</b> (instead of quotes or anything else), wouldn't it simplify the use of BNF for anyone ? Well, I hear the coming problem: it wouldn't be possible to express whitespaces in a grammar. But is there a real need to specify sharply whitespaces in a grammar ? The background problem is that BNF grammar definition, because of its origins, is fuzzy and its current use is approximative.
 </p>
 </div>
