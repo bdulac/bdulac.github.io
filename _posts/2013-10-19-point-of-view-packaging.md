@@ -1,6 +1,6 @@
---- 
-layout: post 
-title: ! 'Point of view: Packaging' 
+---
+layout: post
+title: ! 'Point of view: Packaging'
 categories:
   - Package
   - Software engineering
@@ -10,8 +10,8 @@ categories:
 resource: true
 ---
 <p>
-According to <span itemscope itemtype="http://schema.org/Book"> 
-<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>The Unified Modeling Language User Guide</a>,
+According to <span itemscope itemtype="http://schema.org/Book">
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495">The Unified Modeling Language User Guide</a>,
 <meta itemprop="datePublished" content="1998"/>
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Modeling Language User Guide"/>
