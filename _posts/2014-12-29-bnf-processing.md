@@ -38,7 +38,7 @@ I did not solve properly that problem and modified the input BNF: just introduce
     <meta itemprop="givenName" content="Donald" />
     <meta itemprop="familyName" content="Knuth" />
   </span>
-  <link itemprop="href="http://dx.doi.org/10.1145/355588.365140" />
+  <link itemprop="sameAs" href="http://dx.doi.org/10.1145/355588.365140" />
   <a href="http://dx.doi.org/10.1145/355588.365140">
     said
   </a>
