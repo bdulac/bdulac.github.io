@@ -30,6 +30,6 @@ Runtime environments are declined in three versions:
 <ul>
 	<li>Java Micro Edition (Java ME)</li>
 	<li>Java Standard Edition (Java SE)</li>
-	<li><a href="ee">Java Enterpise Edition (Java EE)</a></li>
+	<li><a href="ee">Java Enterprise Edition (Java EE)</a></li>
 </ul>
 </div>
