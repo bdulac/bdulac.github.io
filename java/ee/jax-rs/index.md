@@ -24,7 +24,7 @@ The reference implementation is <em>Jersey</em>. These notes largely summarize t
 For non-maven developers, dependencies for pure JAX-RS development are limited. The only needed libraries are JARs in the <a href="https://jersey.java.net/download.html">RI bundle</a> <em>lib</em> and <em>api</em> directories.
 </p>
 <p>
-For a maven project: 
+For a maven project:
 </p>
 <pre>&lt;dependency&gt;
     &lt;groupId&gt;javax.ws.rs&lt;/groupId&gt;
@@ -68,14 +68,14 @@ Since JAX-RS 2.0, as the client API is part of the specification, Jersey does no
 This guide summarizes informations from the <a href="https://jersey.java.net/documentation/2.12/media.html#multipart">Jersey 2.12</a> documentation.
 </p>
 <p>
-For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-multipart/dependencies.html">list of dependencies</a> should be satisfied. To the core, Jersey needs two additional JARs: 
+For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-media-multipart/dependencies.html">list of dependencies</a> should be satisfied. To the core, Jersey needs two additional JARs:
 </p>
 <ul>
 	<li><a href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-multipart/">Media-Multipart</a></li>
 	<li><a href="https://mimepull.java.net/">MIME pull</a></li>
 </ul>
 <p>
-For a maven project: 
+For a maven project:
 </p>
 <pre>&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
@@ -98,16 +98,16 @@ The use is rather simple, e.g. with a file:
 An experience (first published in the blog - 2014-09-26 - too technical for such a place)...
 </p>
 <p>
-I tried to use 
+I tried to use
 	<a itemprop="url" href="https://jersey.java.net/documentation/2.12/media.html#json.json-p">
 		<span itemprop="name">JSONP
 	</span>
-	</a> with 
+	</a> with
 	<span itemprop="isPartOf" itemscope itemtype="http://schema.org/SoftwareApplication>
 		<a itemprop="url" href="https://jersey.java.net/">
 			<span itemprop="name"><em>Jersey</em></span>
 		</a>
-	</span>. 
+	</span>.
 	Simple use case: turn a JSON server response into POJOs (a Jersey service is client of another RESTful service)...
 </p>
 <p>
@@ -121,15 +121,15 @@ First step, Jersey installation: for a non-maven project in a <a href="http://to
 	<li><a itemprop="requirements" href="http://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-processing/">Jersey-Media-Json-Processing</a></li>
 </ul>
 <p>
-For the client code, I followed the <a href="https://jersey.java.net/documentation/2.12/client.html#client.ex.formpost">Jersey client doc sample</a>. Well, all I got was: 
+For the client code, I followed the <a href="https://jersey.java.net/documentation/2.12/client.html#client.ex.formpost">Jersey client doc sample</a>. Well, all I got was:
 </p>
 <pre>MessageBodyReader not found for media type=application/json</pre>
 <p>
-Then, I discovered the following <a href="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">post</a>. Consequently, I added an explicit default constructor. Same error. I read the <a href="https://jersey.java.net/documentation/2.12/media.html#d0e6497">Jersey-JSON doc</a> again. What a shame: 
+Then, I discovered the following <a href="https://blogs.oracle.com/groundside/entry/jax_rs_2_0_messagebodyreader">post</a>. Consequently, I added an explicit default constructor. Same error. I read the <a href="https://jersey.java.net/documentation/2.12/media.html#d0e6497">Jersey-JSON doc</a> again. What a shame:
 </p>
 <pre>POJO support represents the easiest way to convert your Java Objects to JSON and back. Media modules that support this approach are MOXy and Jackson</pre>
 <p>
-It seems JSONP is not able to provide a simple POJO support. I came back to <a href="http://www.json.org/java/">the basics</a>. All that mess with Jackson, Moxy, JSONP for such simple operations reminds me of an XML nightmare a few years ago... 
+It seems JSONP is not able to provide a simple POJO support. I came back to <a href="http://www.json.org/java/">the basics</a>. All that mess with Jackson, Moxy, JSONP for such simple operations reminds me of an XML nightmare a few years ago...
 </p>
 </div>
 <div>
@@ -138,14 +138,14 @@ It seems JSONP is not able to provide a simple POJO support. I came back to <a h
 This guide summarizes informations from the <a href="https://jersey.java.net/documentation/2.12/mvc.html">Jersey 2.12</a> documentation. The MVC and MVC features are extensions.
 </p>
 <p>
-For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-mvc-jsp/dependencies.html">list of dependencies</a> should be satisfied. The elements can be found in: 
+For a non-maven project, the <a href="https://jersey.java.net/project-info/2.12/jersey/project/jersey-mvc-jsp/dependencies.html">list of dependencies</a> should be satisfied. The elements can be found in:
 </p>
 <ul>
 	<li>The <a href="https://jersey.java.net/download.html">RI bundle</a> (plus the ext directory)</li>
 	<li>The MVC and MVC-JSP extensions in the <a href="http://repo1.maven.org/maven2/org/glassfish/jersey/ext/">maven repository</a></li>
 </ul>
 <p>
-For a maven project: 
+For a maven project:
 </p>
 <pre>&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
@@ -159,7 +159,7 @@ The next step is to specialize the <a href="https://jersey.java.net/apidocs/2.0/
     .register(org.glassfish.jersey.server.mvc.jsp.JspMvcFeature.class)
     .property(MvcProperties.TEMPLATE_BASE_PATH, "templates");</pre>
 <p>
-Finally, jersey has to be registered as a web application. As of 2.12 version, the servlet mapping mode (web.xml or <a href="https://jsr311.java.net/nonav/javadoc/javax/ws/rs/ApplicationPath.html">ApplicationPath</a> annotation) is not supported by the <a href="https://jersey.java.net/documentation/2.12/mvc.html#mvc.example.implicit.class">MVC extension</a>. Jersey should be deployed as <a href="https://jersey.java.net/documentation/2.12/deployment.html#deployment.servlet.2">servlet filter</a>. Extract from the doc: 
+Finally, jersey has to be registered as a web application. As of 2.12 version, the servlet mapping mode (web.xml or <a href="https://jsr311.java.net/nonav/javadoc/javax/ws/rs/ApplicationPath.html">ApplicationPath</a> annotation) is not supported by the <a href="https://jersey.java.net/documentation/2.12/mvc.html#mvc.example.implicit.class">MVC extension</a>. Jersey should be deployed as <a href="https://jersey.java.net/documentation/2.12/deployment.html#deployment.servlet.2">servlet filter</a>. Extract from the doc:
 </p>
 <pre>&lt;web-app&gt;
     &lt;filter&gt;
