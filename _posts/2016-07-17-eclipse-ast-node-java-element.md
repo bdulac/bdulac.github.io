@@ -9,7 +9,7 @@ categories:
 resource: true
 ---
 <p>
-I previously wrote about <a href="http://bdulac.github.io/note/java-compilation-with-the-eclipse-ide/"><em>Java</em> compilation with the Eclipse IDE</a>. The JDT include several representations of the language components:
+I previously wrote about <a href="http://bdulac.github.io/note/java-compilation-with-the-eclipse-ide"><em>Java</em> compilation with the Eclipse IDE</a>. The JDT include several representations of the language components:
 </p>
 <ul>
     <li>
