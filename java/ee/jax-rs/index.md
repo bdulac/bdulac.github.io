@@ -103,7 +103,7 @@ I tried to use
 		<span itemprop="name">JSONP
 	</span>
 	</a> with
-	<span itemprop="isPartOf" itemscope itemtype="http://schema.org/SoftwareApplication>
+	<span itemprop="isPartOf" itemscope itemtype="http://schema.org/SoftwareApplication">
 		<a itemprop="url" href="https://jersey.java.net/">
 			<span itemprop="name"><em>Jersey</em></span>
 		</a>
