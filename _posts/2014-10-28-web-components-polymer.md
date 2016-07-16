@@ -25,7 +25,7 @@ At
 	was introduced in deep
 	by
 	<span itemprop="performer" itemscope itemtype="http://schema.org/Person" itemid="#bidelman">
-		<link itemprop="sameAs" href="https://plus.google.com/+EricBidelman/posts"></link>
+		<link itemprop="sameAs" href="https://plus.google.com/+EricBidelman/posts" />
 		<a itemprop="sameAs" href="https://twitter.com/ebidel">
 			<span itemprop="name">
 				<span itemprop="givenName">Eric</span>
@@ -35,8 +35,8 @@ At
 	</span>	 
 	<span itemprop="organizer" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
 		<meta itemprop="legalName" content="Google inc." />
-		<link itemprop="sameAs" href="http://www.google.com"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google"></link>
+		<link itemprop="sameAs" href="http://www.google.com" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Google" />
 	</span>
 </span>
 <span itemprop="about" itemscope itemtype="http://schema.org/Code">
@@ -45,7 +45,7 @@ At
 	<meta itemprop="codeRepository" content="https://github.com/Polymer/">
 	is a very interesting move by
 	<meta itemprop="author">
-		<link itemprop="sameAs" href="#goog">Google</link>
+		<meta itemprop="sameAs" href="#goog">Google</meta>
 	</meta>
 </span>
 promoting in some way a W3C work:
@@ -55,8 +55,8 @@ promoting in some way a W3C work:
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Web_Components" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
-		<link itemprop="sameAs" href="http://www.w3.org/"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+		<link itemprop="sameAs" href="http://www.w3.org/" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium" />
 	</span>
 </span>
 I try to sum up here all I learned from <a href="https://www.polymer-project.org/docs/start/tutorial/intro.html">the <em>Polymer</em> tutorial</a>.
@@ -74,8 +74,8 @@ The components definition relies by convenience on another W3C recommendation,
 	<meta itemprop="url" content="http://www.w3.org/TR/html-imports/" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
-		<link itemprop="sameAs" href="http://www.w3.org/"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+		<link itemprop="sameAs" href="http://www.w3.org/" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium" />
 	</span>
 </span>
 Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
@@ -83,8 +83,8 @@ Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.
 	<meta itemprop="url" content="http://www.w3.org/TR/html5/links.html#linkTypes" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
-		<link itemprop="sameAs" href="http://www.w3.org/"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+		<link itemprop="sameAs" href="http://www.w3.org/" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium" />
 	</span>
 </span> (<em>import</em>) the principle is simple. This allows to include an external resource into an HTML resource. The practice for Web components is to use an included resource defining the behavior of each custom element in order to allow reuse of that definition. Web components could of course be defined without imports but this would be of limited interest. A singularity about HTML imports is detailed in a
 <span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
@@ -100,11 +100,11 @@ Introduced as a new <span itemprop="citation" itemscope itemtype="http://schema.
 				<span itemprop="familyName">Van Toll</span>
 			</span>:
 		</a>
-		<link itemprop="sameAs" href="https://github.com/tjvantoll"></link>
-		<link itemprop="sameAs" href="https://twitter.com/tjvantoll"></link>
+		<link itemprop="sameAs" href="https://github.com/tjvantoll" />
+		<link itemprop="sameAs" href="https://twitter.com/tjvantoll" />
 		<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
 			<meta itemprop="legalName" content="Telerik - A progress company" />
-			<link itemprop="sameAs" href="http://www.telerik.com/"></link>
+			<link itemprop="sameAs" href="http://www.telerik.com/" />
 		</span>
 	</span>
 </span>
@@ -125,28 +125,28 @@ One important point is in the naming of custom element. As explained in
 						<span itemprop="familyName">Rocha</span>
 					</span>,
 			  	</a>
-			  	<link itemprop="sameAs" href="https://github.com/zenorocha"></link>
+			  	<link itemprop="sameAs" href="https://github.com/zenorocha" />
 			  	<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
 					<meta itemprop="legalName" content="Liferay, Inc." />
-					<link itemprop="sameAs" href="http://www.liferay.com/"></link>
+					<link itemprop="sameAs" href="http://www.liferay.com/" />
 				</span>
 				<span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization" itemid="#goog">
 					<meta itemprop="legalName" content=" Google Developer Experts program" />
-					<link itemprop="sameAs" href="https://developers.google.com/experts/"></link>
+					<link itemprop="sameAs" href="https://developers.google.com/experts/" />
 				</span>
 			</span>
 		</span> each name should contain a dash in order to avoid conflicts with standard HTML elements (which are still important because needed in the definition of custom elements).
 </p>
 <p>
-In the introduction, <link itemprop="sameAs" href="#bidelman">Bidelman</link> states that every framework is compatible with
+In the introduction, <meta itemprop="sameAs" href="#bidelman">Bidelman</meta> states that every framework is compatible with
 <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
 	<a href="http://www.w3.org/DOM/#what">DOM</a>
 	<meta itemprop="url" content="http://www.w3.org/DOM/#what" />
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Document_Object_Model#cite_note-Introduction-1" />.
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
-		<link itemprop="sameAs" href="http://www.w3.org/"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+		<link itemprop="sameAs" href="http://www.w3.org/" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium" />
 	</span>
 </span>
 Indeed, as a result of the document structure simplification induced by Web components, this is a huge change in the way information is provided on the Web. This won't change so much for end users in the first place.

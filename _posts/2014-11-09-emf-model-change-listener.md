@@ -26,7 +26,7 @@ The <em>EContentAdapter</em> notifies of change on any EMF object (<em>EObject</
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<span itemprop="name">
 				<a itemprop="sameAs" href="http://www.vogella.com/people/larsvogel.html">
-				<link itemprop="sameAs" href="https://twitter.com/vogella"></link>
+				<link itemprop="sameAs" href="https://twitter.com/vogella" />
 				<span itemprop="givenName">Lars</span>
 				<span itemprop="familyName">Vogel</span>
 				</a>
