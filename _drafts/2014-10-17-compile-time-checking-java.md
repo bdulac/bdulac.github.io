@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: post
 title: Compile-time checking in Java
 categories:
   - Software quality
@@ -16,7 +16,7 @@ In my <a href="http://bdulac.github.io/note/apple-ssl-case">latest post</a> I wr
 Here is the point: how would it be possible to proceed that kind of control without rewriting a compiler from scratch ?
 </p>
 <p>
-The <em><a href="http://bdulac.github.io/java/">Java</a></em> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. Annotations can be processed at compile-time or runtime. 
+The <em><a href="http://bdulac.github.io/java/">Java</a></em> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. Annotations can be processed at compile-time or runtime.
 </p>
 <!--
 <p>
@@ -41,35 +41,35 @@ If the topic seems basic for the Java platform, there is a lack of exhaustive do
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<a itemprop="sameAs" href="https://github.com/kallebertell">
 			<span itemprop="name">
-				<span itemprop="givenName">Carl-Petter</span> 
+				<span itemprop="givenName">Carl-Petter</span>
 				<span itemprop="familyName">Bertell</span>
 			</span>
 		</a>
-		<link itemprop="sameAs" href="http://kerebus.com"></link>
+		<link itemprop="sameAs" href="http://kerebus.com" />
 	</span>
-</span>. 
-The <a href="../eclipse/platform/">Eclipse platform</a> provide very precious functions with the <a href="http://www.eclipse.org/jdt/apt/">JDT-APT project</a>. 
+</span>.
+The <a href="../eclipse/platform/">Eclipse platform</a> provide very precious functions with the <a href="http://www.eclipse.org/jdt/apt/">JDT-APT project</a>.
 </p>
 <p>
 <span itemprop="citation" itemscope itemtype="http://schema.org/Creativework">
-A very interesting 
+A very interesting
 	<a itemprop="url" href="http://www.eclipse.org/jdt/apt/eclipsecon2007.zip">
 		<span itemprop="learningResourceType">presentation</span>
 		at EclipseCon 2007
-	</a> 
-	by 
+	</a>
+	by
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<span itemprop="name">
 			<span itemprop="givenName">Walter</span>
 			<span itemprop="familyName">Harley</span>
-		</span>, 
+		</span>,
 	</span>
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<span itemprop="name">
 			<span itemprop="givenName">Gary</span>
 			<span itemprop="familyName">Horen</span>
 		</span>
-	</span> and 
+	</span> and
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<span itemprop="name">
 			<span itemprop="givenName">Jess</span>
