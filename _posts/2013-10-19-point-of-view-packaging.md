@@ -38,7 +38,7 @@ Something is bothering me about packaging. All programs I have been working on, 
 In this single vision, classes are grouped on structural criteria. In a same package, we will find objects assuming a single role: DAOs with DAOs, entities with entities, controllers with controllers. To be honest, this helps designing interesting <a href="http://en.wikipedia.org/wiki/Class_diagram">class</a> diagrams. This has a real interest for building effective heritage hierarchies.
 </p>
 <p>
-But in my point of view, we let apart behavioral criteria. One DAO object usually interacts only with a single entity class. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages. This would be very helpful to help software maintenance: in a single set we have all the relevant elements.
+But in my point of view, we let apart behavioral criteria. One DAO object usually interacts only with a single entity class and a few services. This means, if we design <a href="http://en.wikipedia.org/wiki/Sequence_diagram">sequence</a>, <a href="http://en.wikipedia.org/wiki/Activity_diagram">activity</a> or <a href="http://en.wikipedia.org/wiki/State_diagram_%28UML%29">state</a> diagrams, the involved objects will belong to different packages. This would be very helpful to help software maintenance: in a single set we have all the relevant elements.
 </p>
 Here is a summary:
 <ol>
