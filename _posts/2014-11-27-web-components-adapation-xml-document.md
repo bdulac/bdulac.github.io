@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web components: adaptation of an XML document"
-categories: 
+categories:
   - Web
   - Web components
   - W3C
@@ -15,15 +15,15 @@ Following my <a href="http://bdulac.github.io/note/web-components-polymer">previ
 <p>
 Software modeling is interesting because it provides a graphical representation of software. As a consequence, UML is an expressive representation for design and documentation. The <a href="http://wiki.eclipse.org/MDT-UML2">Eclipse UML2</a> project relies on an XML file which <a href="http://modeling-languages.com/eclipse-mdtuml2-xmi-de-facto-standard/">tends to become</a> a standard form for the persistence of UML models. In that XML file all the informations relative to an UML model are available.
 <p>  
-In the discovery of the <em>Polymer</em> platform came the idea of <em><a href="https://github.com/bdulac/polymeria">Polymeria</a></em>: bridging the gap between the XML representation of an UML model and its graphical representation. The principle sounds simple: writing a Web component for each UML element. This is an echo to the idea <a href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">exposed </a> by E. Bidelman that <b>every framework is compatible with 
+In the discovery of the <em>Polymer</em> platform came the idea of <em><a href="https://github.com/bdulac/polymeria">Polymeria</a></em>: bridging the gap between the XML representation of an UML model and its graphical representation. The principle sounds simple: writing a Web component for each UML element. This is an echo to the idea <a href="http://www.youtube.com/watch?v=8OJ7ih8EE7s">exposed </a> by E. Bidelman that <b>every framework is compatible with
 <span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
 	<a href="http://www.w3.org/DOM/#what">DOM</a>
 	<meta itemprop="url" content="http://www.w3.org/DOM/#what" />
 	<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/Document_Object_Model#cite_note-Introduction-1" />
 	<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="legalName" content="World Wide Web Consortium" />
-		<link itemprop="sameAs" href="http://www.w3.org/"></link>
-		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium"></link>
+		<link itemprop="sameAs" href="http://www.w3.org/" />
+		<link itemprop="sameAs" href="http://en.wikipedia.org/wiki/World_Wide_Web_Consortium" />
 	</span>
 </span></b> (further information is available in my previous post).
 </p>
