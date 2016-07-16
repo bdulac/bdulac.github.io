@@ -44,19 +44,18 @@ This is the reason why it is important to choose the right target platform when 
 This post is interesting on the definition point of view. A simple element is missing:
 	<span itemprop="citation" itemscope itemtype="http://schema.org/TechArticle">
 	  <span itemprop="about">how to use the defined target runtime</span> when developing an Eclipse plug-in ? A
-		  <a itemprop="url" href="http://www.vogella.com/tutorials/EclipseTargetPlatform/article.html">
-			  <span itemprop="learningResourceType">tutorial</span>
-		  </a> by
-		  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			  <span itemprop="name">
-				  <a itemprop="sameAs" href="http://www.vogella.com/people/larsvogel.html">
-				    <link itemprop="sameAs" href="https://twitter.com/vogella" />
-				    <span itemprop="givenName">Lars</span>
-				    <span itemprop="familyName">Vogel</span>
-				  </a>
-			  </span>
-		  </span>
-		  details such a procedure (in section 3).
-	  </span>
-  </span>
+		<a itemprop="url" href="http://www.vogella.com/tutorials/EclipseTargetPlatform/article.html">
+			<span itemprop="learningResourceType">tutorial</span>
+		</a> by
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		  <span itemprop="name">
+			  <a itemprop="sameAs" href="http://www.vogella.com/people/larsvogel.html">
+				  <link itemprop="sameAs" href="https://twitter.com/vogella" />
+				  <span itemprop="givenName">Lars</span>
+				  <span itemprop="familyName">Vogel</span>
+				</a>
+			</span>
+		</span>
+		details such a procedure (in section 3).
+	</span>
 </p>
