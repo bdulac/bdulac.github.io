@@ -6,7 +6,7 @@ categories:
   - Software quality
   - Software engineering
   - Programming practice
-resource: true  
+resource: true
 ---
 <p>
 In a <a href="http://bdulac.github.io/note/apple-ssl-case">previous post</a> I wrote about code quality: in a few words, I believe in <span itemprop="about"><a itemprop="sameAs" href="http://en.wikipedia.org/wiki/Static_program_analysis">static-checking</a></span>. Static means without executing the program. In a software process point of view, this would imply before runtime, in other words at compile-time. For a developer, it can be very useful to have such a verification simply with a compilation, without executing a specific tool (by the way, some very interesting software of that kind are available, just <a href="http://findbugs.sourceforge.net/">Findbugs</a> for example).
