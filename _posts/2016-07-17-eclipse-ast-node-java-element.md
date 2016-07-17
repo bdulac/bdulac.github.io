@@ -2,10 +2,10 @@
 layout: post
 title: 'Eclipse JDT: get the ASTNode from an IJavaElement'
 categories:
- - Eclipse platform
- - JDT
- - Java
- - AST
+  - Eclipse platform
+  - JDT
+  - Java
+  - AST
 resource: true
 ---
 <p>
