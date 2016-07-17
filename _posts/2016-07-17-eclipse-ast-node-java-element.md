@@ -21,23 +21,6 @@ I previously wrote about <a href="http://bdulac.github.io/note/java-compilation-
 <p>
 For a specific purpose I recently needed to get the Javadoc text for a Java element. Unfortunately, the method to retrieve attached Javadoc <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2FIJavaElement.html">always return null</a> for source documents. Therefore I needed to go from the <em><a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2FIJavaElement.html">IJavaelement</a></em> interface to the <em><a href="http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2Fdom%2FASTNode.html">ASTNode</a></em> representation. The <a href="https://wiki.eclipse.org/JDT/FAQ#From_an_IJavaElement_to_its_declaring_ASTNode">official documentation</a> is a bit light on that point: a first step is to get the proper compilation unit. This is possible via the <em><a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2FIMember.html">IMember</a></em> interface. Here is the final code:   
 </p>
-<pre>IJavaElement javaElement = subject.getJavaElement();
-if(javaElement instanceof IMember) {
-    IMember member = (IMember)javaElement;
-    // Fetch the Java model compilation unit
-    ICompilationUnit cUnit = member.getCompilationUnit();
-    // Note the simple name of the java element in the compilation unit
-    String simpleName = javaElement.getElementName();
-    // Parse the source
-    ASTParser parser = ASTParser.newParser(AST.JLS3);
-    parser.setSource(cUnit);
-    parser.setResolveBindings(true);
-    // Fetch the AST node for the compilation unit
-    ASTNode unitNode = parser.createAST(new NullProgressMonitor());
-    // It should be an AST compilation unit
-    if(unitNode instanceof CompilationUnit) {
-      CompilationUnit sourceUnit = (CompilationUnit)unitNode;
-      ASTNode elementNode = sourceUnit.findDeclaringNode(simpleName);
-    }
-}
-</pre>
+<p>
+<script src="https://gist.github.com/bdulac/62954848149321f1d39924d1e0405994.js"></script>
+</p>
