@@ -1,6 +1,7 @@
 <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<header>
 		<link itemprop="url" href="{{ blogPost.url }}" />
+		<meta itemprop="headline" href="{{ blogPost.title }}" />
 		<h1><a href="{{ blogPost.url }}"><span itemprop="name">{{ blogPost.title }}</span></a></h1>
 		<div itemprop="audience" itemscope itemtype="http://schema.org/Audience" style="display: none;">
 				{% for audience in site.audience %}
@@ -21,7 +22,7 @@
        </div>
 	</header>
 	<main>
-		<div id="{{ blogPost.url }}" class="post-content">
+		<div itemprop="mainEntityOfPage" id="{{ blogPost.url }}" class="post-content">
 			{{ blogPost.content}}
 		</div>
 	</main>

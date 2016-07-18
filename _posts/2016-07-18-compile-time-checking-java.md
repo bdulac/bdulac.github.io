@@ -86,10 +86,10 @@ A <b itemprop="about">processor</b> must implement the <b itemprop="about"><em><
 </p>
 <p>
   In a
-<span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
-	<a itemprop="url" href="http://www.alexecollins.com/java-annotation-processor-tutorial/">
-		tutorial about annotation processing,
-	</a>
+  <span itemprop="citation" itemscope itemtype="http://schema.org/Article">
+	  <a itemprop="url" href="http://www.alexecollins.com/java-annotation-processor-tutorial/">
+		  tutorial about annotation processing,
+	  </a>
 	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<a itemprop="sameAs" href="https://github.com/alexec">
 			<span itemprop="name">
@@ -98,13 +98,13 @@ A <b itemprop="about">processor</b> must implement the <b itemprop="about"><em><
 			</span>
 		</a>
 		<link itemprop="sameAs" href="http://www.alexecollins.com" />
-    details the
-    <span itemprop="about">implementation of a compile-time processor</span>  
-    for the
-      <a
-        itemprop="about" href="http://docs.spring.io/autorepo/docs/spring/4.2.x/javadoc-api/org/springframework/transaction/annotation/Transactional.html">
-        @Transactional annotation of the spring framework
-      </a>.
-	  </span>
+  </span>
+  details the
+  <span itemprop="about">implementation of a compile-time processor</span>  
+  for the
+    <a
+      itemprop="about" href="http://docs.spring.io/autorepo/docs/spring/4.2.x/javadoc-api/org/springframework/transaction/annotation/Transactional.html">
+      @Transactional annotation of the spring framework
+    </a>.
   </span>
 </p>
