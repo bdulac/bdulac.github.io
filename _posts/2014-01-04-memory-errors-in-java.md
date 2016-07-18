@@ -1,5 +1,5 @@
---- 
-layout: post 
+---
+layout: post
 title: Memory errors in Java
 categories:
   - Java
@@ -14,8 +14,7 @@ resource: true
 </p>
 <p>
 	The memory is divided in two distinct spaces, <b>even if this <a
-		href="http://openjdk.java.net/jeps/122">might change in Java 8</a><a
-		href="http://www.blogger.com/null"></b></a>.
+		href="http://openjdk.java.net/jeps/122">might change in Java 8</a>.
 <ul>
 	<li>The PermGen space contains classes definitions</li>
 	<li>The Heap space contains objects</li>
@@ -74,12 +73,16 @@ resource: true
 	configurable with many JVM options.</p>
 <p>
 	If there is no memory leak, the easy solution is to increase the
-	available space.<br />All becomes complicated when there is a memory
-	leak. The cause can be difficult to identify. Several tools help to
-	identify the problem nature.
+	available space.
 </p>
 <p>
-	I personally generate an <i>hprof</i> file with the JVM option <em>-XX:+HeapDumpOnOutOfMemoryError</em>.
+  All becomes complicated when there is a memory leak.
+  The cause can be difficult to identify.
+  Several tools help to identify the problem nature.
+</p>
+<p>
+	I personally generate an <i>hprof</i> file.
+  This is done using JVM option <em>-XX:+HeapDumpOnOutOfMemoryError</em>.
 	Another JVM option <em>-XX:HeapDumpPath=...</em> allows to specify the
 	generated file location. The <a href="http://www.eclipse.org/mat/">Eclipse
 		MAT</a> tools helps to visualize the generated file.
