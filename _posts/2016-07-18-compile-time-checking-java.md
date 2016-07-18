@@ -15,7 +15,7 @@ In a <a href="http://bdulac.github.io/note/apple-ssl-case">previous post</a> I w
 Here is the point: how would it be possible to proceed that kind of control without rewriting a compiler from scratch ?
 </p>
 <p>
-The <em><a href="http://bdulac.github.io/java/">Java</a></em> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. Annotations can be processed at compile-time or runtime.
+The <b><em><a href="http://bdulac.github.io/java/">Java</a></em></b> platform provides a very interesting feature to perform such operations: <a href="http://docs.oracle.com/javase/tutorial/java/annotations/">annotations</a> (<a href="https://www.jcp.org/en/jsr/detail?id=175">JSR 175</a>). These are metadata <a href="http://docs.oracle.com/javase/tutorial/java/annotations/declaring.html">defined as java types</a>. Annotations have been introduced in the Java language starting with Java SE 5. <b>Annotations</b> can be processed at <b>compile-time</b> or runtime.
 </p>
 <!--
 <p>
@@ -82,7 +82,7 @@ A very interesting
 </span>
 </p>
 <p>
-A processor must implement the <em><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/Processor.html">javax.annotation.processing.Processor</a></em> interface. The implementation should be specified to the platform using the <a href="http://bdulac.github.io/note/spi">SPI</a> system. An abstract class <em><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/AbstractProcessor.html">AbstractProcessor</a></em> is provided to help implementations.
+A <b>processor</b> must implement the <b><em><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/Processor.html">javax.annotation.processing.Processor</a></em> interface</b>. The implementation should be <b>specified</b> to the platform <b>using the <a href="http://bdulac.github.io/note/spi">SPI</a></b> system. An abstract class <em><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/processing/AbstractProcessor.html">AbstractProcessor</a></em> is provided to help implementations.
 </p>
 <p>
   In a
