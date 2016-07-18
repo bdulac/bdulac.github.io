@@ -35,12 +35,16 @@ resource: true
 	(Sun/Oracle implementation). For more informations, the <a
 		href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html">official
 		<i>HotSpot</i> tuning documentation
-	</a> is very helpful.<br />
+	</a> is very helpful.
+</p>
+<div>
+  <h3>
 	<a
 		href="http://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html#gbyuu"><br /></a><a
 		href="http://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html#gbyuu"><u>java.lang.OutOfMemoryError:
-			PermGen space</u></a><br />
-<ul></ul>
+			PermGen space</u></a>
+  </h3>
+</div>
 <p>
 	The space allocated for classes definitions is full. This can happen if
 	the environment loads a large number of classes (common in Java EE
@@ -61,11 +65,13 @@ resource: true
 		post</a> by Frank Kieviet explains a pattern that could also cause PermGen
 	space errors.
 </p>
-<p>
+<div>
+  <h3>
 	<a
 		href="http://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html#gbyvh"><u>Message
 			java.lang.OutOfMemoryError: Java heap space</u></a>
-</p>
+  </h3>
+</div>
 <p>The created objects stay in the Heap space while being referenced
 	in the executed program. When an object is not referenced any more, it
 	becomes available for release by the Garbage Collector (GC). Most of
@@ -93,11 +99,13 @@ resource: true
 	avoid this option because it requires much resources to run (and was
 	quite unstable the last time I used it).
 </p>
-<p>
+<div>
+  <h3>
 	<a
 		href="http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#cms.oom"><u>Message
 			java.lang.OutOfMemoryError: GC limit overhead exceeded</u></a>
-</p>
+  </h3>
+</div>
 <p>
 	This error happens when the system spends too much time executing
 	garbage collection. Literally, there is no memory saturation but the
