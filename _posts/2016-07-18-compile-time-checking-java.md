@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Compile-time checking in Java
+layout: post
 categories:
   - Java
   - Software quality
@@ -31,7 +31,7 @@ Since Java 6, that function is part of the platform with <a href="https://www.jc
 <p>
 If the topic seems basic for the Java platform, there is a lack of exhaustive documentation for annotation processors development. I found some precious informations in  
 <span itemprop="citation" itemscope itemtype="http://schema.org/BlogPosting">
-	<a itemprop="url" href="http://kerebus.com/2011/02/using-java-6-processors-in-eclipse/">
+	<a itemprop="url" href="https://dzone.com/articles/using-java-6-processors">
 		<em>Using Java 6 processors in Eclipse</em>
 	</a>
 	, a blog post by  
@@ -42,7 +42,6 @@ If the topic seems basic for the Java platform, there is a lack of exhaustive do
 				<span itemprop="familyName">Bertell</span>
 			</span>
 		</a>
-		<link itemprop="sameAs" href="http://kerebus.com" />
 	</span>
 </span>.
 The <a href="../eclipse/platform/">Eclipse platform</a> provide very precious functions with the <a href="http://www.eclipse.org/jdt/apt/">JDT-APT project</a>.
