@@ -77,7 +77,7 @@ A very interesting
 		<a itemprop="sameAs" href="http://en.wikipedia.org/wiki/BEA_Systems">
 			<span itemprop="legalName">BEA systems</span>
 		</a>
-	</span> develops many important points about compile-time checking: what could be done with annotation processors and what requires more. For example, the processor does not provide the structure of the <a href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> and thereby does not allow flow analysis.
+	</span> develops many important points about compile-time checking: what could be done with annotation processors and what requires more. For example, the processor does not provide the structure of the <a href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> and thereby <b>does not allow flow analysis</b>.
 </span>
 </p>
 <p>
