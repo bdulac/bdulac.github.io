@@ -8,25 +8,25 @@ categoryPage: UML
 <div>
 <h2><a href="#origin" name="origin">Origins</a></h2>
 <p>
-The graphical UML language is generally considered to be standard in the field 
-of <a href="../software/engineering">software engineering</a>. Its terms (the UML elements) where  originally 
+The graphical UML language is generally considered to be standard in the field
+of <a href="../software/engineering">software engineering</a>. Its terms (the UML elements) where  originally
 <span itemscope itemtype="http://schema.org/Book">
-defined in 
+defined in
   <span itemprop="datePublished">1998</span>
- with a 
-<a itemprop="sameAs" href="http://www.worldcat.org/oclc/245749828">reference book</a> by 
+ with a
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/245749828">reference book</a> by
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Modeling Language Reference Manual"/>
 <span itemprop="author">James Rumbaugh</span>,
 <span itemprop="author">Ivar Jacobson</span> and
 <span itemprop="author">Grady Booch</span>
 <meta itemprop="bookEdition" content="1st print"/>
-</span>. 
-A 
-<span itemscope itemtype="http://schema.org/Book"> 
-<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495"/>guide</a>
+</span>.
+A
+<span itemscope itemtype="http://schema.org/Book">
+<a itemprop="sameAs" href="http://www.worldcat.org/oclc/439579495">guide</a>
 <meta itemprop="datePublished" content="1998"/>
-by the same authors 
+by the same authors
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Modeling Language User Guide"/>
 <meta itemprop="author" content="Grady Booch"/>
@@ -34,10 +34,10 @@ by the same authors
 <meta itemprop="author" content="Ivar Jacobson"/>
 <meta itemprop="bookEdition" content="1st print"/>
 </span>
-defines the way the UML elements should be used. It is important to note that UML is distinct from any software development methodology: the authors introduced in a same time the Unified Process with a 
-<span itemscope itemtype="http://schema.org/Book"> 
+defines the way the UML elements should be used. It is important to note that UML is distinct from any software development methodology: the authors introduced in a same time the Unified Process with a
+<span itemscope itemtype="http://schema.org/Book">
 <a itemprop="sameAs" href="http://www.worldcat.org/oclc/613267531">third book</a>
-<meta itemprop="datePublished" content="1998"/> 
+<meta itemprop="datePublished" content="1998"/>
 <link itemprop="bookFormat" href="http://schema.org/Hardcover"/>
 <meta itemprop="name" content="The Unified Software Development Process"/>
 <meta itemprop="author" content="Ivar Jacobson"/>
@@ -56,11 +56,11 @@ UML evolves nowadays in the frame of the <a href="http://omg.org/"><em>Object Ma
 <div>
 <h2><a href="#ways" name="ways">Using UML ?</a></h2>
 <p>
-In a 
-<span itemscope itemtype="http://schema.org/Book"> 
+In a
+<span itemscope itemtype="http://schema.org/Book">
 <a itemprop="sameAs" href="http://www.worldcat.org/oclc/892608752">
-pragmatic book</a>, 
-<meta itemprop="datePublished" content="2013"/> 
+pragmatic book</a>,
+<meta itemprop="datePublished" content="2013"/>
 <link itemprop="bookFormat" href="http://schema.org/Paperback"/>
 <meta itemprop="name" content="UML distilled : a brief guide to the standard object modeling language"/>
 <span itemprop="author">Martin Fowler</span>
